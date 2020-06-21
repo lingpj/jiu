@@ -1,0 +1,31 @@
+{extend name="public:base"}
+{block name="content"}
+<div class="dashboard-page">
+    <form method="get">
+        <input type="text" placeholder="按账号查找" value="{$telephone}" name="telephone" />
+        <button class="layui-btn">确定</button>
+        <button class="layui-btn layui-btn-normal" onclick="$(this).parent().find('input').val('').parent().submit();" type="button">清空</button>
+    </form>
+    <table class="layui-table">
+        <thead>
+            <th>ID</th>
+            <th>账号</th>
+            <th>对战局数</th>
+            <th>查看棋谱</th>
+        </thead>
+        {foreach $list as $v}
+        <tr>
+            <td>{$v.user_id}</td>
+            <td>{$v.telephone}</td>
+            <td>{$v.count}</td>
+            <td>
+                <a href="{:url('admin/manual/detail')}?user_id={$v.user_id}">查看</a>
+            </td>
+        </tr>
+        {/foreach}
+    </table>
+    <div>
+        {$pagination}
+    </div>
+</div>
+{/block}

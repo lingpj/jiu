@@ -1,0 +1,134 @@
+{
+    "frames": {
+        "back.png": {
+            "frame": {
+                "h": 61,
+                "idx": 0,
+                "w": 57,
+                "x": 388,
+                "y": 321
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 61,
+                "w": 57
+            },
+            "spriteSourceSize": {
+                "h": 61,
+                "w": 57,
+                "x": 0,
+                "y": 0
+            },
+            "trimmed": false
+        },
+        "createroom.png": {
+            "frame": {
+                "h": 320,
+                "idx": 0,
+                "w": 243,
+                "x": 247,
+                "y": 0
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 320,
+                "w": 243
+            },
+            "spriteSourceSize": {
+                "h": 320,
+                "w": 243,
+                "x": 0,
+                "y": 0
+            },
+            "trimmed": false
+        },
+        "gorecharge-buttton.png": {
+            "frame": {
+                "h": 60,
+                "idx": 0,
+                "w": 147,
+                "x": 0,
+                "y": 321
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 60,
+                "w": 147
+            },
+            "spriteSourceSize": {
+                "h": 60,
+                "w": 147,
+                "x": 0,
+                "y": 0
+            },
+            "trimmed": false
+        },
+        "joinroom.png": {
+            "frame": {
+                "h": 320,
+                "idx": 0,
+                "w": 246,
+                "x": 0,
+                "y": 0
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 320,
+                "w": 246
+            },
+            "spriteSourceSize": {
+                "h": 320,
+                "w": 246,
+                "x": 0,
+                "y": 0
+            },
+            "trimmed": false
+        },
+        "prompttext.png": {
+            "frame": {
+                "h": 50,
+                "idx": 0,
+                "w": 91,
+                "x": 296,
+                "y": 321
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 50,
+                "w": 91
+            },
+            "spriteSourceSize": {
+                "h": 50,
+                "w": 91,
+                "x": 0,
+                "y": 0
+            },
+            "trimmed": false
+        },
+        "returngame-button.png": {
+            "frame": {
+                "h": 60,
+                "idx": 0,
+                "w": 147,
+                "x": 148,
+                "y": 321
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 60,
+                "w": 147
+            },
+            "spriteSourceSize": {
+                "h": 60,
+                "w": 147,
+                "x": 0,
+                "y": 0
+            },
+            "trimmed": false
+        }
+    },
+    "meta": {
+        "image": "customRoom.png",
+        "prefix": "comp/loaded/customRoom/"
+    }
+}

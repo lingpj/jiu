@@ -1,0 +1,68 @@
+{extend name="public:base"} {block name="content"}
+
+<div class="dashboard-page" id="dashboard-page">
+    <h1>机器人管理</h1>
+    <form method="post">
+        <div class="layui-form-item">
+            <label class="layui-form-label"></label>
+            <div class="layui-input-block">
+                请注意：每次修改后，机器人不会立即退出，而是自然退出（房间解散或者符合某种机器人规则）。<br/>
+                概率会立即生效
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">机器人开关</label>
+            <div class="layui-input-block">
+                <select name="open">
+                    <option value="1" {if $open == 1}selected{/if}>开</option>
+                    <option value="0" {if $open == 0}selected{/if}>关</option>
+                </select>
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">百人场系统坐庄胜利概率</label>
+            <div class="layui-input-block">
+                <input type="text" class="layui-input" value="{$bairen_probability}" name="bairen_probability"/>
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">4人场机器人坐庄概率</label>
+            <div class="layui-input-block">
+                <input type="text" class="layui-input" value="{$four_be_master_probability}" name="four_be_master_probability"/>
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">VIP赢的概率</label>
+            <div class="layui-input-block">
+                <input type="text" class="layui-input" value="{$vip_probability}" name="vip_probability"/>
+            </div>
+        </div>
+        <div class="layui-form-item" id="s">
+            <div class="layui-input-block">
+                <button class="layui-btn" @click="submitForm" lay-submit lay-filter="formDemo">确定</button>
+            </div>
+        </div>
+    </form>
+</div>
+
+<style scoped>
+    .layui-input-block{
+        position: relative;
+    }
+    .layui-input-block .btn2{
+        position: absolute;
+        right:0;
+        top:0;
+    }
+    h1 {
+        font-size: 36px;
+        padding-left: 50px;
+        padding-bottom: 50px;
+    }
+
+    select {
+        border:1px solid #e6e6e6;
+        padding:8px;
+    }
+</style>
+{/block}

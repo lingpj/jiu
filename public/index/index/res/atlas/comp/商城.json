@@ -1,0 +1,596 @@
+{
+    "frames": {
+        "bg.png": {
+            "frame": {
+                "h": 297,
+                "idx": 0,
+                "w": 214,
+                "x": 0,
+                "y": 0
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 297,
+                "w": 214
+            },
+            "spriteSourceSize": {
+                "h": 297,
+                "w": 214,
+                "x": 0,
+                "y": 0
+            },
+            "trimmed": false
+        },
+        "commodity-1.png": {
+            "frame": {
+                "h": 37,
+                "idx": 0,
+                "w": 136,
+                "x": 361,
+                "y": 114
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 37,
+                "w": 136
+            },
+            "spriteSourceSize": {
+                "h": 37,
+                "w": 136,
+                "x": 0,
+                "y": 0
+            },
+            "trimmed": false
+        },
+        "commodity-2.png": {
+            "frame": {
+                "h": 61,
+                "idx": 0,
+                "w": 216,
+                "x": 261,
+                "y": 356
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 61,
+                "w": 216
+            },
+            "spriteSourceSize": {
+                "h": 61,
+                "w": 216,
+                "x": 0,
+                "y": 0
+            },
+            "trimmed": false
+        },
+        "commoditypk-1.png": {
+            "frame": {
+                "h": 97,
+                "idx": 0,
+                "w": 65,
+                "x": 631,
+                "y": 106
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 97,
+                "w": 65
+            },
+            "spriteSourceSize": {
+                "h": 97,
+                "w": 65,
+                "x": 0,
+                "y": 0
+            },
+            "trimmed": false
+        },
+        "commoditypk-2.png": {
+            "frame": {
+                "h": 91,
+                "idx": 0,
+                "w": 46,
+                "x": 672,
+                "y": 330
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 91,
+                "w": 46
+            },
+            "spriteSourceSize": {
+                "h": 91,
+                "w": 46,
+                "x": 0,
+                "y": 0
+            },
+            "trimmed": false
+        },
+        "commoditypk-3.png": {
+            "frame": {
+                "h": 84,
+                "idx": 0,
+                "w": 103,
+                "x": 494,
+                "y": 270
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 84,
+                "w": 103
+            },
+            "spriteSourceSize": {
+                "h": 84,
+                "w": 103,
+                "x": 0,
+                "y": 0
+            },
+            "trimmed": false
+        },
+        "commoditypk-4.png": {
+            "frame": {
+                "h": 87,
+                "idx": 0,
+                "w": 62,
+                "x": 645,
+                "y": 204
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 87,
+                "w": 62
+            },
+            "spriteSourceSize": {
+                "h": 87,
+                "w": 62,
+                "x": 0,
+                "y": 0
+            },
+            "trimmed": false
+        },
+        "coupons-1.png": {
+            "frame": {
+                "h": 38,
+                "idx": 0,
+                "w": 175,
+                "x": 400,
+                "y": 472
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 38,
+                "w": 175
+            },
+            "spriteSourceSize": {
+                "h": 38,
+                "w": 175,
+                "x": 0,
+                "y": 0
+            },
+            "trimmed": false
+        },
+        "coupons-2.png": {
+            "frame": {
+                "h": 61,
+                "idx": 0,
+                "w": 232,
+                "x": 0,
+                "y": 441
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 61,
+                "w": 232
+            },
+            "spriteSourceSize": {
+                "h": 61,
+                "w": 232,
+                "x": 0,
+                "y": 0
+            },
+            "trimmed": false
+        },
+        "coupons.png": {
+            "frame": {
+                "h": 44,
+                "idx": 0,
+                "w": 52,
+                "x": 672,
+                "y": 422
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 44,
+                "w": 52
+            },
+            "spriteSourceSize": {
+                "h": 44,
+                "w": 52,
+                "x": 0,
+                "y": 0
+            },
+            "trimmed": false
+        },
+        "couponsbutotn.png": {
+            "frame": {
+                "h": 49,
+                "idx": 0,
+                "w": 155,
+                "x": 400,
+                "y": 418
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 49,
+                "w": 155
+            },
+            "spriteSourceSize": {
+                "h": 49,
+                "w": 155,
+                "x": 0,
+                "y": 0
+            },
+            "trimmed": false
+        },
+        "couponspk-1.png": {
+            "frame": {
+                "h": 111,
+                "idx": 0,
+                "w": 131,
+                "x": 499,
+                "y": 106
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 111,
+                "w": 131
+            },
+            "spriteSourceSize": {
+                "h": 111,
+                "w": 131,
+                "x": 0,
+                "y": 0
+            },
+            "trimmed": false
+        },
+        "couponspk-2.png": {
+            "frame": {
+                "h": 113,
+                "idx": 0,
+                "w": 137,
+                "x": 361,
+                "y": 0
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 113,
+                "w": 137
+            },
+            "spriteSourceSize": {
+                "h": 113,
+                "w": 137,
+                "x": 0,
+                "y": 0
+            },
+            "trimmed": false
+        },
+        "couponspk-3.png": {
+            "frame": {
+                "h": 115,
+                "idx": 0,
+                "w": 145,
+                "x": 215,
+                "y": 0
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 115,
+                "w": 145
+            },
+            "spriteSourceSize": {
+                "h": 115,
+                "w": 145,
+                "x": 0,
+                "y": 0
+            },
+            "trimmed": false
+        },
+        "couponspk-4.png": {
+            "frame": {
+                "h": 115,
+                "idx": 0,
+                "w": 138,
+                "x": 215,
+                "y": 116
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 115,
+                "w": 138
+            },
+            "spriteSourceSize": {
+                "h": 115,
+                "w": 138,
+                "x": 0,
+                "y": 0
+            },
+            "trimmed": false
+        },
+        "gold.png": {
+            "frame": {
+                "h": 44,
+                "idx": 0,
+                "w": 43,
+                "x": 354,
+                "y": 152
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 44,
+                "w": 43
+            },
+            "spriteSourceSize": {
+                "h": 44,
+                "w": 43,
+                "x": 0,
+                "y": 0
+            },
+            "trimmed": false
+        },
+        "goldbg.png": {
+            "frame": {
+                "h": 51,
+                "idx": 0,
+                "w": 196,
+                "x": 448,
+                "y": 218
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 51,
+                "w": 196
+            },
+            "spriteSourceSize": {
+                "h": 51,
+                "w": 196,
+                "x": 0,
+                "y": 0
+            },
+            "trimmed": false
+        },
+        "goldbutton.png": {
+            "frame": {
+                "h": 49,
+                "idx": 0,
+                "w": 155,
+                "x": 494,
+                "y": 355
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 49,
+                "w": 155
+            },
+            "spriteSourceSize": {
+                "h": 49,
+                "w": 155,
+                "x": 0,
+                "y": 0
+            },
+            "trimmed": false
+        },
+        "icon_money_reward_00.png": {
+            "frame": {
+                "h": 82,
+                "idx": 0,
+                "w": 138,
+                "x": 261,
+                "y": 418
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 82,
+                "w": 138
+            },
+            "spriteSourceSize": {
+                "h": 82,
+                "w": 138,
+                "x": 0,
+                "y": 0
+            },
+            "trimmed": false
+        },
+        "icon_money_reward_01.png": {
+            "frame": {
+                "h": 105,
+                "idx": 0,
+                "w": 143,
+                "x": 499,
+                "y": 0
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 105,
+                "w": 143
+            },
+            "spriteSourceSize": {
+                "h": 105,
+                "w": 143,
+                "x": 0,
+                "y": 0
+            },
+            "trimmed": false
+        },
+        "icon_money_reward_02.png": {
+            "frame": {
+                "h": 142,
+                "idx": 0,
+                "w": 142,
+                "x": 0,
+                "y": 298
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 142,
+                "w": 142
+            },
+            "spriteSourceSize": {
+                "h": 142,
+                "w": 142,
+                "x": 0,
+                "y": 0
+            },
+            "trimmed": false
+        },
+        "icon_money_reward_03.png": {
+            "frame": {
+                "h": 126,
+                "idx": 0,
+                "w": 117,
+                "x": 143,
+                "y": 298
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 126,
+                "w": 117
+            },
+            "spriteSourceSize": {
+                "h": 126,
+                "w": 117,
+                "x": 0,
+                "y": 0
+            },
+            "trimmed": false
+        },
+        "malltext.png": {
+            "frame": {
+                "h": 66,
+                "idx": 0,
+                "w": 115,
+                "x": 556,
+                "y": 405
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 66,
+                "w": 115
+            },
+            "spriteSourceSize": {
+                "h": 66,
+                "w": 115,
+                "x": 0,
+                "y": 0
+            },
+            "trimmed": false
+        },
+        "recharge-1.png": {
+            "frame": {
+                "h": 37,
+                "idx": 0,
+                "w": 138,
+                "x": 598,
+                "y": 292
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 37,
+                "w": 138
+            },
+            "spriteSourceSize": {
+                "h": 37,
+                "w": 138,
+                "x": 0,
+                "y": 0
+            },
+            "trimmed": false
+        },
+        "recharge-2.png": {
+            "frame": {
+                "h": 61,
+                "idx": 0,
+                "w": 232,
+                "x": 215,
+                "y": 232
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 61,
+                "w": 232
+            },
+            "spriteSourceSize": {
+                "h": 61,
+                "w": 232,
+                "x": 0,
+                "y": 0
+            },
+            "trimmed": false
+        },
+        "service-1.png": {
+            "frame": {
+                "h": 39,
+                "idx": 0,
+                "w": 67,
+                "x": 576,
+                "y": 472
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 39,
+                "w": 67
+            },
+            "spriteSourceSize": {
+                "h": 39,
+                "w": 67,
+                "x": 0,
+                "y": 0
+            },
+            "trimmed": false
+        },
+        "service-2.png": {
+            "frame": {
+                "h": 61,
+                "idx": 0,
+                "w": 232,
+                "x": 261,
+                "y": 294
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 61,
+                "w": 232
+            },
+            "spriteSourceSize": {
+                "h": 61,
+                "w": 232,
+                "x": 0,
+                "y": 0
+            },
+            "trimmed": false
+        },
+        "shut.png": {
+            "frame": {
+                "h": 80,
+                "idx": 0,
+                "w": 79,
+                "x": 643,
+                "y": 0
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 80,
+                "w": 79
+            },
+            "spriteSourceSize": {
+                "h": 80,
+                "w": 79,
+                "x": 0,
+                "y": 0
+            },
+            "trimmed": false
+        }
+    },
+    "meta": {
+        "image": "商城.png",
+        "prefix": "comp/商城/"
+    }
+}

@@ -1,0 +1,328 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8' />
+    <title>九九游戏</title>
+    <meta name='viewport' content='width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no'
+    />
+    <meta name="renderer" content="webkit">
+    <meta name='apple-mobile-web-app-capable' content='yes' />
+    <meta name='full-screen' content='true' />
+    <meta name='x5-fullscreen' content='true' />
+    <meta name='360-fullscreen' content='true' />
+    <meta name="laya" screenorientation="landscape" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta http-equiv='expires' content='0' />
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <script type="text/javascript" src="/static/js/jweixin-1.2.0.js?v=5"></script>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        #fish-loading-img {
+            width: 100%;
+            height: 100%;
+        }
+        
+        #loading-percent-wrap {
+            position: absolute;
+            color: #F46308;
+            font-size: 20px;
+            text-align: center;
+            width: 100%;
+            z-index: 3;
+        }
+
+        #loading-percent {
+            position: fixed;
+            bottom: 80px;
+            width: 100%;
+            z-index: 4;
+        }
+        
+    </style>
+
+    <script>
+
+    </script>
+</head>
+
+<body>
+    <div id="loading-percent-wrap">
+        <img src="/static/img/loading.gif" id="fish-loading-img" />
+        <div id="loading-percent"></div>
+    </div>
+    <script>
+        function initWeiXinConfig() {
+            var ready = function (r) {
+                wx.config({
+                    debug: false,
+                    appId: r.appId,
+                    timestamp: r.timestamp,
+                    nonceStr: r.nonceStr,
+                    signature: r.signature,
+                    jsApiList: [
+                        'onMenuShareTimeline',
+                        'onMenuShareAppMessage'
+                    ]
+                });
+
+                wx.ready(function () {
+                    var current_uri = r.uri + '?number=' + Pai.roomNumber;
+
+                    var title = '九九游戏 邀请您进入房间：' + Pai.roomNumber;
+                    wx.onMenuShareTimeline({
+                        title: title,
+                        link: current_uri,
+                        imgUrl: r.img,
+                        success: function () {
+                        },
+                        cancel: function () {
+                        }
+                    });
+
+                    //to friend
+                    var friend_page_title = title;
+                    var friend_page_intro = "";
+                    var friend_page_img = r.img;
+
+                    function _alert(str) { }
+
+                    wx.onMenuShareAppMessage({
+                        title: friend_page_title,
+                        desc: friend_page_intro,
+                        link: current_uri,
+                        imgUrl: friend_page_img,
+                        trigger: function (res) {
+                        },
+                        success: function (res) {
+                            _alert(JSON.stringify(res));
+                        },
+                        cancel: function (res) {
+                            _alert(JSON.stringify(res));
+                        },
+                        fail: function (res) {
+                            _alert(JSON.stringify(res));
+                        }
+                    });
+                });
+            };
+
+            $.post('http://www.qfozcx.net/index/index/weixinconfig', function (r) {
+                if (r.open_id) {
+                    Pai.wxObjInfo = {
+                        OpenId: r.open_id,
+                        Nickname: r.nickname,
+                        AvatarUrl: r.head_img_url
+                    }
+                    Pai.enterRoomNumber = r.number
+                }
+                ready(r);
+            });
+        }
+
+        var PaiJiuUtil = {
+            version: 78,
+            beVersion: true,
+            lastScript: "../src/main.js?v=5",
+            list: [
+                "./comp/4renchang/gamebg.png",
+                "./comp/customBoard/juxing.png",
+                "./comp/datianjiu2/beijing.png",
+                "./comp/hundred/bg.png",
+                "./comp/hundred/tishitanchuang.png",
+                "./comp/hundred/playerList/wanjiatanchuang.png",
+                "./comp/hundred2/bg.png",
+                "./comp/hundred2/tishitanchuang.png",
+                "./comp/loaded/homebg.png",
+                "./comp/loaded/userinfo/personalframe.png",
+                "./comp/loaded/customRoom/popupbox.png",
+                "./comp/loaded/customRoom/joinRoom/jionframe.png",
+                "./comp/loaded/message/annframe.png",
+                "./comp/login/tuceng.png",
+                "./comp/shop/mallframe.png",
+                "./comp/shop/offlineframe.png",
+                "./comp/shop/tip/kuang.png",
+                "./comp/shop/duihuan/tishi.png",
+                "./comp/loaded/c.png",
+
+                "libs/laya.core.js?v=5",
+                "libs/laya.webgl.js?v=5",
+                "libs/laya.ani.js?v=5",
+                "libs/laya.filter.js?v=5",
+                "libs/laya.html.js?v=5",
+                "libs/laya.particle.js?v=5",
+                "libs/laya.tiledmap.js?v=5",
+                "libs/md5.js?v=5",
+                "libs/laya.ui.js?v=5",
+                "../src/ui/layaUI.max.all.js?v=5",
+                "../src/Pai.js?v=5",
+                "../src/alertView.js?v=5",
+                "../src/clock.js?v=5",
+                "/static/layui/lay/dest/layui.all.js?v=5",
+                "../src/alertView.js?v=5",
+                "../src/loaded/four/fourBoard.js?v=5",
+                "../src/dajiu/dajiuBoard.js?v=5",
+                "../src/custom/customBoard.js?v=5",
+                "../src/hundred/paiList.js?v=5",
+                "../src/hundred/playerList.js?v=5",
+                "../src/hundred/hundredBoard.js?v=5",
+                "../src/msg.js?v=5",
+                "../src/loaded/joinRoom.js?v=5",
+                "../src/loaded/customRoomTip.js?v=5",
+                "../src/loaded/set.js?v=5",
+                "../src/loaded/safe.js?v=5",
+                "../src/loaded/userinfo.js?v=5",
+                "../src/loaded/notice.js?v=5",
+                "../src/loaded/rule/rule.js?v=5",
+                "../src/loaded/shop/shopTipResult.js?v=5",
+                "../src/Pai.js?v=5",
+                "../src/msg.js?v=5",
+                "../src/loaded/share.js?v=5",
+                "../src/handler.js?v=5",
+                "../src/loaded/loaded.js?v=5",
+                "../src/loaded/shop/shop.js?v=5",
+                "../src/loaded/shop/shopTip.js?v=5",
+                "../src/login.js?v=5",
+                "../src/request.js?v=5",
+            ],
+            load: function (url, func) {
+                if (PaiJiuUtil.beVersion) {
+                    //图片不加版本号，layabox认为带版本号的图片和不带的不是同一张，会重复加载
+                    if (url.indexOf(".png") < 0 && url.indexOf(".jpg") < 0) {
+                        url = url + '?v=' + PaiJiuUtil.version;
+                    }
+                }
+                if (url.indexOf(".png") < 0 && url.indexOf(".jpg") < 0) {
+                    PaiJiuUtil.loadJsAsync(url, func);
+                } else {
+                    PaiJiuUtil.loadImage(url, func)
+                }
+            },
+            loadJsAsync: function (url, func) {
+                func = func || function () { };
+
+                var body = document.getElementsByTagName('body')[0];
+                var jsNode = document.createElement('script');
+                jsNode.setAttribute('type', 'text/javascript');
+                jsNode.setAttribute('src', url);
+                jsNode.onload = jsNode.onreadystatechange = function () {
+                    if (!this.readyState || this.readyState === "loaded" || this.readyState === "complete") {
+                        jsNode.onload = jsNode.onreadystatechange = null;
+                        func()
+                    }
+                };
+                body.appendChild(jsNode);
+            },
+            loadImage: function (src, func) {
+                func = func || function () { };
+                var img = new Image();
+                img.src = src;
+                img.onload = function () {
+                    func()
+                }
+            },
+            updateProgress: function (index) {
+                var len = PaiJiuUtil.list.length;
+                var percent = parseInt((index / len) * 100);
+                if (percent == 100) {
+                    PaiJiuUtil.loadJsAsync(PaiJiuUtil.lastScript);
+                    clearTimeout(PaiJiuUtil.timeout);
+                    var body = document.getElementsByTagName('body')[0];
+                    var loading = document.getElementById("loading-percent-wrap");
+                    body.removeChild(loading);
+                } else {
+                    document.getElementById("loading-percent").innerHTML = "加载：" + percent + "%";
+                }
+            },
+            status: {},
+            loop: function (index) {
+                var list = PaiJiuUtil.list;
+                if (list[index]) {
+                    PaiJiuUtil.load(list[index], function () {
+                        index++;
+                        PaiJiuUtil.loop(index);
+                        PaiJiuUtil.updateProgress(index);
+                    })
+                }
+            },
+            loadAll: function (list) {
+                list.forEach(function (ele) {
+                    PaiJiuUtil.status[ele] = false;
+                });
+                PaiJiuUtil.loop(0);
+            }
+        };
+
+        // PaiJiuUtil.loadAll(PaiJiuUtil.list);
+
+        // PaiJiuUtil.timeout = setTimeout(function () {
+        //     if (confirm('因网络原因加载失败，是否重新加载？')) {
+        //         window.location.reload();
+        //     }
+        // }, 30 * 1000);
+    </script>
+     <!--核心包，封装了显示对象渲染，事件，时间管理，时间轴动画，缓动，消息交互,socket，本地存储，鼠标触摸，声音，加载，颜色滤镜，位图字体等-->
+    <script type="text/javascript" src="libs/laya.core.js?v=5"></script>
+    <!--&lt;!&ndash;封装了webgl渲染管线，如果使用webgl渲染，可以在初始化时调用Laya.init(1000,800,laya.webgl.WebGL);&ndash;&gt;-->
+    <script type="text/javascript" src="libs/laya.webgl.js?v=5"></script>
+    <!--&lt;!&ndash;是动画模块，包含了swf动画，骨骼动画等&ndash;&gt;-->
+    <script type="text/javascript" src="libs/laya.ani.js?v=5"></script>
+    <!--&lt;!&ndash;包含更多webgl滤镜，比如外发光，阴影，模糊以及更多&ndash;&gt;-->
+    <script type="text/javascript" src="libs/laya.filter.js?v=5"></script>
+    <!--&lt;!&ndash;封装了html动态排版功能&ndash;&gt;-->
+    <script type="text/javascript" src="libs/laya.html.js?v=5"></script>
+    <!--&lt;!&ndash;粒子类库&ndash;&gt;-->
+    <script type="text/javascript" src="libs/laya.particle.js?v=5"></script>
+    <!--&lt;!&ndash;提供tileMap解析支持&ndash;&gt;-->
+    <script type="text/javascript" src="libs/laya.tiledmap.js?v=5"></script>
+    <script type="text/javascript" src="libs/md5.js?v=5"></script>
+    <!---->
+    <!--&lt;!&ndash;提供了制作UI的各种组件实现&ndash;&gt;-->
+    <script type="text/javascript" src="libs/laya.ui.js?v=5"></script>
+    <!---->
+    <script src="../src/ui/layaUI.max.all.js?v=5"></script>
+    <!---->
+    <script src="../src/Pai.js?v=5"></script>
+    <script src="../src/alertView.js?v=5"></script>
+    <script src="../src/clock.js?v=5"></script>
+    <!--&lt;!&ndash;自定义的js(bin/js文件夹下)文件自动添加到下面jsfile模块标签里面里，js的顺序可以手动修改，修改后保留修改的顺序，新增加的js会默认依次追加到标签里&ndash;&gt;-->
+    <!--&lt;!&ndash;删除标签，ide不会自动添加js文件，请谨慎操作&ndash;&gt;-->
+    <!--&lt;!&ndash;jsfile&#45;&#45;startTag&ndash;&gt;-->
+    <script src="/static/layui/lay/dest/layui.all.js?v=5"></script>
+
+    <script src="../src/alertView.js?v=5"></script>
+    <script src="../src/clock.js?v=5"></script>
+    <script src="../src/loaded/four/fourBoard.js?v=5"></script>
+    <script src="../src/dajiu/dajiuBoard.js?v=5"></script>
+    <script src="../src/custom/customBoard.js?v=5"></script>
+    <script src="../src/hundred/paiList.js?v=5"></script>
+    <script src="../src/hundred/playerList.js?v=5"></script>
+    <script src="../src/hundred/hundredBoard.js?v=5"></script>
+    <script src="../src/msg.js?v=5"></script>
+    
+    <script src="../src/loaded/joinRoom.js?v=5"></script>
+    <script src="../src/loaded/customRoomTip.js?v=5"></script>
+    <script src="../src/loaded/set.js?v=5"></script>
+    <script src="../src/loaded/safe.js?v=5"></script>
+    <script src="../src/loaded/userinfo.js?v=5"></script>
+    <script src="../src/loaded/notice.js?v=5"></script>
+    <script src="../src/loaded/rule/rule.js?v=5"></script>
+    <script src="../src/loaded/shop/shopTipResult.js?v=5"></script>
+    <script src="../src/Pai.js?v=5"></script>
+    <script src="../src/msg.js?v=5"></script>
+    <script src="../src/loaded/share.js?v=5"></script>
+    <script src="../src/handler.js?v=5"></script>
+    <script src="../src/loaded/loaded.js?v=5"></script>
+    <script src="../src/loaded/shop/shop.js?v=5"></script>
+    <script src="../src/loaded/shop/shopTip.js?v=5"></script>
+    <script src="../src/login.js?v=5"></script>
+    <script src="../src/request.js?v=5"></script>
+    <script src="../src/main.js?v=5"></script> 
+    <!--jsfile--endTag-->
+</body>
+
+</html>

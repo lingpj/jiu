@@ -1,0 +1,99 @@
+{extend name="public:base"}
+{block name="content"}
+<h1 class="breadcrumb-title">代理收益报表</h1>
+<script src="http://res.layui.com/layui/release/laydate/dist/laydate.js?v=20171105"></script>
+<div class="dashboard-page">
+    <div style="width: 500px;margin-bottom: 20px;">
+        <form method="get" class="layui-form">
+            <div class="layui-form-item">
+                <label class="layui-form-label">开始时间</label>
+                <div class="layui-input-block">
+                    <input class="layui-input" type="date" name="start_time" value="{$start_time}" id="start"/>
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <label class="layui-form-label">结束时间</label>
+                <div class="layui-input-block">
+                    <input class="layui-input" type="date" name="end_time" value="{$end_time}" id="end" />
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <label class="layui-form-label">玩家ID</label>
+                <div class="layui-input-block">
+                    <input class="layui-input" type="text" placeholder="玩家ID" value="{$player_id|default=''}" name="player_id"/>
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <label class="layui-form-label">玩家ID</label>
+                <div class="layui-input-block">
+                    <button style="display: inline-block" class="layui-btn">确定</button>
+                    <button type="button" onclick="clears()" style="display: inline-block" class="layui-btn layui-btn-primary">清空</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <table class="layui-table">
+        <thead>
+            <th>UID</th>
+            <th>日期</th>
+            <th>手机号</th>
+            <th>昵称</th>
+            <th>金币</th>
+            <th>收益</th>
+            <th>产生税收</th>
+            <th>注册人数</th>
+            <th>下属人数</th>
+            <th>操作</th>
+        </thead>
+        {foreach $list as $v}
+        <tr>
+            <td>{$v.id}</td>
+            <td>{:date('Y-m-d',strtotime($v.created_time))}</td>
+            <td>{$v.phone}</td>
+            <td>{$v.nickname}</td>
+            <td>{$v.coin}</td>
+            <td class="t">{$v.player_profit_coin}</td>
+            <td>{$v.system_profit_coin}</td>
+            <td>
+                {$v.register}
+            </td>
+            <td>
+                {$v.children}
+            </td>
+            <td>
+                <button type="button" class="layui-btn" onclick="change('{$v.qid}','{$v.id}',this)">修改收益</button>
+            </td>
+        </tr>
+        {/foreach}
+    </table>
+    <div>
+        {$pagination}
+    </div>
+</div>
+<script>
+    function clears(){
+        var inputs = $('form').find('input');
+        console.log(inputs);
+        for(var i = 0;i < inputs.length;i ++){
+            var input = inputs[i];
+            $(input).val('');
+            $('form').submit();
+            console.log(1);
+        }
+    }
+
+    function change(qid,id,othis){
+        layer.prompt({title: 'ID:'+id, formType: 3}, function(text, index){
+            $.post('{:url("admin/profit/editprofit")}',{'id':qid,coin:text},function(r){
+                if(r.code == 1){
+                    layer.close(index);
+                    $(othis).parent().parent().find('.t').html(text);
+                }else{
+                    layer.msg(r.msg);
+                }
+            });
+        });
+    }
+</script>
+{/block}

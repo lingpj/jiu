@@ -1,0 +1,40 @@
+{extend name="public:base"}
+{block name="content"}
+<h1 class="breadcrumb-title">代理收益统计</h1>
+<div class="dashboard-page">
+    <div style="width: 300px;margin-bottom: 20px;">
+        <form method="get">
+            <input type="text" placeholder="玩家ID" value="{$player_id|default=''}" name="player_id"/>
+            <button style="display: inline-block" class="layui-btn">确定</button>
+        </form>
+    </div>
+    <table class="layui-table">
+        <thead>
+            <th>UID</th>
+            <th>手机号</th>
+            <th>昵称</th>
+            <th>金币</th>
+            <th>代理收益</th>
+            <th>下属玩家数</th>
+        </thead>
+        {foreach $list as $v}
+        <tr>
+            <td>{$v.id}</td>
+            <td>{$v.phone}</td>
+            <td>{$v.nickname}</td>
+            <td>{$v.coin}</td>
+            <td>{$v.profit_coin}</td>
+            <td>
+                {$v.children}
+            </td>
+        </tr>
+        {/foreach}
+    </table>
+    <div>
+        {$pagination}
+    </div>
+</div>
+<script>
+
+</script>
+{/block}

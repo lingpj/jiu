@@ -1,0 +1,52 @@
+{extend name="public:base"}
+{block name="content"}
+<div class="dashboard-page">
+    <div style="width: 300px;margin-bottom: 20px;">
+        <form method="get">
+            <input name="date" value="{$date}" style="display: inline-block;width: 200px;" class="layui-input" type="date"/>
+            <button style="display: inline-block" class="layui-btn">确定</button>
+        </form>
+    </div>
+    <a class="layui-btn" href="{:url('admin/broadcast/edit')}">添加</a>
+    <table class="layui-table">
+        <thead>
+            <th>玩家昵称</th>
+            <th>玩家ID</th>
+            <th>玩家手机</th>
+            <th>收益</th>
+            <th>推荐数量</th>
+            <th>时间</th>
+            <th>操作</th>
+            <th>操作</th>
+        </thead>
+        {foreach $list as $v}
+        <tr>
+            <td>{$v.nickname}</td>
+            <td>{$v.player_id}</td>
+            <td>{$v.phone}</td>
+            <td>{if $v.fee > 0}{:short_count($v.fee)}<span class="layui-badge">✔</span>{else/}<span class="layui-badge">✘</span>{/if}</td>
+            <td>{$v.kids}人</td>
+            <td>{$v.created_time}</td>
+            <td>
+                {if $v.fee > 0}
+                <a href="{:url('admin/profit/edit')}?id={$v.id}&player_id={$v.player_id}">编辑</a>
+                {else/}
+                <a class="layui-btn" href="{:url('admin/profit/edit')}?player_id={$v.player_id}&date={$date}">添加</a>
+                {/if}
+            </td>
+            <td>
+                {if $v.fee > 0}
+                <a href="{:url('admin/profit/del')}?id={$v.id}">删除</a>
+                {/if}
+            </td>
+        </tr>
+        {/foreach}
+    </table>
+    <div>
+        {$pagination}
+    </div>
+</div>
+<script>
+
+</script>
+{/block}

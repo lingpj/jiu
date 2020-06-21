@@ -1,0 +1,27 @@
+{extend name="public:base"} {block name="content"}
+<style>
+    #a{
+        margin-top: 10px;
+        border:1px solid #D2D2D2;
+        padding:5px;
+    }
+</style>
+<div class="dashboard-page" id="dashboard-page">
+    <form method="post">
+        <input type="hidden" name="id" value="{$id|default=0}"/>
+        <input type="hidden" name="player_id" value="{$player_id|default=0}"/>
+        <input type="hidden" name="date" value="{$date|default=0}"/>
+        <div class="layui-form-item">
+            <label class="layui-form-label">收益</label>
+            <div class="layui-input-block">
+                <input type="number" name="fee" value="{$fee|default=''}" required lay-verify="required" class="layui-input">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <div class="layui-input-block">
+                <button class="layui-btn" @click="submitForm" lay-submit lay-filter="formDemo">确定</button>
+            </div>
+        </div>
+    </form>
+</div>
+{/block}

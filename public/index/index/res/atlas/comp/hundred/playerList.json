@@ -1,0 +1,113 @@
+{
+    "frames": {
+        "jinbibg.png": {
+            "frame": {
+                "h": 36,
+                "idx": 0,
+                "w": 107,
+                "x": 80,
+                "y": 176
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 36,
+                "w": 107
+            },
+            "spriteSourceSize": {
+                "h": 36,
+                "w": 107,
+                "x": 0,
+                "y": 0
+            },
+            "trimmed": false
+        },
+        "shut.png": {
+            "frame": {
+                "h": 80,
+                "idx": 0,
+                "w": 79,
+                "x": 0,
+                "y": 176
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 80,
+                "w": 79
+            },
+            "spriteSourceSize": {
+                "h": 80,
+                "w": 79,
+                "x": 0,
+                "y": 0
+            },
+            "trimmed": false
+        },
+        "touxiang.png": {
+            "frame": {
+                "h": 80,
+                "idx": 0,
+                "w": 80,
+                "x": 189,
+                "y": 121
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 80,
+                "w": 80
+            },
+            "spriteSourceSize": {
+                "h": 80,
+                "w": 80,
+                "x": 0,
+                "y": 0
+            },
+            "trimmed": false
+        },
+        "wanjiabg.png": {
+            "frame": {
+                "h": 120,
+                "idx": 0,
+                "w": 234,
+                "x": 0,
+                "y": 0
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 120,
+                "w": 234
+            },
+            "spriteSourceSize": {
+                "h": 120,
+                "w": 234,
+                "x": 0,
+                "y": 0
+            },
+            "trimmed": false
+        },
+        "wanjiawanzi.png": {
+            "frame": {
+                "h": 54,
+                "idx": 0,
+                "w": 188,
+                "x": 0,
+                "y": 121
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 54,
+                "w": 188
+            },
+            "spriteSourceSize": {
+                "h": 54,
+                "w": 188,
+                "x": 0,
+                "y": 0
+            },
+            "trimmed": false
+        }
+    },
+    "meta": {
+        "image": "playerList.png",
+        "prefix": "comp/hundred/playerList/"
+    }
+}

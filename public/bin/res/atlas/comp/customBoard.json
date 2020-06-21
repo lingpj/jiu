@@ -1,0 +1,743 @@
+{
+    "frames": {
+        "100.png": {
+            "frame": {
+                "h": 79,
+                "idx": 0,
+                "w": 78,
+                "x": 847,
+                "y": 509
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 79,
+                "w": 78
+            },
+            "spriteSourceSize": {
+                "h": 79,
+                "w": 78,
+                "x": 0,
+                "y": 0
+            },
+            "trimmed": false
+        },
+        "1000.png": {
+            "frame": {
+                "h": 78,
+                "idx": 0,
+                "w": 78,
+                "x": 926,
+                "y": 509
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 78,
+                "w": 78
+            },
+            "spriteSourceSize": {
+                "h": 78,
+                "w": 78,
+                "x": 0,
+                "y": 0
+            },
+            "trimmed": false
+        },
+        "1yi.png": {
+            "frame": {
+                "h": 78,
+                "idx": 0,
+                "w": 78,
+                "x": 0,
+                "y": 556
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 78,
+                "w": 78
+            },
+            "spriteSourceSize": {
+                "h": 78,
+                "w": 78,
+                "x": 0,
+                "y": 0
+            },
+            "trimmed": false
+        },
+        "500.png": {
+            "frame": {
+                "h": 78,
+                "idx": 0,
+                "w": 78,
+                "x": 467,
+                "y": 525
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 78,
+                "w": 78
+            },
+            "spriteSourceSize": {
+                "h": 78,
+                "w": 78,
+                "x": 0,
+                "y": 0
+            },
+            "trimmed": false
+        },
+        "5000.png": {
+            "frame": {
+                "h": 78,
+                "idx": 0,
+                "w": 78,
+                "x": 388,
+                "y": 525
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 78,
+                "w": 78
+            },
+            "spriteSourceSize": {
+                "h": 78,
+                "w": 78,
+                "x": 0,
+                "y": 0
+            },
+            "trimmed": false
+        },
+        "avatar.png": {
+            "frame": {
+                "h": 100,
+                "idx": 0,
+                "w": 100,
+                "x": 891,
+                "y": 286
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 100,
+                "w": 100
+            },
+            "spriteSourceSize": {
+                "h": 100,
+                "w": 100,
+                "x": 0,
+                "y": 0
+            },
+            "trimmed": false
+        },
+        "bg.png": {
+            "frame": {
+                "h": 324,
+                "idx": 0,
+                "w": 324,
+                "x": 0,
+                "y": 0
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 324,
+                "w": 324
+            },
+            "spriteSourceSize": {
+                "h": 324,
+                "w": 324,
+                "x": 0,
+                "y": 0
+            },
+            "trimmed": false
+        },
+        "bushangzhuang.png": {
+            "frame": {
+                "h": 88,
+                "idx": 0,
+                "w": 194,
+                "x": 0,
+                "y": 379
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 88,
+                "w": 194
+            },
+            "spriteSourceSize": {
+                "h": 88,
+                "w": 194,
+                "x": 0,
+                "y": 0
+            },
+            "trimmed": false
+        },
+        "chipsbg.png": {
+            "frame": {
+                "h": 154,
+                "idx": 0,
+                "w": 510,
+                "x": 325,
+                "y": 0
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 154,
+                "w": 510
+            },
+            "spriteSourceSize": {
+                "h": 154,
+                "w": 510,
+                "x": 0,
+                "y": 0
+            },
+            "trimmed": false
+        },
+        "dao-1.png": {
+            "frame": {
+                "h": 170,
+                "idx": 0,
+                "w": 188,
+                "x": 514,
+                "y": 155
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 170,
+                "w": 188
+            },
+            "spriteSourceSize": {
+                "h": 170,
+                "w": 188,
+                "x": 0,
+                "y": 0
+            },
+            "trimmed": false
+        },
+        "daojiao-1.png": {
+            "frame": {
+                "h": 119,
+                "idx": 0,
+                "w": 187,
+                "x": 703,
+                "y": 301
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 119,
+                "w": 187
+            },
+            "spriteSourceSize": {
+                "h": 119,
+                "w": 187,
+                "x": 0,
+                "y": 0
+            },
+            "trimmed": false
+        },
+        "drop-game.png": {
+            "frame": {
+                "h": 77,
+                "idx": 0,
+                "w": 74,
+                "x": 233,
+                "y": 556
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 77,
+                "w": 74
+            },
+            "spriteSourceSize": {
+                "h": 77,
+                "w": 74,
+                "x": 0,
+                "y": 0
+            },
+            "trimmed": false
+        },
+        "goldbg-game.png": {
+            "frame": {
+                "h": 32,
+                "idx": 0,
+                "w": 99,
+                "x": 891,
+                "y": 387
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 32,
+                "w": 99
+            },
+            "spriteSourceSize": {
+                "h": 32,
+                "w": 99,
+                "x": 0,
+                "y": 0
+            },
+            "trimmed": false
+        },
+        "jixuzuozhuang.png": {
+            "frame": {
+                "h": 87,
+                "idx": 0,
+                "w": 193,
+                "x": 829,
+                "y": 421
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 87,
+                "w": 193
+            },
+            "spriteSourceSize": {
+                "h": 87,
+                "w": 193,
+                "x": 0,
+                "y": 0
+            },
+            "trimmed": false
+        },
+        "lijishangzhuang.png": {
+            "frame": {
+                "h": 87,
+                "idx": 0,
+                "w": 193,
+                "x": 390,
+                "y": 437
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 87,
+                "w": 193
+            },
+            "spriteSourceSize": {
+                "h": 87,
+                "w": 193,
+                "x": 0,
+                "y": 0
+            },
+            "trimmed": false
+        },
+        "lijixiazhuang.png": {
+            "frame": {
+                "h": 88,
+                "idx": 0,
+                "w": 194,
+                "x": 195,
+                "y": 379
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 88,
+                "w": 194
+            },
+            "spriteSourceSize": {
+                "h": 88,
+                "w": 194,
+                "x": 0,
+                "y": 0
+            },
+            "trimmed": false
+        },
+        "news-game.png": {
+            "frame": {
+                "h": 78,
+                "idx": 0,
+                "w": 76,
+                "x": 156,
+                "y": 556
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 78,
+                "w": 76
+            },
+            "spriteSourceSize": {
+                "h": 78,
+                "w": 76,
+                "x": 0,
+                "y": 0
+            },
+            "trimmed": false
+        },
+        "ok-game.png": {
+            "frame": {
+                "h": 62,
+                "idx": 0,
+                "w": 50,
+                "x": 635,
+                "y": 326
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 62,
+                "w": 50
+            },
+            "spriteSourceSize": {
+                "h": 62,
+                "w": 50,
+                "x": 0,
+                "y": 0
+            },
+            "trimmed": false
+        },
+        "promptbg-game.png": {
+            "frame": {
+                "h": 52,
+                "idx": 0,
+                "w": 448,
+                "x": 0,
+                "y": 326
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 52,
+                "w": 448
+            },
+            "spriteSourceSize": {
+                "h": 52,
+                "w": 448,
+                "x": 0,
+                "y": 0
+            },
+            "trimmed": false
+        },
+        "readybutton-game.png": {
+            "frame": {
+                "h": 87,
+                "idx": 0,
+                "w": 193,
+                "x": 0,
+                "y": 468
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 87,
+                "w": 193
+            },
+            "spriteSourceSize": {
+                "h": 87,
+                "w": 193,
+                "x": 0,
+                "y": 0
+            },
+            "trimmed": false
+        },
+        "recharge-game.png": {
+            "frame": {
+                "h": 79,
+                "idx": 0,
+                "w": 82,
+                "x": 685,
+                "y": 509
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 79,
+                "w": 82
+            },
+            "spriteSourceSize": {
+                "h": 79,
+                "w": 82,
+                "x": 0,
+                "y": 0
+            },
+            "trimmed": false
+        },
+        "safe-game.png": {
+            "frame": {
+                "h": 80,
+                "idx": 0,
+                "w": 78,
+                "x": 768,
+                "y": 509
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 80,
+                "w": 78
+            },
+            "spriteSourceSize": {
+                "h": 80,
+                "w": 78,
+                "x": 0,
+                "y": 0
+            },
+            "trimmed": false
+        },
+        "set-game.png": {
+            "frame": {
+                "h": 78,
+                "idx": 0,
+                "w": 76,
+                "x": 79,
+                "y": 556
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 78,
+                "w": 76
+            },
+            "spriteSourceSize": {
+                "h": 78,
+                "w": 76,
+                "x": 0,
+                "y": 0
+            },
+            "trimmed": false
+        },
+        "shun-1.png": {
+            "frame": {
+                "h": 170,
+                "idx": 0,
+                "w": 188,
+                "x": 325,
+                "y": 155
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 170,
+                "w": 188
+            },
+            "spriteSourceSize": {
+                "h": 170,
+                "w": 188,
+                "x": 0,
+                "y": 0
+            },
+            "trimmed": false
+        },
+        "shunjiao-1.png": {
+            "frame": {
+                "h": 119,
+                "idx": 0,
+                "w": 187,
+                "x": 703,
+                "y": 181
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 119,
+                "w": 187
+            },
+            "spriteSourceSize": {
+                "h": 119,
+                "w": 187,
+                "x": 0,
+                "y": 0
+            },
+            "trimmed": false
+        },
+        "tain-1.png": {
+            "frame": {
+                "h": 180,
+                "idx": 0,
+                "w": 184,
+                "x": 836,
+                "y": 0
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 180,
+                "w": 184
+            },
+            "spriteSourceSize": {
+                "h": 180,
+                "w": 184,
+                "x": 0,
+                "y": 0
+            },
+            "trimmed": false
+        },
+        "tang-1.png": {
+            "frame": {
+                "h": 110,
+                "idx": 0,
+                "w": 185,
+                "x": 449,
+                "y": 326
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 110,
+                "w": 185
+            },
+            "spriteSourceSize": {
+                "h": 110,
+                "w": 185,
+                "x": 0,
+                "y": 0
+            },
+            "trimmed": false
+        },
+        "te.png": {
+            "frame": {
+                "h": 39,
+                "idx": 0,
+                "w": 132,
+                "x": 847,
+                "y": 589
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 39,
+                "w": 132
+            },
+            "spriteSourceSize": {
+                "h": 39,
+                "w": 132,
+                "x": 0,
+                "y": 0
+            },
+            "trimmed": false
+        },
+        "throwingbutton.png": {
+            "frame": {
+                "h": 87,
+                "idx": 0,
+                "w": 193,
+                "x": 635,
+                "y": 421
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 87,
+                "w": 193
+            },
+            "spriteSourceSize": {
+                "h": 87,
+                "w": 193,
+                "x": 0,
+                "y": 0
+            },
+            "trimmed": false
+        },
+        "villageicon.png": {
+            "frame": {
+                "h": 50,
+                "idx": 0,
+                "w": 51,
+                "x": 390,
+                "y": 379
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 50,
+                "w": 51
+            },
+            "spriteSourceSize": {
+                "h": 50,
+                "w": 51,
+                "x": 0,
+                "y": 0
+            },
+            "trimmed": false
+        },
+        "waitbg-game.png": {
+            "frame": {
+                "h": 100,
+                "idx": 0,
+                "w": 100,
+                "x": 584,
+                "y": 509
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 100,
+                "w": 100
+            },
+            "spriteSourceSize": {
+                "h": 100,
+                "w": 100,
+                "x": 0,
+                "y": 0
+            },
+            "trimmed": false
+        },
+        "xiazhuangbg.png": {
+            "frame": {
+                "h": 39,
+                "idx": 0,
+                "w": 122,
+                "x": 685,
+                "y": 590
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 39,
+                "w": 122
+            },
+            "spriteSourceSize": {
+                "h": 39,
+                "w": 122,
+                "x": 0,
+                "y": 0
+            },
+            "trimmed": false
+        },
+        "xipai2.png": {
+            "frame": {
+                "h": 87,
+                "idx": 0,
+                "w": 193,
+                "x": 194,
+                "y": 468
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 87,
+                "w": 193
+            },
+            "spriteSourceSize": {
+                "h": 87,
+                "w": 193,
+                "x": 0,
+                "y": 0
+            },
+            "trimmed": false
+        },
+        "xuanzhong.png": {
+            "frame": {
+                "h": 104,
+                "idx": 0,
+                "w": 104,
+                "x": 891,
+                "y": 181
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 104,
+                "w": 104
+            },
+            "spriteSourceSize": {
+                "h": 104,
+                "w": 104,
+                "x": 0,
+                "y": 0
+            },
+            "trimmed": false
+        },
+        "zhuang.png": {
+            "frame": {
+                "h": 50,
+                "idx": 0,
+                "w": 50,
+                "x": 584,
+                "y": 437
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 50,
+                "w": 50
+            },
+            "spriteSourceSize": {
+                "h": 50,
+                "w": 50,
+                "x": 0,
+                "y": 0
+            },
+            "trimmed": false
+        }
+    },
+    "meta": {
+        "image": "customBoard.png",
+        "prefix": "comp/customBoard/"
+    }
+}

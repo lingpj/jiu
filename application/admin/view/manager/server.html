@@ -1,0 +1,73 @@
+{extend name="public:base"} {block name="content"}
+
+<div class="dashboard-page" id="dashboard-page">
+
+    <h1>编辑客服微信号</h1>
+    <form method="post">
+        <div class="layui-form-item">
+            <label class="layui-form-label"></label>
+            <div class="layui-input-block">
+                <span style="color:red">*</span>微信客服名称和微信号用，（逗号）隔开，例如：小欣，15012345678
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label"></label>
+            <div class="layui-input-block">
+                <button type="button" onclick="add();" class="layui-btn">增加一个</button>
+            </div>
+        </div>
+
+        {foreach $list as $v}
+        <div class="layui-form-item">
+            <label class="layui-form-label">用户名</label>
+            <div class="layui-input-block">
+                <input type="text" name="we_chat[]" value="{$v}" required lay-verify="required" v-model="name" placeholder="请输入微信号" autocomplete="off"
+                    class="layui-input">
+                <button type="button" class="layui-btn btn2" onclick="$(this).parent().parent().remove();">删除</button>
+            </div>
+        </div>
+        {/foreach}
+        <div class="layui-form-item" id="s">
+            <div class="layui-input-block">
+                <button class="layui-btn" @click="submitForm" lay-submit lay-filter="formDemo">确定</button>
+            </div>
+        </div>
+    </form>
+</div>
+<script type="text/html" id="html">
+    <div class="layui-form-item">
+        <label class="layui-form-label">用户名</label>
+        <div class="layui-input-block">
+            <input type="text" name="we_chat[]" required lay-verify="required" v-model="name" placeholder="请输入微信号" autocomplete="off"
+                   class="layui-input">
+        </div>
+    </div>
+</script>
+<script>
+    function add(){
+        var content = $("#html").html();
+        var div = $("<div>").html(content);
+        $("#s").before(div)
+    }
+</script>
+<style scoped>
+    .layui-input-block{
+        position: relative;
+    }
+    .layui-input-block .btn2{
+        position: absolute;
+        right:0;
+        top:0;
+    }
+    h1 {
+        font-size: 36px;
+        padding-left: 50px;
+        padding-bottom: 50px;
+    }
+
+    select {
+        border:1px solid #e6e6e6;
+        padding:8px;
+    }
+</style>
+{/block}

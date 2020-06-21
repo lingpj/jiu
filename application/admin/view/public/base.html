@@ -1,0 +1,56 @@
+{include file="public:header"}
+
+<body>
+    <div class="admin-page">
+        <div class="admin-top-nav">
+            <span class="title">
+                <a href="{:url('admin/index/dashboard')}">{$Think.config.head}</a>
+            </span>
+            <span>
+                <b>{$Think.session.admin.name}</b>{$Think.session.admin.role_name}
+                <!--<a href="{:url('admin/set/setpassword')}}">修改密码</a>-->
+            </span>
+            <a href="{:url('admin/index/logout')}">退出</a>
+        </div>
+        <div class="admin-wrap">
+            <div class="admin-menu">
+                <ul class="layui-nav layui-nav-tree site-demo-nav">
+                    {foreach $menu_list as $v}
+                    <li class="layui-nav-item ">
+                        <a class="layui-nav-btn">{$v.name}
+                            <span class="layui-nav-more"></span></a>
+                        {if $v.list}
+                        <dl class="layui-nav-child">
+                            {foreach $v.list as $li}
+                            <dd {if $li.active}class="layui-this"{/if}>
+                                <a href="{$li.url}"><i class="layui-icon" style="font-size:13px;margin-right:10px">&#xe600;</i>{$li.name}</a>
+                            </dd>
+                            {/foreach}
+                        </dl>
+                        {/if}
+                    </li>
+                    {/foreach}
+                </ul>
+            </div>
+            <div class="admin-content">
+                {block name="content"}{/block}
+            </div>
+        </div>
+    </div>
+</body>
+<style scoped>
+    a{
+        transition: none;
+        -webkit-transition:none !important;
+    }
+</style>
+<script>
+    // 切换抽屉导航内容
+    $('dd.layui-this').parent().parent().addClass('layui-nav-itemed')
+    $('.layui-nav a.layui-nav-btn').click(function(){
+        $('.layui-nav a.layui-nav-btn').parent().removeClass('layui-nav-itemed')
+        $(this).parent().addClass('layui-nav-itemed')
+    })
+</script>
+
+</html>

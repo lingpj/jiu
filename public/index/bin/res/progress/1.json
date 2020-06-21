@@ -1,0 +1,638 @@
+{
+    "frames": {
+        "jindu_00001.png": {
+            "frame": {
+                "h": 8,
+                "idx": 0,
+                "w": 15,
+                "x": 0,
+                "y": 228
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 60,
+                "w": 57
+            },
+            "spriteSourceSize": {
+                "h": 8,
+                "w": 15,
+                "x": 23,
+                "y": 2
+            },
+            "trimmed": true
+        },
+        "jindu_00002.png": {
+            "frame": {
+                "h": 9,
+                "idx": 0,
+                "w": 20,
+                "x": 244,
+                "y": 243
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 60,
+                "w": 57
+            },
+            "spriteSourceSize": {
+                "h": 9,
+                "w": 20,
+                "x": 23,
+                "y": 2
+            },
+            "trimmed": true
+        },
+        "jindu_00003.png": {
+            "frame": {
+                "h": 12,
+                "idx": 0,
+                "w": 24,
+                "x": 219,
+                "y": 243
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 60,
+                "w": 57
+            },
+            "spriteSourceSize": {
+                "h": 12,
+                "w": 24,
+                "x": 23,
+                "y": 2
+            },
+            "trimmed": true
+        },
+        "jindu_00004.png": {
+            "frame": {
+                "h": 15,
+                "idx": 0,
+                "w": 28,
+                "x": 82,
+                "y": 228
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 60,
+                "w": 57
+            },
+            "spriteSourceSize": {
+                "h": 15,
+                "w": 28,
+                "x": 23,
+                "y": 2
+            },
+            "trimmed": true
+        },
+        "jindu_00005.png": {
+            "frame": {
+                "h": 19,
+                "idx": 0,
+                "w": 31,
+                "x": 50,
+                "y": 228
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 60,
+                "w": 57
+            },
+            "spriteSourceSize": {
+                "h": 19,
+                "w": 31,
+                "x": 23,
+                "y": 2
+            },
+            "trimmed": true
+        },
+        "jindu_00006.png": {
+            "frame": {
+                "h": 24,
+                "idx": 0,
+                "w": 33,
+                "x": 16,
+                "y": 228
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 60,
+                "w": 57
+            },
+            "spriteSourceSize": {
+                "h": 24,
+                "w": 33,
+                "x": 23,
+                "y": 2
+            },
+            "trimmed": true
+        },
+        "jindu_00007.png": {
+            "frame": {
+                "h": 29,
+                "idx": 0,
+                "w": 34,
+                "x": 184,
+                "y": 222
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 60,
+                "w": 57
+            },
+            "spriteSourceSize": {
+                "h": 29,
+                "w": 34,
+                "x": 23,
+                "y": 2
+            },
+            "trimmed": true
+        },
+        "jindu_00008.png": {
+            "frame": {
+                "h": 34,
+                "idx": 0,
+                "w": 34,
+                "x": 219,
+                "y": 208
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 60,
+                "w": 57
+            },
+            "spriteSourceSize": {
+                "h": 34,
+                "w": 34,
+                "x": 23,
+                "y": 2
+            },
+            "trimmed": true
+        },
+        "jindu_00009.png": {
+            "frame": {
+                "h": 40,
+                "idx": 0,
+                "w": 34,
+                "x": 229,
+                "y": 114
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 60,
+                "w": 57
+            },
+            "spriteSourceSize": {
+                "h": 40,
+                "w": 34,
+                "x": 23,
+                "y": 2
+            },
+            "trimmed": true
+        },
+        "jindu_00010.png": {
+            "frame": {
+                "h": 44,
+                "idx": 0,
+                "w": 34,
+                "x": 219,
+                "y": 163
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 60,
+                "w": 57
+            },
+            "spriteSourceSize": {
+                "h": 44,
+                "w": 34,
+                "x": 23,
+                "y": 2
+            },
+            "trimmed": true
+        },
+        "jindu_00011.png": {
+            "frame": {
+                "h": 48,
+                "idx": 0,
+                "w": 34,
+                "x": 194,
+                "y": 114
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 60,
+                "w": 57
+            },
+            "spriteSourceSize": {
+                "h": 48,
+                "w": 34,
+                "x": 23,
+                "y": 2
+            },
+            "trimmed": true
+        },
+        "jindu_00012.png": {
+            "frame": {
+                "h": 52,
+                "idx": 0,
+                "w": 34,
+                "x": 184,
+                "y": 169
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 60,
+                "w": 57
+            },
+            "spriteSourceSize": {
+                "h": 52,
+                "w": 34,
+                "x": 23,
+                "y": 2
+            },
+            "trimmed": true
+        },
+        "jindu_00013.png": {
+            "frame": {
+                "h": 54,
+                "idx": 0,
+                "w": 34,
+                "x": 159,
+                "y": 114
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 60,
+                "w": 57
+            },
+            "spriteSourceSize": {
+                "h": 54,
+                "w": 34,
+                "x": 23,
+                "y": 2
+            },
+            "trimmed": true
+        },
+        "jindu_00014.png": {
+            "frame": {
+                "h": 56,
+                "idx": 0,
+                "w": 34,
+                "x": 149,
+                "y": 171
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 60,
+                "w": 57
+            },
+            "spriteSourceSize": {
+                "h": 56,
+                "w": 34,
+                "x": 23,
+                "y": 2
+            },
+            "trimmed": true
+        },
+        "jindu_00015.png": {
+            "frame": {
+                "h": 56,
+                "idx": 0,
+                "w": 34,
+                "x": 114,
+                "y": 171
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 60,
+                "w": 57
+            },
+            "spriteSourceSize": {
+                "h": 56,
+                "w": 34,
+                "x": 23,
+                "y": 2
+            },
+            "trimmed": true
+        },
+        "jindu_00016.png": {
+            "frame": {
+                "h": 56,
+                "idx": 0,
+                "w": 39,
+                "x": 0,
+                "y": 0
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 60,
+                "w": 57
+            },
+            "spriteSourceSize": {
+                "h": 56,
+                "w": 39,
+                "x": 18,
+                "y": 2
+            },
+            "trimmed": true
+        },
+        "jindu_00017.png": {
+            "frame": {
+                "h": 56,
+                "idx": 0,
+                "w": 44,
+                "x": 114,
+                "y": 114
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 60,
+                "w": 57
+            },
+            "spriteSourceSize": {
+                "h": 56,
+                "w": 44,
+                "x": 13,
+                "y": 2
+            },
+            "trimmed": true
+        },
+        "jindu_00018.png": {
+            "frame": {
+                "h": 56,
+                "idx": 0,
+                "w": 48,
+                "x": 223,
+                "y": 57
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 60,
+                "w": 57
+            },
+            "spriteSourceSize": {
+                "h": 56,
+                "w": 48,
+                "x": 9,
+                "y": 2
+            },
+            "trimmed": true
+        },
+        "jindu_00019.png": {
+            "frame": {
+                "h": 56,
+                "idx": 0,
+                "w": 52,
+                "x": 170,
+                "y": 57
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 60,
+                "w": 57
+            },
+            "spriteSourceSize": {
+                "h": 56,
+                "w": 52,
+                "x": 5,
+                "y": 2
+            },
+            "trimmed": true
+        },
+        "jindu_00020.png": {
+            "frame": {
+                "h": 56,
+                "idx": 0,
+                "w": 55,
+                "x": 114,
+                "y": 57
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 60,
+                "w": 57
+            },
+            "spriteSourceSize": {
+                "h": 56,
+                "w": 55,
+                "x": 2,
+                "y": 2
+            },
+            "trimmed": true
+        },
+        "jindu_00021.png": {
+            "frame": {
+                "h": 56,
+                "idx": 0,
+                "w": 56,
+                "x": 57,
+                "y": 171
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 60,
+                "w": 57
+            },
+            "spriteSourceSize": {
+                "h": 56,
+                "w": 56,
+                "x": 1,
+                "y": 2
+            },
+            "trimmed": true
+        },
+        "jindu_00022.png": {
+            "frame": {
+                "h": 56,
+                "idx": 0,
+                "w": 56,
+                "x": 57,
+                "y": 114
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 60,
+                "w": 57
+            },
+            "spriteSourceSize": {
+                "h": 56,
+                "w": 56,
+                "x": 1,
+                "y": 2
+            },
+            "trimmed": true
+        },
+        "jindu_00023.png": {
+            "frame": {
+                "h": 56,
+                "idx": 0,
+                "w": 56,
+                "x": 211,
+                "y": 0
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 60,
+                "w": 57
+            },
+            "spriteSourceSize": {
+                "h": 56,
+                "w": 56,
+                "x": 1,
+                "y": 2
+            },
+            "trimmed": true
+        },
+        "jindu_00024.png": {
+            "frame": {
+                "h": 56,
+                "idx": 0,
+                "w": 56,
+                "x": 154,
+                "y": 0
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 60,
+                "w": 57
+            },
+            "spriteSourceSize": {
+                "h": 56,
+                "w": 56,
+                "x": 1,
+                "y": 2
+            },
+            "trimmed": true
+        },
+        "jindu_00025.png": {
+            "frame": {
+                "h": 56,
+                "idx": 0,
+                "w": 56,
+                "x": 97,
+                "y": 0
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 60,
+                "w": 57
+            },
+            "spriteSourceSize": {
+                "h": 56,
+                "w": 56,
+                "x": 1,
+                "y": 2
+            },
+            "trimmed": true
+        },
+        "jindu_00026.png": {
+            "frame": {
+                "h": 56,
+                "idx": 0,
+                "w": 56,
+                "x": 57,
+                "y": 57
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 60,
+                "w": 57
+            },
+            "spriteSourceSize": {
+                "h": 56,
+                "w": 56,
+                "x": 1,
+                "y": 2
+            },
+            "trimmed": true
+        },
+        "jindu_00027.png": {
+            "frame": {
+                "h": 56,
+                "idx": 0,
+                "w": 56,
+                "x": 0,
+                "y": 171
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 60,
+                "w": 57
+            },
+            "spriteSourceSize": {
+                "h": 56,
+                "w": 56,
+                "x": 1,
+                "y": 2
+            },
+            "trimmed": true
+        },
+        "jindu_00028.png": {
+            "frame": {
+                "h": 56,
+                "idx": 0,
+                "w": 56,
+                "x": 0,
+                "y": 114
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 60,
+                "w": 57
+            },
+            "spriteSourceSize": {
+                "h": 56,
+                "w": 56,
+                "x": 1,
+                "y": 2
+            },
+            "trimmed": true
+        },
+        "jindu_00029.png": {
+            "frame": {
+                "h": 56,
+                "idx": 0,
+                "w": 56,
+                "x": 40,
+                "y": 0
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 60,
+                "w": 57
+            },
+            "spriteSourceSize": {
+                "h": 56,
+                "w": 56,
+                "x": 1,
+                "y": 2
+            },
+            "trimmed": true
+        },
+        "jindu_00030.png": {
+            "frame": {
+                "h": 56,
+                "idx": 0,
+                "w": 56,
+                "x": 0,
+                "y": 57
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 60,
+                "w": 57
+            },
+            "spriteSourceSize": {
+                "h": 56,
+                "w": 56,
+                "x": 1,
+                "y": 2
+            },
+            "trimmed": true
+        }
+    },
+    "meta": {
+        "image": "1.png",
+        "prefix": "1/"
+    }
+}

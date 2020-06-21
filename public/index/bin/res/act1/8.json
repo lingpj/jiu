@@ -1,0 +1,428 @@
+{
+    "frames": {
+        "futou_a0001.png": {
+            "frame": {
+                "h": 257,
+                "idx": 0,
+                "w": 173,
+                "x": 171,
+                "y": 526
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 302,
+                "w": 235
+            },
+            "spriteSourceSize": {
+                "h": 257,
+                "w": 173,
+                "x": 31,
+                "y": 22
+            },
+            "trimmed": true
+        },
+        "futou_a0002.png": {
+            "frame": {
+                "h": 259,
+                "idx": 0,
+                "w": 171,
+                "x": 871,
+                "y": 530
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 302,
+                "w": 235
+            },
+            "spriteSourceSize": {
+                "h": 259,
+                "w": 171,
+                "x": 32,
+                "y": 21
+            },
+            "trimmed": true
+        },
+        "futou_a0003.png": {
+            "frame": {
+                "h": 261,
+                "idx": 0,
+                "w": 171,
+                "x": 699,
+                "y": 530
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 302,
+                "w": 235
+            },
+            "spriteSourceSize": {
+                "h": 261,
+                "w": 171,
+                "x": 32,
+                "y": 20
+            },
+            "trimmed": true
+        },
+        "futou_a0004.png": {
+            "frame": {
+                "h": 263,
+                "idx": 0,
+                "w": 175,
+                "x": 754,
+                "y": 266
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 302,
+                "w": 235
+            },
+            "spriteSourceSize": {
+                "h": 263,
+                "w": 175,
+                "x": 30,
+                "y": 19
+            },
+            "trimmed": true
+        },
+        "futou_a0005.png": {
+            "frame": {
+                "h": 264,
+                "idx": 0,
+                "w": 178,
+                "x": 520,
+                "y": 530
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 302,
+                "w": 235
+            },
+            "spriteSourceSize": {
+                "h": 264,
+                "w": 178,
+                "x": 28,
+                "y": 19
+            },
+            "trimmed": true
+        },
+        "futou_a0006.png": {
+            "frame": {
+                "h": 265,
+                "idx": 0,
+                "w": 174,
+                "x": 345,
+                "y": 527
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 302,
+                "w": 235
+            },
+            "spriteSourceSize": {
+                "h": 265,
+                "w": 174,
+                "x": 30,
+                "y": 18
+            },
+            "trimmed": true
+        },
+        "futou_a0007.png": {
+            "frame": {
+                "h": 263,
+                "idx": 0,
+                "w": 164,
+                "x": 589,
+                "y": 266
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 302,
+                "w": 235
+            },
+            "spriteSourceSize": {
+                "h": 263,
+                "w": 164,
+                "x": 35,
+                "y": 19
+            },
+            "trimmed": true
+        },
+        "futou_a0008.png": {
+            "frame": {
+                "h": 261,
+                "idx": 0,
+                "w": 149,
+                "x": 439,
+                "y": 265
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 302,
+                "w": 235
+            },
+            "spriteSourceSize": {
+                "h": 261,
+                "w": 149,
+                "x": 43,
+                "y": 20
+            },
+            "trimmed": true
+        },
+        "futou_a0009.png": {
+            "frame": {
+                "h": 255,
+                "idx": 0,
+                "w": 128,
+                "x": 171,
+                "y": 784
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 302,
+                "w": 235
+            },
+            "spriteSourceSize": {
+                "h": 255,
+                "w": 128,
+                "x": 53,
+                "y": 23
+            },
+            "trimmed": true
+        },
+        "futou_a0010.png": {
+            "frame": {
+                "h": 252,
+                "idx": 0,
+                "w": 114,
+                "x": 324,
+                "y": 264
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 302,
+                "w": 235
+            },
+            "spriteSourceSize": {
+                "h": 252,
+                "w": 114,
+                "x": 60,
+                "y": 25
+            },
+            "trimmed": true
+        },
+        "futou_a0011.png": {
+            "frame": {
+                "h": 257,
+                "idx": 0,
+                "w": 126,
+                "x": 0,
+                "y": 0
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 302,
+                "w": 235
+            },
+            "spriteSourceSize": {
+                "h": 257,
+                "w": 126,
+                "x": 54,
+                "y": 22
+            },
+            "trimmed": true
+        },
+        "futou_a0012.png": {
+            "frame": {
+                "h": 261,
+                "idx": 0,
+                "w": 149,
+                "x": 174,
+                "y": 264
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 302,
+                "w": 235
+            },
+            "spriteSourceSize": {
+                "h": 261,
+                "w": 149,
+                "x": 43,
+                "y": 20
+            },
+            "trimmed": true
+        },
+        "futou_a0013.png": {
+            "frame": {
+                "h": 264,
+                "idx": 0,
+                "w": 163,
+                "x": 827,
+                "y": 0
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 302,
+                "w": 235
+            },
+            "spriteSourceSize": {
+                "h": 264,
+                "w": 163,
+                "x": 36,
+                "y": 19
+            },
+            "trimmed": true
+        },
+        "futou_a0014.png": {
+            "frame": {
+                "h": 265,
+                "idx": 0,
+                "w": 172,
+                "x": 654,
+                "y": 0
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 302,
+                "w": 235
+            },
+            "spriteSourceSize": {
+                "h": 265,
+                "w": 172,
+                "x": 31,
+                "y": 18
+            },
+            "trimmed": true
+        },
+        "futou_a0015.png": {
+            "frame": {
+                "h": 264,
+                "idx": 0,
+                "w": 177,
+                "x": 476,
+                "y": 0
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 302,
+                "w": 235
+            },
+            "spriteSourceSize": {
+                "h": 264,
+                "w": 177,
+                "x": 29,
+                "y": 19
+            },
+            "trimmed": true
+        },
+        "futou_a0016.png": {
+            "frame": {
+                "h": 263,
+                "idx": 0,
+                "w": 175,
+                "x": 300,
+                "y": 0
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 302,
+                "w": 235
+            },
+            "spriteSourceSize": {
+                "h": 263,
+                "w": 175,
+                "x": 30,
+                "y": 19
+            },
+            "trimmed": true
+        },
+        "futou_a0017.png": {
+            "frame": {
+                "h": 260,
+                "idx": 0,
+                "w": 170,
+                "x": 0,
+                "y": 774
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 302,
+                "w": 235
+            },
+            "spriteSourceSize": {
+                "h": 260,
+                "w": 170,
+                "x": 32,
+                "y": 21
+            },
+            "trimmed": true
+        },
+        "futou_a0018.png": {
+            "frame": {
+                "h": 259,
+                "idx": 0,
+                "w": 170,
+                "x": 0,
+                "y": 514
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 302,
+                "w": 235
+            },
+            "spriteSourceSize": {
+                "h": 259,
+                "w": 170,
+                "x": 32,
+                "y": 21
+            },
+            "trimmed": true
+        },
+        "futou_a0019.png": {
+            "frame": {
+                "h": 255,
+                "idx": 0,
+                "w": 173,
+                "x": 0,
+                "y": 258
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 302,
+                "w": 235
+            },
+            "spriteSourceSize": {
+                "h": 255,
+                "w": 173,
+                "x": 31,
+                "y": 23
+            },
+            "trimmed": true
+        },
+        "futou_a0020.png": {
+            "frame": {
+                "h": 257,
+                "idx": 0,
+                "w": 172,
+                "x": 127,
+                "y": 0
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 302,
+                "w": 235
+            },
+            "spriteSourceSize": {
+                "h": 257,
+                "w": 172,
+                "x": 31,
+                "y": 22
+            },
+            "trimmed": true
+        }
+    },
+    "meta": {
+        "image": "8.png",
+        "prefix": "8/"
+    }
+}

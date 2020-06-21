@@ -1,0 +1,722 @@
+{
+    "frames": {
+        "1.png": {
+            "frame": {
+                "h": 88,
+                "idx": 0,
+                "w": 87,
+                "x": 481,
+                "y": 515
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 88,
+                "w": 87
+            },
+            "spriteSourceSize": {
+                "h": 88,
+                "w": 87,
+                "x": 0,
+                "y": 0
+            },
+            "trimmed": false
+        },
+        "10.png": {
+            "frame": {
+                "h": 87,
+                "idx": 0,
+                "w": 87,
+                "x": 573,
+                "y": 273
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 87,
+                "w": 87
+            },
+            "spriteSourceSize": {
+                "h": 87,
+                "w": 87,
+                "x": 0,
+                "y": 0
+            },
+            "trimmed": false
+        },
+        "100.png": {
+            "frame": {
+                "h": 87,
+                "idx": 0,
+                "w": 87,
+                "x": 567,
+                "y": 361
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 87,
+                "w": 87
+            },
+            "spriteSourceSize": {
+                "h": 87,
+                "w": 87,
+                "x": 0,
+                "y": 0
+            },
+            "trimmed": false
+        },
+        "1000.png": {
+            "frame": {
+                "h": 87,
+                "idx": 0,
+                "w": 87,
+                "x": 661,
+                "y": 273
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 87,
+                "w": 87
+            },
+            "spriteSourceSize": {
+                "h": 87,
+                "w": 87,
+                "x": 0,
+                "y": 0
+            },
+            "trimmed": false
+        },
+        "1yi.png": {
+            "frame": {
+                "h": 87,
+                "idx": 0,
+                "w": 87,
+                "x": 655,
+                "y": 361
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 87,
+                "w": 87
+            },
+            "spriteSourceSize": {
+                "h": 87,
+                "w": 87,
+                "x": 0,
+                "y": 0
+            },
+            "trimmed": false
+        },
+        "28_zhuang.png": {
+            "frame": {
+                "h": 32,
+                "idx": 0,
+                "w": 33,
+                "x": 716,
+                "y": 100
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 32,
+                "w": 33
+            },
+            "spriteSourceSize": {
+                "h": 32,
+                "w": 33,
+                "x": 0,
+                "y": 0
+            },
+            "trimmed": false
+        },
+        "bipai.png": {
+            "frame": {
+                "h": 38,
+                "idx": 0,
+                "w": 139,
+                "x": 377,
+                "y": 655
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 38,
+                "w": 139
+            },
+            "spriteSourceSize": {
+                "h": 38,
+                "w": 139,
+                "x": 0,
+                "y": 0
+            },
+            "trimmed": false
+        },
+        "countdown.png": {
+            "frame": {
+                "h": 100,
+                "idx": 0,
+                "w": 90,
+                "x": 390,
+                "y": 515
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 100,
+                "w": 90
+            },
+            "spriteSourceSize": {
+                "h": 100,
+                "w": 90,
+                "x": 0,
+                "y": 0
+            },
+            "trimmed": false
+        },
+        "dao1.png": {
+            "frame": {
+                "h": 234,
+                "idx": 0,
+                "w": 287,
+                "x": 0,
+                "y": 0
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 234,
+                "w": 287
+            },
+            "spriteSourceSize": {
+                "h": 234,
+                "w": 287,
+                "x": 0,
+                "y": 0
+            },
+            "trimmed": false
+        },
+        "dao2.png": {
+            "frame": {
+                "h": 167,
+                "idx": 0,
+                "w": 284,
+                "x": 288,
+                "y": 191
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 167,
+                "w": 284
+            },
+            "spriteSourceSize": {
+                "h": 167,
+                "w": 284,
+                "x": 0,
+                "y": 0
+            },
+            "trimmed": false
+        },
+        "diushaiFlag.png": {
+            "frame": {
+                "h": 37,
+                "idx": 0,
+                "w": 141,
+                "x": 532,
+                "y": 647
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 37,
+                "w": 141
+            },
+            "spriteSourceSize": {
+                "h": 37,
+                "w": 141,
+                "x": 0,
+                "y": 0
+            },
+            "trimmed": false
+        },
+        "fanhui.png": {
+            "frame": {
+                "h": 60,
+                "idx": 0,
+                "w": 147,
+                "x": 568,
+                "y": 100
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 60,
+                "w": 147
+            },
+            "spriteSourceSize": {
+                "h": 60,
+                "w": 147,
+                "x": 0,
+                "y": 0
+            },
+            "trimmed": false
+        },
+        "haoyou.png": {
+            "frame": {
+                "h": 80,
+                "idx": 0,
+                "w": 78,
+                "x": 649,
+                "y": 449
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 80,
+                "w": 78
+            },
+            "spriteSourceSize": {
+                "h": 80,
+                "w": 78,
+                "x": 0,
+                "y": 0
+            },
+            "trimmed": false
+        },
+        "jilu.png": {
+            "frame": {
+                "h": 78,
+                "idx": 0,
+                "w": 76,
+                "x": 569,
+                "y": 530
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 78,
+                "w": 76
+            },
+            "spriteSourceSize": {
+                "h": 78,
+                "w": 76,
+                "x": 0,
+                "y": 0
+            },
+            "trimmed": false
+        },
+        "kongxian.png": {
+            "frame": {
+                "h": 37,
+                "idx": 0,
+                "w": 142,
+                "x": 0,
+                "y": 699
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 37,
+                "w": 142
+            },
+            "spriteSourceSize": {
+                "h": 37,
+                "w": 142,
+                "x": 0,
+                "y": 0
+            },
+            "trimmed": false
+        },
+        "peipaishijian.png": {
+            "frame": {
+                "h": 38,
+                "idx": 0,
+                "w": 141,
+                "x": 390,
+                "y": 616
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 38,
+                "w": 141
+            },
+            "spriteSourceSize": {
+                "h": 38,
+                "w": 141,
+                "x": 0,
+                "y": 0
+            },
+            "trimmed": false
+        },
+        "qiangzhuangFlag.png": {
+            "frame": {
+                "h": 37,
+                "idx": 0,
+                "w": 142,
+                "x": 532,
+                "y": 609
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 37,
+                "w": 142
+            },
+            "spriteSourceSize": {
+                "h": 37,
+                "w": 142,
+                "x": 0,
+                "y": 0
+            },
+            "trimmed": false
+        },
+        "qianwang.png": {
+            "frame": {
+                "h": 58,
+                "idx": 0,
+                "w": 147,
+                "x": 573,
+                "y": 161
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 58,
+                "w": 147
+            },
+            "spriteSourceSize": {
+                "h": 58,
+                "w": 147,
+                "x": 0,
+                "y": 0
+            },
+            "trimmed": false
+        },
+        "renshubg.png": {
+            "frame": {
+                "h": 32,
+                "idx": 0,
+                "w": 32,
+                "x": 286,
+                "y": 701
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 32,
+                "w": 32
+            },
+            "spriteSourceSize": {
+                "h": 32,
+                "w": 32,
+                "x": 0,
+                "y": 0
+            },
+            "trimmed": false
+        },
+        "shangzhuang.png": {
+            "frame": {
+                "h": 60,
+                "idx": 0,
+                "w": 147,
+                "x": 148,
+                "y": 638
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 60,
+                "w": 147
+            },
+            "spriteSourceSize": {
+                "h": 60,
+                "w": 147,
+                "x": 0,
+                "y": 0
+            },
+            "trimmed": false
+        },
+        "shun1.png": {
+            "frame": {
+                "h": 234,
+                "idx": 0,
+                "w": 286,
+                "x": 0,
+                "y": 235
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 234,
+                "w": 286
+            },
+            "spriteSourceSize": {
+                "h": 234,
+                "w": 286,
+                "x": 0,
+                "y": 0
+            },
+            "trimmed": false
+        },
+        "shun2.png": {
+            "frame": {
+                "h": 167,
+                "idx": 0,
+                "w": 284,
+                "x": 0,
+                "y": 470
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 167,
+                "w": 284
+            },
+            "spriteSourceSize": {
+                "h": 167,
+                "w": 284,
+                "x": 0,
+                "y": 0
+            },
+            "trimmed": false
+        },
+        "shut.png": {
+            "frame": {
+                "h": 80,
+                "idx": 0,
+                "w": 79,
+                "x": 569,
+                "y": 449
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 80,
+                "w": 79
+            },
+            "spriteSourceSize": {
+                "h": 80,
+                "w": 79,
+                "x": 0,
+                "y": 0
+            },
+            "trimmed": false
+        },
+        "tang.png": {
+            "frame": {
+                "h": 155,
+                "idx": 0,
+                "w": 279,
+                "x": 287,
+                "y": 359
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 155,
+                "w": 279
+            },
+            "spriteSourceSize": {
+                "h": 155,
+                "w": 279,
+                "x": 0,
+                "y": 0
+            },
+            "trimmed": false
+        },
+        "tian.png": {
+            "frame": {
+                "h": 190,
+                "idx": 0,
+                "w": 279,
+                "x": 288,
+                "y": 0
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 190,
+                "w": 279
+            },
+            "spriteSourceSize": {
+                "h": 190,
+                "w": 279,
+                "x": 0,
+                "y": 0
+            },
+            "trimmed": false
+        },
+        "tishiwenzi.png": {
+            "frame": {
+                "h": 50,
+                "idx": 0,
+                "w": 91,
+                "x": 646,
+                "y": 530
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 50,
+                "w": 91
+            },
+            "spriteSourceSize": {
+                "h": 50,
+                "w": 91,
+                "x": 0,
+                "y": 0
+            },
+            "trimmed": false
+        },
+        "touxiang .png": {
+            "frame": {
+                "h": 80,
+                "idx": 0,
+                "w": 80,
+                "x": 296,
+                "y": 620
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 80,
+                "w": 80
+            },
+            "spriteSourceSize": {
+                "h": 80,
+                "w": 80,
+                "x": 0,
+                "y": 0
+            },
+            "trimmed": false
+        },
+        "xia.png": {
+            "frame": {
+                "h": 37,
+                "idx": 0,
+                "w": 142,
+                "x": 377,
+                "y": 694
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 37,
+                "w": 142
+            },
+            "spriteSourceSize": {
+                "h": 37,
+                "w": 142,
+                "x": 0,
+                "y": 0
+            },
+            "trimmed": false
+        },
+        "xiazhubg.png": {
+            "frame": {
+                "h": 52,
+                "idx": 0,
+                "w": 162,
+                "x": 573,
+                "y": 220
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 52,
+                "w": 162
+            },
+            "spriteSourceSize": {
+                "h": 52,
+                "w": 162,
+                "x": 0,
+                "y": 0
+            },
+            "trimmed": false
+        },
+        "xinxibg.png": {
+            "frame": {
+                "h": 99,
+                "idx": 0,
+                "w": 184,
+                "x": 568,
+                "y": 0
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 99,
+                "w": 184
+            },
+            "spriteSourceSize": {
+                "h": 99,
+                "w": 184,
+                "x": 0,
+                "y": 0
+            },
+            "trimmed": false
+        },
+        "xuanzhong.png": {
+            "frame": {
+                "h": 104,
+                "idx": 0,
+                "w": 104,
+                "x": 285,
+                "y": 515
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 104,
+                "w": 104
+            },
+            "spriteSourceSize": {
+                "h": 104,
+                "w": 104,
+                "x": 0,
+                "y": 0
+            },
+            "trimmed": false
+        },
+        "zhuang.png": {
+            "frame": {
+                "h": 52,
+                "idx": 0,
+                "w": 52,
+                "x": 675,
+                "y": 581
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 52,
+                "w": 52
+            },
+            "spriteSourceSize": {
+                "h": 52,
+                "w": 52,
+                "x": 0,
+                "y": 0
+            },
+            "trimmed": false
+        },
+        "zhunbeiFlag.png": {
+            "frame": {
+                "h": 37,
+                "idx": 0,
+                "w": 142,
+                "x": 143,
+                "y": 699
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 37,
+                "w": 142
+            },
+            "spriteSourceSize": {
+                "h": 37,
+                "w": 142,
+                "x": 0,
+                "y": 0
+            },
+            "trimmed": false
+        },
+        "立即下庄.png": {
+            "frame": {
+                "h": 60,
+                "idx": 0,
+                "w": 147,
+                "x": 0,
+                "y": 638
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 60,
+                "w": 147
+            },
+            "spriteSourceSize": {
+                "h": 60,
+                "w": 147,
+                "x": 0,
+                "y": 0
+            },
+            "trimmed": false
+        }
+    },
+    "meta": {
+        "image": "hundred2.png",
+        "prefix": "comp/hundred2/"
+    }
+}

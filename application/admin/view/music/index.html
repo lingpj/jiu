@@ -1,0 +1,35 @@
+{extend name="public:base"}
+{block name="content"}
+    <div>
+        <a class="layui-btn layui-btn-normal" href="{:url('admin/music/add')}">添加</a>
+        <table class="layui-table">
+            <thead>
+                <th>编号</th>
+                <th>名称</th>
+                <th>地址</th>
+                <th>状态</th>
+                <th>创建时间</th>
+                <th>编辑</th>
+            </thead>
+            <tbody>
+                {foreach $list as $v}
+                <tr>
+                    <td>{$v.id}</td>
+                    <td>{$v.name}</td>
+                    <td>{$v.url}</td>
+                    <td>
+                        {$v.status}
+                        <a class="layui-btn layui-btn-mini" href="{:url('admin/music/updateStatus')}?id={$v.id}">
+                            {$v.status_button_text}
+                        </a>
+                    </td>
+                    <td>{$v.created_time}</td>
+                    <td>
+                        <a href="{:url('admin/music/add')}?id={$v.id}">编辑</a>
+                    </td>
+                </tr>
+                {/foreach}
+            </tbody>
+        </table>
+    </div>
+{/block}

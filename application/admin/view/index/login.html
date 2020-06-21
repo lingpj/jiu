@@ -1,0 +1,64 @@
+{extend name="public:base_without_menu"}
+{block name="content"}
+<style>
+    html{
+        background: url("/static/img/jiu_board.jpg") no-repeat;
+        background-size: cover;
+    }
+    h1,.layui-form-label{
+        color:#fff;
+    }
+    .layui-input-block img{
+        height:38px;
+    }
+</style>
+<div>
+    <div class="login-page">
+        <h1 class="tc">九九游戏</h1>
+        <form class="layui-form" action="" method="post">
+            <div class="layui-form-item">
+                <label class="layui-form-label">账号:</label>
+                <div class="layui-input-block">
+                    <input type="text" name="name" required  lay-verify="required" autocomplete="off" class="layui-input">
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <label class="layui-form-label">密码:</label>
+                <div class="layui-input-block">
+                    <input type="password" name="password" required  lay-verify="required" autocomplete="off" class="layui-input">
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <label class="layui-form-label">代理:</label>
+                <div class="layui-input-block">
+                    <select class="normal-select" name="is_agent">
+                        <option value="0">不是</option>
+                        <option value="1">是</option>
+                    </select>
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <label class="layui-form-label">验证码:</label>
+                <div class="layui-input-block">
+                    <input type="text" style="width: 120px;display: inline-block;" name="captcha" required  lay-verify="required" autocomplete="off" class="layui-input">
+                    {:captcha_img_changeable()}
+                    <b onclick="change(this)" id="c">换一张</b>
+                </div>
+            </div>
+            <div class="tr">
+                <button class="layui-btn-normal layui-btn confirm">确定</button>
+            </div>
+        </form>
+    </div>
+</div>
+<script>
+    function change(othis){
+        othis = $(othis).prev();
+        var src = othis.attr('data-src');
+        othis.attr('src',src + '?v=' + Math.random());
+    }
+    $(document).ready(function(){
+        $('#c').trigger('click');
+    });
+</script>
+{/block}

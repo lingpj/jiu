@@ -1,0 +1,428 @@
+{
+    "frames": {
+        "chouliu0001.png": {
+            "frame": {
+                "h": 101,
+                "idx": 0,
+                "w": 71,
+                "x": 230,
+                "y": 0
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 128,
+                "w": 111
+            },
+            "spriteSourceSize": {
+                "h": 101,
+                "w": 71,
+                "x": 20,
+                "y": 13
+            },
+            "trimmed": true
+        },
+        "chouliu0002.png": {
+            "frame": {
+                "h": 103,
+                "idx": 0,
+                "w": 71,
+                "x": 366,
+                "y": 328
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 128,
+                "w": 111
+            },
+            "spriteSourceSize": {
+                "h": 103,
+                "w": 71,
+                "x": 20,
+                "y": 12
+            },
+            "trimmed": true
+        },
+        "chouliu0003.png": {
+            "frame": {
+                "h": 105,
+                "idx": 0,
+                "w": 75,
+                "x": 366,
+                "y": 222
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 128,
+                "w": 111
+            },
+            "spriteSourceSize": {
+                "h": 105,
+                "w": 75,
+                "x": 18,
+                "y": 11
+            },
+            "trimmed": true
+        },
+        "chouliu0004.png": {
+            "frame": {
+                "h": 107,
+                "idx": 0,
+                "w": 78,
+                "x": 366,
+                "y": 114
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 128,
+                "w": 111
+            },
+            "spriteSourceSize": {
+                "h": 107,
+                "w": 78,
+                "x": 16,
+                "y": 10
+            },
+            "trimmed": true
+        },
+        "chouliu0005.png": {
+            "frame": {
+                "h": 110,
+                "idx": 0,
+                "w": 81,
+                "x": 284,
+                "y": 336
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 128,
+                "w": 111
+            },
+            "spriteSourceSize": {
+                "h": 110,
+                "w": 81,
+                "x": 15,
+                "y": 9
+            },
+            "trimmed": true
+        },
+        "chouliu0006.png": {
+            "frame": {
+                "h": 113,
+                "idx": 0,
+                "w": 82,
+                "x": 309,
+                "y": 0
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 128,
+                "w": 111
+            },
+            "spriteSourceSize": {
+                "h": 113,
+                "w": 82,
+                "x": 14,
+                "y": 7
+            },
+            "trimmed": true
+        },
+        "chouliu0007.png": {
+            "frame": {
+                "h": 115,
+                "idx": 0,
+                "w": 81,
+                "x": 284,
+                "y": 220
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 128,
+                "w": 111
+            },
+            "spriteSourceSize": {
+                "h": 115,
+                "w": 81,
+                "x": 15,
+                "y": 6
+            },
+            "trimmed": true
+        },
+        "chouliu0008.png": {
+            "frame": {
+                "h": 117,
+                "idx": 0,
+                "w": 75,
+                "x": 233,
+                "y": 102
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 128,
+                "w": 111
+            },
+            "spriteSourceSize": {
+                "h": 117,
+                "w": 75,
+                "x": 18,
+                "y": 5
+            },
+            "trimmed": true
+        },
+        "chouliu0009.png": {
+            "frame": {
+                "h": 117,
+                "idx": 0,
+                "w": 64,
+                "x": 219,
+                "y": 234
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 128,
+                "w": 111
+            },
+            "spriteSourceSize": {
+                "h": 117,
+                "w": 64,
+                "x": 23,
+                "y": 5
+            },
+            "trimmed": true
+        },
+        "chouliu0010.png": {
+            "frame": {
+                "h": 117,
+                "idx": 0,
+                "w": 55,
+                "x": 163,
+                "y": 234
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 128,
+                "w": 111
+            },
+            "spriteSourceSize": {
+                "h": 117,
+                "w": 55,
+                "x": 28,
+                "y": 5
+            },
+            "trimmed": true
+        },
+        "chouliu0011.png": {
+            "frame": {
+                "h": 117,
+                "idx": 0,
+                "w": 66,
+                "x": 0,
+                "y": 0
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 128,
+                "w": 111
+            },
+            "spriteSourceSize": {
+                "h": 117,
+                "w": 66,
+                "x": 22,
+                "y": 5
+            },
+            "trimmed": true
+        },
+        "chouliu0012.png": {
+            "frame": {
+                "h": 117,
+                "idx": 0,
+                "w": 76,
+                "x": 156,
+                "y": 116
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 128,
+                "w": 111
+            },
+            "spriteSourceSize": {
+                "h": 117,
+                "w": 76,
+                "x": 17,
+                "y": 5
+            },
+            "trimmed": true
+        },
+        "chouliu0013.png": {
+            "frame": {
+                "h": 115,
+                "idx": 0,
+                "w": 82,
+                "x": 147,
+                "y": 0
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 128,
+                "w": 111
+            },
+            "spriteSourceSize": {
+                "h": 115,
+                "w": 82,
+                "x": 14,
+                "y": 6
+            },
+            "trimmed": true
+        },
+        "chouliu0014.png": {
+            "frame": {
+                "h": 113,
+                "idx": 0,
+                "w": 83,
+                "x": 79,
+                "y": 319
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 128,
+                "w": 111
+            },
+            "spriteSourceSize": {
+                "h": 113,
+                "w": 83,
+                "x": 14,
+                "y": 7
+            },
+            "trimmed": true
+        },
+        "chouliu0015.png": {
+            "frame": {
+                "h": 110,
+                "idx": 0,
+                "w": 82,
+                "x": 73,
+                "y": 208
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 128,
+                "w": 111
+            },
+            "spriteSourceSize": {
+                "h": 110,
+                "w": 82,
+                "x": 14,
+                "y": 9
+            },
+            "trimmed": true
+        },
+        "chouliu0016.png": {
+            "frame": {
+                "h": 108,
+                "idx": 0,
+                "w": 78,
+                "x": 0,
+                "y": 324
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 128,
+                "w": 111
+            },
+            "spriteSourceSize": {
+                "h": 108,
+                "w": 78,
+                "x": 16,
+                "y": 10
+            },
+            "trimmed": true
+        },
+        "chouliu0017.png": {
+            "frame": {
+                "h": 105,
+                "idx": 0,
+                "w": 74,
+                "x": 72,
+                "y": 102
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 128,
+                "w": 111
+            },
+            "spriteSourceSize": {
+                "h": 105,
+                "w": 74,
+                "x": 18,
+                "y": 11
+            },
+            "trimmed": true
+        },
+        "chouliu0018.png": {
+            "frame": {
+                "h": 103,
+                "idx": 0,
+                "w": 72,
+                "x": 0,
+                "y": 220
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 128,
+                "w": 111
+            },
+            "spriteSourceSize": {
+                "h": 103,
+                "w": 72,
+                "x": 19,
+                "y": 12
+            },
+            "trimmed": true
+        },
+        "chouliu0019.png": {
+            "frame": {
+                "h": 101,
+                "idx": 0,
+                "w": 71,
+                "x": 67,
+                "y": 0
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 128,
+                "w": 111
+            },
+            "spriteSourceSize": {
+                "h": 101,
+                "w": 71,
+                "x": 20,
+                "y": 13
+            },
+            "trimmed": true
+        },
+        "chouliu0020.png": {
+            "frame": {
+                "h": 101,
+                "idx": 0,
+                "w": 71,
+                "x": 0,
+                "y": 118
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 128,
+                "w": 111
+            },
+            "spriteSourceSize": {
+                "h": 101,
+                "w": 71,
+                "x": 20,
+                "y": 13
+            },
+            "trimmed": true
+        }
+    },
+    "meta": {
+        "image": "21.png",
+        "prefix": "21/"
+    }
+}

@@ -1,0 +1,56 @@
+{extend name="public:base"}
+{block name="content"}
+<div>
+    <table class="layui-table">
+        <thead>
+        <th>编号</th>
+        <th>电话</th>
+        <th>姓名</th>
+        <th>支付宝账号</th>
+        <th>申请金额</th>
+        <th>申请时间</th>
+        <th>操作</th>
+        </thead>
+        <tbody>
+        {foreach $list as $v}
+        <tr>
+            <td>{$v.id}</td>
+            <td>{$v.phone}</td>
+            <td>{$v.name}</td>
+            <td>{$v.account}</td>
+            <td>{$v.money}</td>
+            <td>
+                {$v.created_time}
+            </td>
+            <td>
+                {if $v.status == 0}
+                    <button type="button" class="layui-btn" onclick="check('{$v.id}')">审核</button>
+                {else/}
+                    于{$v.updated_time}通过审核
+                {/if}
+            </td>
+        </tr>
+        {/foreach}
+        </tbody>
+    </table>
+    <div>
+        {$pagination}
+    </div>
+    <script>
+        function check(id){
+            var loading = layer.load(1);
+            var url = '{:url("admin/member/withdraw")}';
+
+            $.post(url,{id:id},function(r){
+                layer.close(loading);
+                if(r.code == 0){
+                    layer.msg(r.msg);
+                }else{
+                    layer.msg('审核成功');
+                    redirectTo(url,2);
+                }
+            });
+        }
+    </script>
+</div>
+{/block}

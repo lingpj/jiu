@@ -1,0 +1,92 @@
+{
+    "frames": {
+        "chenggong.png": {
+            "frame": {
+                "h": 183,
+                "idx": 0,
+                "w": 393,
+                "x": 0,
+                "y": 0
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 183,
+                "w": 393
+            },
+            "spriteSourceSize": {
+                "h": 183,
+                "w": 393,
+                "x": 0,
+                "y": 0
+            },
+            "trimmed": false
+        },
+        "duihuan.png": {
+            "frame": {
+                "h": 60,
+                "idx": 0,
+                "w": 147,
+                "x": 0,
+                "y": 184
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 60,
+                "w": 147
+            },
+            "spriteSourceSize": {
+                "h": 60,
+                "w": 147,
+                "x": 0,
+                "y": 0
+            },
+            "trimmed": false
+        },
+        "fanhui.png": {
+            "frame": {
+                "h": 60,
+                "idx": 0,
+                "w": 147,
+                "x": 148,
+                "y": 184
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 60,
+                "w": 147
+            },
+            "spriteSourceSize": {
+                "h": 60,
+                "w": 147,
+                "x": 0,
+                "y": 0
+            },
+            "trimmed": false
+        },
+        "tishi.png": {
+            "frame": {
+                "h": 50,
+                "idx": 0,
+                "w": 91,
+                "x": 296,
+                "y": 184
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 50,
+                "w": 91
+            },
+            "spriteSourceSize": {
+                "h": 50,
+                "w": 91,
+                "x": 0,
+                "y": 0
+            },
+            "trimmed": false
+        }
+    },
+    "meta": {
+        "image": "tip.png",
+        "prefix": "comp/shop/tip/"
+    }
+}

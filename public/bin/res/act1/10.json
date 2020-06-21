@@ -1,0 +1,365 @@
+{
+    "frames": {
+        "gaojiao_a0001.png": {
+            "frame": {
+                "h": 265,
+                "idx": 0,
+                "w": 176,
+                "x": 180,
+                "y": 539
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 302,
+                "w": 235
+            },
+            "spriteSourceSize": {
+                "h": 265,
+                "w": 176,
+                "x": 29,
+                "y": 18
+            },
+            "trimmed": true
+        },
+        "gaojiao_a0002.png": {
+            "frame": {
+                "h": 265,
+                "idx": 0,
+                "w": 176,
+                "x": 843,
+                "y": 538
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 302,
+                "w": 235
+            },
+            "spriteSourceSize": {
+                "h": 265,
+                "w": 176,
+                "x": 29,
+                "y": 18
+            },
+            "trimmed": true
+        },
+        "gaojiao_a0003.png": {
+            "frame": {
+                "h": 268,
+                "idx": 0,
+                "w": 175,
+                "x": 843,
+                "y": 269
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 302,
+                "w": 235
+            },
+            "spriteSourceSize": {
+                "h": 268,
+                "w": 175,
+                "x": 30,
+                "y": 17
+            },
+            "trimmed": true
+        },
+        "gaojiao_a0007.png": {
+            "frame": {
+                "h": 272,
+                "idx": 0,
+                "w": 169,
+                "x": 475,
+                "y": 542
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 302,
+                "w": 235
+            },
+            "spriteSourceSize": {
+                "h": 272,
+                "w": 169,
+                "x": 33,
+                "y": 15
+            },
+            "trimmed": true
+        },
+        "gaojiao_a0008.png": {
+            "frame": {
+                "h": 269,
+                "idx": 0,
+                "w": 154,
+                "x": 688,
+                "y": 535
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 302,
+                "w": 235
+            },
+            "spriteSourceSize": {
+                "h": 269,
+                "w": 154,
+                "x": 40,
+                "y": 16
+            },
+            "trimmed": true
+        },
+        "gaojiao_a0009.png": {
+            "frame": {
+                "h": 265,
+                "idx": 0,
+                "w": 131,
+                "x": 688,
+                "y": 269
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 302,
+                "w": 235
+            },
+            "spriteSourceSize": {
+                "h": 265,
+                "w": 131,
+                "x": 52,
+                "y": 18
+            },
+            "trimmed": true
+        },
+        "gaojiao_a0010.png": {
+            "frame": {
+                "h": 260,
+                "idx": 0,
+                "w": 117,
+                "x": 357,
+                "y": 539
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 302,
+                "w": 235
+            },
+            "spriteSourceSize": {
+                "h": 260,
+                "w": 117,
+                "x": 59,
+                "y": 21
+            },
+            "trimmed": true
+        },
+        "gaojiao_a0011.png": {
+            "frame": {
+                "h": 265,
+                "idx": 0,
+                "w": 130,
+                "x": 0,
+                "y": 270
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 302,
+                "w": 235
+            },
+            "spriteSourceSize": {
+                "h": 265,
+                "w": 130,
+                "x": 52,
+                "y": 18
+            },
+            "trimmed": true
+        },
+        "gaojiao_a0012.png": {
+            "frame": {
+                "h": 269,
+                "idx": 0,
+                "w": 153,
+                "x": 0,
+                "y": 0
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 302,
+                "w": 235
+            },
+            "spriteSourceSize": {
+                "h": 269,
+                "w": 153,
+                "x": 41,
+                "y": 16
+            },
+            "trimmed": true
+        },
+        "gaojiao_a0013.png": {
+            "frame": {
+                "h": 272,
+                "idx": 0,
+                "w": 167,
+                "x": 520,
+                "y": 269
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 302,
+                "w": 235
+            },
+            "spriteSourceSize": {
+                "h": 272,
+                "w": 167,
+                "x": 34,
+                "y": 15
+            },
+            "trimmed": true
+        },
+        "gaojiao_a0014.png": {
+            "frame": {
+                "h": 272,
+                "idx": 0,
+                "w": 179,
+                "x": 0,
+                "y": 537
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 302,
+                "w": 235
+            },
+            "spriteSourceSize": {
+                "h": 272,
+                "w": 179,
+                "x": 28,
+                "y": 15
+            },
+            "trimmed": true
+        },
+        "gaojiao_a0015.png": {
+            "frame": {
+                "h": 272,
+                "idx": 0,
+                "w": 182,
+                "x": 337,
+                "y": 266
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 302,
+                "w": 235
+            },
+            "spriteSourceSize": {
+                "h": 272,
+                "w": 182,
+                "x": 26,
+                "y": 15
+            },
+            "trimmed": true
+        },
+        "gaojiao_a0016.png": {
+            "frame": {
+                "h": 270,
+                "idx": 0,
+                "w": 182,
+                "x": 154,
+                "y": 266
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 302,
+                "w": 235
+            },
+            "spriteSourceSize": {
+                "h": 270,
+                "w": 182,
+                "x": 26,
+                "y": 16
+            },
+            "trimmed": true
+        },
+        "gaojiao_a0017.png": {
+            "frame": {
+                "h": 268,
+                "idx": 0,
+                "w": 176,
+                "x": 685,
+                "y": 0
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 302,
+                "w": 235
+            },
+            "spriteSourceSize": {
+                "h": 268,
+                "w": 176,
+                "x": 29,
+                "y": 17
+            },
+            "trimmed": true
+        },
+        "gaojiao_a0018.png": {
+            "frame": {
+                "h": 265,
+                "idx": 0,
+                "w": 175,
+                "x": 509,
+                "y": 0
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 302,
+                "w": 235
+            },
+            "spriteSourceSize": {
+                "h": 265,
+                "w": 175,
+                "x": 30,
+                "y": 18
+            },
+            "trimmed": true
+        },
+        "gaojiao_a0019.png": {
+            "frame": {
+                "h": 265,
+                "idx": 0,
+                "w": 176,
+                "x": 332,
+                "y": 0
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 302,
+                "w": 235
+            },
+            "spriteSourceSize": {
+                "h": 265,
+                "w": 176,
+                "x": 29,
+                "y": 18
+            },
+            "trimmed": true
+        },
+        "gaojiao_a0020.png": {
+            "frame": {
+                "h": 265,
+                "idx": 0,
+                "w": 177,
+                "x": 154,
+                "y": 0
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 302,
+                "w": 235
+            },
+            "spriteSourceSize": {
+                "h": 265,
+                "w": 177,
+                "x": 29,
+                "y": 18
+            },
+            "trimmed": true
+        }
+    },
+    "meta": {
+        "image": "10.png",
+        "prefix": "10/"
+    }
+}

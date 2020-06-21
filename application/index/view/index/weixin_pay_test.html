@@ -1,0 +1,12 @@
+{extend name="public:base" /}
+{block name="content"}
+<img src="" id="img"/>
+<script>
+    var url = '{:url("index/index/pay")}';
+    $.post(url,{way:1,fee:0.01,user_id:9},function(r){
+        if(r.data.url){
+            $('#img').attr('src', r.data.url);
+        }
+    });
+</script>
+{/block}

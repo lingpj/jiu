@@ -1,0 +1,213 @@
+{extend name="public:base"}
+{block name="content"}
+<style>
+    .multiple{
+        position: relative;
+        margin-bottom: 10px;
+    }
+    .multiple .del{
+        position: absolute;
+        right:10px;
+        top:10px;
+    }
+    .multiple .preview{
+        position: absolute;
+        right:50px;
+        top:10px;
+    }
+</style>
+<div>
+    <form class="layui-form" action="" method="post" enctype="multipart/form-data">
+        <div class="layui-form-item">
+            <label class="layui-form-label"></label>
+            <div class="layui-input-block">
+                <p class="gray"><b class="red">*</b>请注意，为了保证质量，所有图片不会进行压缩，请先压缩后再上传</p>
+                <p class="gray"><b class="red">*</b>图片最大为2M</p>
+                <p class="gray"><b class="red">*</b>请谨慎修改标签</p>
+                <p class="gray"><b class="red">*</b>数字越大越靠前(最大255)</p>
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">排序:</label>
+            <div class="layui-input-block">
+                <input type="text"  name="sort" required  lay-verify="required" autocomplete="off" class="layui-input">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">显示new:</label>
+            <div class="layui-input-block">
+                <input type="text" name="is_new" placeholder="0不显示，1显示" required  lay-verify="required" autocomplete="off" class="layui-input">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">皮肤:</label>
+            <div class="layui-input-block">
+                <textarea type="text" name="skin" class="layui-input"></textarea>
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">标题:</label>
+            <div class="layui-input-block">
+                <input type="text"  name="title" required  lay-verify="required" autocomplete="off" class="layui-input">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">简介</label>
+            <div class="layui-input-block">
+                <input name="intro" class="layui-input" />
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">
+                头图（多个）
+            </label>
+            <div class="layui-input-block multiple">
+                <input name="banner_image[]" class="layui-input" placeholder="图片地址 非必填" />
+                <button class="preview" type="button" onclick="preview(this)">预览</button>
+                <button class="del" type="button" onclick="$(this).parent().remove()">删除</button>
+            </div>
+            <div class="layui-input-block">
+                <button type="button" onclick="addMultiple(this)">添加</button>
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">
+                商品
+            </label>
+            <div class="layui-input-block multiple">
+                <input name="product_img[]" class="layui-input" placeholder="商品图片" />
+                <input name="product_title[]" class="layui-input" placeholder="商品标题" />
+                <button class="del" type="button" onclick="$(this).parent().remove()">删除</button>
+                <button class="preview" type="button" onclick="preview(this)">预览</button>
+            </div>
+            <div class="layui-input-block">
+                <button type="button" onclick="addMultipleProduct(this)">添加</button>
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">示例</label>
+            <div class="layui-input-block">
+                <input name="example"  class="layui-input" />
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">标题图片:</label>
+            <div class="layui-input-block">
+                <span class="plus-img-btn" data-name="image_id" data-limit="1">+</span>
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">标签:</label>
+            <div class="layui-input-block">
+                <input type="text" name="tag" required  lay-verify="required" autocomplete="off" class="layui-input">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">主题:</label>
+            <div class="layui-input-block">
+                <input type="text" name="theme" autocomplete="off" class="layui-input">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">主图:</label>
+            <div class="layui-input-block">
+                <span class="plus-img-btn" data-name="main_image_id" data-limit="1">+</span>
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">产品介绍图：</label>
+            <div class="layui-input-block">
+                <span class="plus-img-btn" data-name="intro_image_ids[]" data-limit="10">+</span>
+            </div>
+        </div>
+        <!--<div class="layui-form-item">-->
+            <!--<label class="layui-form-label">banner图</label>-->
+            <!--<div class="layui-input-block">-->
+                <!--<span class="plus-img-btn" data-name="banner_image_id" data-limit="1">+</span>-->
+            <!--</div>-->
+        <!--</div>-->
+        <div class="layui-form-item">
+            <label class="layui-form-label">默认标题</label>
+            <div class="layui-input-block">
+                <input class="layui-input" name="default_title"/>
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">默认简介</label>
+            <div class="layui-input-block">
+                <textarea id="default-intro" name="default_intro"></textarea>
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">默认规则</label>
+            <div class="layui-input-block">
+                <textarea id="default-rule" name="default_rule"></textarea>
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">默认组织机构介绍</label>
+            <div class="layui-input-block">
+                <textarea id="org-intro" name="org_intro"></textarea>
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">状态</label>
+            <div class="layui-input-block">
+                <select name="status">
+                    <option value="1">启用</option>
+                    <option value="1">禁用</option>
+                </select>
+            </div>
+        </div>
+        <div class="tr">
+            <button class="layui-btn-normal layui-btn">确定</button>
+        </div>
+    </form>
+</div>
+<script>
+    initReachEditor(['default-intro','default-rule','org-intro'],true);
+
+    function addMultiple(othis){
+        $(othis).parent().before('<div class="layui-input-block multiple"> \
+                <input name="banner_image[]" class="layui-input" placeholder="图片地址 非必填"  /> \
+                <button class="del" type="button" onclick="$(this).parent().remove()">删除</button> \
+                </div>');
+    }
+
+    function addMultipleProduct(othis){
+        $(othis).parent().before('<div class="layui-input-block multiple"> \
+                <input name="product_img[]" class="layui-input" placeholder="商品图片" />\
+                <input name="product_title[]" class="layui-input" placeholder="商品标题" />\
+                <button class="del" type="button" onclick="$(this).parent().remove()">删除</button>\
+                <button class="preview" type="button" onclick="preview(this)">预览</button>\
+                </div>');
+    }
+
+    function preview(othis){
+        othis = $(othis);
+        var src = othis.parent().find('input').val();
+        src = 'http://jushangbao1.oss-cn-hangzhou.aliyuncs.com/' + src;
+        layer.open({
+            title:'预览',
+            content:'<img src="'+src+'" />'
+        });
+    }
+
+    $('.plus-img-btn').click(function(){
+        var othis = $(this);
+        var name = othis.attr('data-name');
+        var limit = othis.attr('data-limit');
+        var list = findArrayInput(name);
+        if(list.length < limit){
+            var input = $('<input>');
+            input.attr('name',name).attr('type','file');
+            var wrap = $('<div>').attr('class','upload-img-wrap');
+            wrap.append(input);
+            othis.before(wrap);
+        }else{
+            layer.msg('上传图片不能超过 '+limit+' 张');
+        }
+    });
+//    multipleImageUpload('banner-image-upload','banner-image-id','banner-img-wrap',1,false,true);
+</script>
+{/block}

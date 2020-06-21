@@ -1,0 +1,114 @@
+{extend name="public:base"} {block name="content"}
+
+<div class="dashboard-page" id="dashboard-page">
+
+    <h1>管理员添加/编辑页面</h1>
+
+    <div class="layui-form-item">
+        <label class="layui-form-label">用户名</label>
+        <div class="layui-input-block">
+            <input type="text" name="name" required lay-verify="required" v-model="name" placeholder="请输入用户名，1-10位" autocomplete="off"
+                class="layui-input">
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label">密码</label>
+        <div class="layui-input-block">
+            <input type="password" name="password" required lay-verify="required" v-model="password" placeholder="请输入密码，6-20位" autocomplete="off"
+                class="layui-input">
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label">角色列表</label>
+        <div class="layui-input-block">
+            <select name="role_id" lay-ignore>
+                <option :value="item.id" v-for="item in data.role_list" v-bind:selected="item.id == role_id" >{{item.role_name}}</option>
+            </select>
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label">备注</label>
+        <div class="layui-input-block">
+            <input type="text" name="note" v-model="note" placeholder="请输入备注，选填" autocomplete="off" class="layui-input">
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <div class="layui-input-block">
+            <button class="layui-btn" @click="submitForm" lay-submit lay-filter="formDemo">确定</button>
+        </div>
+    </div>
+</div>
+
+<style scoped>
+    h1 {
+        font-size: 36px;
+        padding-left: 50px;
+        padding-bottom: 50px;
+    }
+
+    select {
+        border:1px solid #e6e6e6;
+        padding:8px;
+    }
+</style>
+<script>
+    layui.form().render();
+
+    var pageVar = JSON.parse('{$page_var}');
+
+    var vm = new Vue({
+        el: '#dashboard-page',
+        data: {
+            id: pageVar.id,
+            data: pageVar,
+            name: pageVar.name,
+            password: pageVar.password,
+            note: pageVar.note,
+            role_id: pageVar.role_id
+        },
+        methods: {
+            isValid: function () {
+                if (this.name.length >= 10) {
+                    layer.msg('用户名不能超过10位');
+                    return false
+                }
+                if (this.password.length < 6 || this.password.length > 20) {
+                    layer.msg('密码位数应该在6-20之间');
+                    return false
+                }
+                return true
+            },
+            submitForm: function () {
+                if (!vm.isValid()) {
+                    return false;
+                }
+                var loading = layer.load(1);
+                var param = {
+                    'name': this.name,
+                    'password': this.password,
+                    'note': this.note,
+                    'auth_group_id': $('option:selected').val()
+                };
+                if (vm.id) {
+                    param.id = vm.id;
+                }
+                $.post('{:url("admin/manager/edit")}', param, function (r) {
+                    layer.close(loading);
+                    if (r.code == 1) {
+                        if (vm.id) {
+                            layer.msg('修改成功');
+                        } else {
+                            layer.msg('添加成功');
+                        }
+                        setTimeout(function () {
+                            window.location.href = '{:url("admin/manager/index")}';
+                        }, 2000);
+                    } else {
+                        layer.msg(r.msg);
+                    }
+                })
+            }
+        }
+    })
+</script>
+{/block}

@@ -1,0 +1,428 @@
+{
+    "frames": {
+        "zajiu_a0001.png": {
+            "frame": {
+                "h": 112,
+                "idx": 0,
+                "w": 76,
+                "x": 78,
+                "y": 228
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 128,
+                "w": 111
+            },
+            "spriteSourceSize": {
+                "h": 112,
+                "w": 76,
+                "x": 17,
+                "y": 8
+            },
+            "trimmed": true
+        },
+        "zajiu_a0002.png": {
+            "frame": {
+                "h": 112,
+                "idx": 0,
+                "w": 76,
+                "x": 432,
+                "y": 116
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 128,
+                "w": 111
+            },
+            "spriteSourceSize": {
+                "h": 112,
+                "w": 76,
+                "x": 17,
+                "y": 8
+            },
+            "trimmed": true
+        },
+        "zajiu_a0003.png": {
+            "frame": {
+                "h": 114,
+                "idx": 0,
+                "w": 76,
+                "x": 392,
+                "y": 232
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 128,
+                "w": 111
+            },
+            "spriteSourceSize": {
+                "h": 114,
+                "w": 76,
+                "x": 17,
+                "y": 7
+            },
+            "trimmed": true
+        },
+        "zajiu_a0004.png": {
+            "frame": {
+                "h": 115,
+                "idx": 0,
+                "w": 78,
+                "x": 313,
+                "y": 232
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 128,
+                "w": 111
+            },
+            "spriteSourceSize": {
+                "h": 115,
+                "w": 78,
+                "x": 16,
+                "y": 6
+            },
+            "trimmed": true
+        },
+        "zajiu_a0005.png": {
+            "frame": {
+                "h": 115,
+                "idx": 0,
+                "w": 78,
+                "x": 234,
+                "y": 231
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 128,
+                "w": 111
+            },
+            "spriteSourceSize": {
+                "h": 115,
+                "w": 78,
+                "x": 16,
+                "y": 6
+            },
+            "trimmed": true
+        },
+        "zajiu_a0006.png": {
+            "frame": {
+                "h": 116,
+                "idx": 0,
+                "w": 78,
+                "x": 155,
+                "y": 229
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 128,
+                "w": 111
+            },
+            "spriteSourceSize": {
+                "h": 116,
+                "w": 78,
+                "x": 16,
+                "y": 6
+            },
+            "trimmed": true
+        },
+        "zajiu_a0007.png": {
+            "frame": {
+                "h": 115,
+                "idx": 0,
+                "w": 77,
+                "x": 354,
+                "y": 116
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 128,
+                "w": 111
+            },
+            "spriteSourceSize": {
+                "h": 115,
+                "w": 77,
+                "x": 17,
+                "y": 6
+            },
+            "trimmed": true
+        },
+        "zajiu_a0008.png": {
+            "frame": {
+                "h": 114,
+                "idx": 0,
+                "w": 72,
+                "x": 281,
+                "y": 116
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 128,
+                "w": 111
+            },
+            "spriteSourceSize": {
+                "h": 114,
+                "w": 72,
+                "x": 19,
+                "y": 7
+            },
+            "trimmed": true
+        },
+        "zajiu_a0009.png": {
+            "frame": {
+                "h": 112,
+                "idx": 0,
+                "w": 65,
+                "x": 215,
+                "y": 116
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 128,
+                "w": 111
+            },
+            "spriteSourceSize": {
+                "h": 112,
+                "w": 65,
+                "x": 23,
+                "y": 8
+            },
+            "trimmed": true
+        },
+        "zajiu_a0010.png": {
+            "frame": {
+                "h": 112,
+                "idx": 0,
+                "w": 55,
+                "x": 159,
+                "y": 116
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 128,
+                "w": 111
+            },
+            "spriteSourceSize": {
+                "h": 112,
+                "w": 55,
+                "x": 28,
+                "y": 8
+            },
+            "trimmed": true
+        },
+        "zajiu_a0011.png": {
+            "frame": {
+                "h": 112,
+                "idx": 0,
+                "w": 51,
+                "x": 0,
+                "y": 0
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 128,
+                "w": 111
+            },
+            "spriteSourceSize": {
+                "h": 112,
+                "w": 51,
+                "x": 30,
+                "y": 8
+            },
+            "trimmed": true
+        },
+        "zajiu_a0012.png": {
+            "frame": {
+                "h": 114,
+                "idx": 0,
+                "w": 60,
+                "x": 443,
+                "y": 0
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 128,
+                "w": 111
+            },
+            "spriteSourceSize": {
+                "h": 114,
+                "w": 60,
+                "x": 25,
+                "y": 7
+            },
+            "trimmed": true
+        },
+        "zajiu_a0013.png": {
+            "frame": {
+                "h": 115,
+                "idx": 0,
+                "w": 70,
+                "x": 372,
+                "y": 0
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 128,
+                "w": 111
+            },
+            "spriteSourceSize": {
+                "h": 115,
+                "w": 70,
+                "x": 20,
+                "y": 6
+            },
+            "trimmed": true
+        },
+        "zajiu_a0014.png": {
+            "frame": {
+                "h": 115,
+                "idx": 0,
+                "w": 77,
+                "x": 0,
+                "y": 226
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 128,
+                "w": 111
+            },
+            "spriteSourceSize": {
+                "h": 115,
+                "w": 77,
+                "x": 17,
+                "y": 6
+            },
+            "trimmed": true
+        },
+        "zajiu_a0015.png": {
+            "frame": {
+                "h": 115,
+                "idx": 0,
+                "w": 81,
+                "x": 290,
+                "y": 0
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 128,
+                "w": 111
+            },
+            "spriteSourceSize": {
+                "h": 115,
+                "w": 81,
+                "x": 15,
+                "y": 6
+            },
+            "trimmed": true
+        },
+        "zajiu_a0016.png": {
+            "frame": {
+                "h": 115,
+                "idx": 0,
+                "w": 81,
+                "x": 208,
+                "y": 0
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 128,
+                "w": 111
+            },
+            "spriteSourceSize": {
+                "h": 115,
+                "w": 81,
+                "x": 15,
+                "y": 6
+            },
+            "trimmed": true
+        },
+        "zajiu_a0017.png": {
+            "frame": {
+                "h": 114,
+                "idx": 0,
+                "w": 80,
+                "x": 78,
+                "y": 113
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 128,
+                "w": 111
+            },
+            "spriteSourceSize": {
+                "h": 114,
+                "w": 80,
+                "x": 15,
+                "y": 7
+            },
+            "trimmed": true
+        },
+        "zajiu_a0018.png": {
+            "frame": {
+                "h": 112,
+                "idx": 0,
+                "w": 78,
+                "x": 129,
+                "y": 0
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 128,
+                "w": 111
+            },
+            "spriteSourceSize": {
+                "h": 112,
+                "w": 78,
+                "x": 16,
+                "y": 8
+            },
+            "trimmed": true
+        },
+        "zajiu_a0019.png": {
+            "frame": {
+                "h": 112,
+                "idx": 0,
+                "w": 77,
+                "x": 0,
+                "y": 113
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 128,
+                "w": 111
+            },
+            "spriteSourceSize": {
+                "h": 112,
+                "w": 77,
+                "x": 17,
+                "y": 8
+            },
+            "trimmed": true
+        },
+        "zajiu_a0020.png": {
+            "frame": {
+                "h": 112,
+                "idx": 0,
+                "w": 76,
+                "x": 52,
+                "y": 0
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 128,
+                "w": 111
+            },
+            "spriteSourceSize": {
+                "h": 112,
+                "w": 76,
+                "x": 17,
+                "y": 8
+            },
+            "trimmed": true
+        }
+    },
+    "meta": {
+        "image": "13.png",
+        "prefix": "13/"
+    }
+}

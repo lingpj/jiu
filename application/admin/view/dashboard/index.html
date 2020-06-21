@@ -1,0 +1,11 @@
+{extend name="public:base"}
+{block name="content"}
+<div class="dashboard-page">
+    <h2>欢迎,{$Think.session.admin.name}</h2>
+    {if $code}
+    <p>
+        您的唯一邀请码是:<span style="font-size: 25px;margin:0 5px;">{$code}</span>,在您的商户注册时，请填写此邀请码。
+    </p>
+    {/if}
+</div>
+{/block}

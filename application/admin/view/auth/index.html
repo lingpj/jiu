@@ -1,0 +1,19 @@
+{extend name="public:base"}
+{block name="content"}
+<div class="dashboard-page">
+    <ul>
+    {foreach $list as $v}
+        <li>
+        {$v.name}
+        {if isset($v.list)}
+            <ul style="padding-left: 1em">
+            {foreach $v.list as $l}
+                <li>{$l.name}&gt;{$l.auth}&gt;菜单：{if isset($l.is_menu) && $l.is_menu}是{else/}否{/if}</li>
+            {/foreach}
+            </ul>
+        {/if}
+        </li>
+    {/foreach}
+    </ul>
+</div>
+{/block}

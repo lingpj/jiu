@@ -1,0 +1,118 @@
+.breadcrumb-title{
+    font-size: 30px !important;
+    border-bottom: 1px solid #efefef;
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+}
+.normal-select{
+    display: inline-block !important;
+    padding:8px;
+}
+.tc{
+    text-align: center;
+}
+.tl{
+    text-align: left;
+}
+.tr{
+    text-align: right;
+}
+.fix:after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.login-page{
+    width: 500px;
+    margin-left:auto;
+    margin-right:auto;
+}
+.login-page h1{
+    font-size: 30px;
+    margin:50px 0;
+}
+.admin-page{
+    position: relative;
+}
+.admin-menu{
+    width: 200px;
+    height:2000px;
+    position: absolute;
+    left:0;
+    top:0;
+    background-color: #393D49;
+    border-top:1px solid #000;
+}
+.admin-menu p{
+    padding-left:20px;
+}
+.admin-content{
+    margin-left:220px;
+    padding:20px;
+}
+.admin-wrap{
+    position: relative;
+}
+.admin-top-nav,.admin-top-nav a{
+    color:#c2c2c2;
+}
+.admin-top-nav{
+    padding:0 20px;
+    height: 50px;
+    line-height: 50px;
+    background-color: #393D49;
+    text-align: right;
+    position: relative;
+}
+.admin-top-nav .title{
+    position: absolute;
+    left:20px;
+    font-size: 20px;
+}
+.banner-images img{
+    width: 50px;
+}
+.gray{
+    color:#ccc;
+}
+.red{
+    color:red;
+}
+.plus-img-btn{
+    background-color: #fff;
+    border:1px solid #e6e6e6;
+    display: inline-block;
+    width: 50px;
+    height: 30px;
+    line-height:28px;
+    text-align: center;
+}
+.blue{
+    color:dodgerblue;
+}
+.template-page .layui-form-item img{
+    max-width: 50px;
+}
+.pagination li{
+    display: inline-block;
+    margin-left: -1px;
+}
+.pagination li:first-child{
+    margin-left: 0;
+}
+.pagination li a,.pagination li span{
+    display: inline-block;
+    border:1px solid #efefef;
+    width:38px;
+    height:38px;
+    line-height: 38px;
+    text-align: center;
+}
+.pagination li.active span{
+    color:#fff;
+    background-color: #3076D6;
+    border:none;
+}
+.admin-menu li.active{
+    background-color: #009688;
+}

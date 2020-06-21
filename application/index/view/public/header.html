@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>九九游戏</title>
+    <meta content="九九游戏" name="application-name" />
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="shortcut icon" href="/static/img/favicon.ico" />
+    {css href="/static/layui/css/layui.css"}
+    {css href="/static/layui/css/layui.mobile.css"}
+    {css href="/static/baofonts/iconfont.css"}
+    {js href="/static/js/jquery.2.1.4.min.js"}
+    {js href="/static/layui/lay/dest/layui.all.js"}
+    {js href="/static/js/jweixin-1.2.0.js"}
+    {js href="/static/js/weui.min.js"}
+    <script>
+        wx.config({
+            debug: false,
+            appId: '{$sign_package["appId"]}',
+            timestamp: '{$sign_package["timestamp"]}',
+            nonceStr: '{$sign_package["nonceStr"]}',
+            signature: '{$sign_package["signature"]}',
+            jsApiList: [
+                'onMenuShareTimeline',
+                'onMenuShareAppMessage',
+                'chooseImage'
+            ]
+        });
+
+        wx.ready(function () {
+            var number = '{$sign_package["number"]|default=""}';
+            var openId = '{$sign_package["open_id"]|default=""}';
+            var nickname = '{$sign_package["nickname"]|default=""}';
+            var avatarUrl = '{$sign_package["head_img_url"]|default=""}';
+            var is_phone = "{$sign_package['is_phone']}";
+            var img = "{$sign_package['img']}";
+            var uri = "{$sign_package['uri']}";
+            var current_uri = uri;
+
+            if( ! current_uri){
+                current_uri = window.location.href;
+            }
+            //to quan
+            var title = '您好的好友邀请您进入房间：123456';
+            wx.onMenuShareTimeline({
+                title: title,
+                link:current_uri,
+                imgUrl: img,
+                success: function () {
+                },
+                cancel: function () {
+                }
+            });
+            //to friend
+            var friend_page_title = title;
+            var friend_page_intro = title;
+            var friend_page_img = img;
+
+            function _alert(str){}
+
+            wx.onMenuShareAppMessage({
+                title: friend_page_title,
+                desc: friend_page_intro,
+                link:current_uri,
+                imgUrl: friend_page_img,
+                trigger: function (res) {
+                },
+                success: function (res) {
+                    _alert(JSON.stringify(res));
+                },
+                cancel: function (res) {
+                    _alert(JSON.stringify(res));
+                },
+                fail: function (res) {
+                    _alert(JSON.stringify(res));
+                }
+            });
+        });
+    </script>
+</head>

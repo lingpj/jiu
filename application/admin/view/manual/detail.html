@@ -1,0 +1,33 @@
+{extend name="public:base"}
+{block name="content"}
+<div class="dashboard-page">
+    <a class="layui-btn" target="_blank" href="{:url('admin/manual/download')}?user_id={$user_id}">下载所有</a>
+    <table class="layui-table">
+        <thead>
+            <th>昵称</th>
+            <th>对方昵称</th>
+            <th>积分</th>
+            <th>时间</th>
+            <th>操作</th>
+            <th>操作</th>
+        </thead>
+        {foreach $list as $v}
+        <tr>
+            <td>{$v.a_nickname}</td>
+            <td>{$v.b_nickname}</td>
+            <td>{$v.score}</td>
+            <td>{$v.result}</td>
+            <td>
+                <a target="_blank" href="{:url('admin/manual/download')}?user_id={$v.user_id}&round_record_id={$v.round_record_id}">下载</a>
+            </td>
+            <td>
+                <a target="_blank" href="{:url('admin/manual/del')}?round_record_id={$v.round_record_id}">删除</a>
+            </td>
+        </tr>
+        {/foreach}
+    </table>
+    <div>
+        {$pagination}
+    </div>
+</div>
+{/block}

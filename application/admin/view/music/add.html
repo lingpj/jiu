@@ -1,0 +1,22 @@
+{extend name="public:base"}
+{block name="content"}
+<div>
+    <form class="layui-form" action="" method="post" enctype="multipart/form-data">
+        <div class="layui-form-item">
+            <label class="layui-form-label">名称:</label>
+            <div class="layui-input-block">
+                <input type="text" value="{$name|default=''}" name="name" required  lay-verify="required" autocomplete="off" class="layui-input">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">文件:</label>
+            <div class="layui-input-block">
+                <input type="file" name="file"  lay-verify="required" autocomplete="off" class="layui-input">
+            </div>
+        </div>
+        <div class="tr">
+            <button class="layui-btn-normal layui-btn">确定</button>
+        </div>
+    </form>
+</div>
+{/block}

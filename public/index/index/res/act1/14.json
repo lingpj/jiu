@@ -1,0 +1,428 @@
+{
+    "frames": {
+        "xiezaba_a0001.png": {
+            "frame": {
+                "h": 276,
+                "idx": 0,
+                "w": 183,
+                "x": 496,
+                "y": 279
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 302,
+                "w": 235
+            },
+            "spriteSourceSize": {
+                "h": 276,
+                "w": 183,
+                "x": 26,
+                "y": 13
+            },
+            "trimmed": true
+        },
+        "xiezaba_a0002.png": {
+            "frame": {
+                "h": 278,
+                "idx": 0,
+                "w": 181,
+                "x": 888,
+                "y": 573
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 302,
+                "w": 235
+            },
+            "spriteSourceSize": {
+                "h": 278,
+                "w": 181,
+                "x": 27,
+                "y": 12
+            },
+            "trimmed": true
+        },
+        "xiezaba_a0003.png": {
+            "frame": {
+                "h": 281,
+                "idx": 0,
+                "w": 175,
+                "x": 712,
+                "y": 573
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 302,
+                "w": 235
+            },
+            "spriteSourceSize": {
+                "h": 281,
+                "w": 175,
+                "x": 30,
+                "y": 10
+            },
+            "trimmed": true
+        },
+        "xiezaba_a0004.png": {
+            "frame": {
+                "h": 285,
+                "idx": 0,
+                "w": 180,
+                "x": 531,
+                "y": 559
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 302,
+                "w": 235
+            },
+            "spriteSourceSize": {
+                "h": 285,
+                "w": 180,
+                "x": 27,
+                "y": 8
+            },
+            "trimmed": true
+        },
+        "xiezaba_a0005.png": {
+            "frame": {
+                "h": 287,
+                "idx": 0,
+                "w": 179,
+                "x": 351,
+                "y": 561
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 302,
+                "w": 235
+            },
+            "spriteSourceSize": {
+                "h": 287,
+                "w": 179,
+                "x": 28,
+                "y": 7
+            },
+            "trimmed": true
+        },
+        "xiezaba_a0006.png": {
+            "frame": {
+                "h": 288,
+                "idx": 0,
+                "w": 174,
+                "x": 176,
+                "y": 565
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 302,
+                "w": 235
+            },
+            "spriteSourceSize": {
+                "h": 288,
+                "w": 174,
+                "x": 30,
+                "y": 7
+            },
+            "trimmed": true
+        },
+        "xiezaba_a0007.png": {
+            "frame": {
+                "h": 286,
+                "idx": 0,
+                "w": 163,
+                "x": 806,
+                "y": 286
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 302,
+                "w": 235
+            },
+            "spriteSourceSize": {
+                "h": 286,
+                "w": 163,
+                "x": 36,
+                "y": 8
+            },
+            "trimmed": true
+        },
+        "xiezaba_a0008.png": {
+            "frame": {
+                "h": 283,
+                "idx": 0,
+                "w": 147,
+                "x": 1037,
+                "y": 268
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 302,
+                "w": 235
+            },
+            "spriteSourceSize": {
+                "h": 283,
+                "w": 147,
+                "x": 44,
+                "y": 9
+            },
+            "trimmed": true
+        },
+        "xiezaba_a0009.png": {
+            "frame": {
+                "h": 276,
+                "idx": 0,
+                "w": 125,
+                "x": 680,
+                "y": 282
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 302,
+                "w": 235
+            },
+            "spriteSourceSize": {
+                "h": 276,
+                "w": 125,
+                "x": 55,
+                "y": 13
+            },
+            "trimmed": true
+        },
+        "xiezaba_a0010.png": {
+            "frame": {
+                "h": 267,
+                "idx": 0,
+                "w": 120,
+                "x": 1037,
+                "y": 0
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 302,
+                "w": 235
+            },
+            "spriteSourceSize": {
+                "h": 267,
+                "w": 120,
+                "x": 57,
+                "y": 17
+            },
+            "trimmed": true
+        },
+        "xiezaba_a0011.png": {
+            "frame": {
+                "h": 276,
+                "idx": 0,
+                "w": 129,
+                "x": 0,
+                "y": 0
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 302,
+                "w": 235
+            },
+            "spriteSourceSize": {
+                "h": 276,
+                "w": 129,
+                "x": 53,
+                "y": 13
+            },
+            "trimmed": true
+        },
+        "xiezaba_a0012.png": {
+            "frame": {
+                "h": 283,
+                "idx": 0,
+                "w": 150,
+                "x": 345,
+                "y": 277
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 302,
+                "w": 235
+            },
+            "spriteSourceSize": {
+                "h": 283,
+                "w": 150,
+                "x": 42,
+                "y": 9
+            },
+            "trimmed": true
+        },
+        "xiezaba_a0013.png": {
+            "frame": {
+                "h": 286,
+                "idx": 0,
+                "w": 164,
+                "x": 180,
+                "y": 277
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 302,
+                "w": 235
+            },
+            "spriteSourceSize": {
+                "h": 286,
+                "w": 164,
+                "x": 35,
+                "y": 8
+            },
+            "trimmed": true
+        },
+        "xiezaba_a0014.png": {
+            "frame": {
+                "h": 288,
+                "idx": 0,
+                "w": 175,
+                "x": 0,
+                "y": 565
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 302,
+                "w": 235
+            },
+            "spriteSourceSize": {
+                "h": 288,
+                "w": 175,
+                "x": 30,
+                "y": 7
+            },
+            "trimmed": true
+        },
+        "xiezaba_a0015.png": {
+            "frame": {
+                "h": 287,
+                "idx": 0,
+                "w": 179,
+                "x": 0,
+                "y": 277
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 302,
+                "w": 235
+            },
+            "spriteSourceSize": {
+                "h": 287,
+                "w": 179,
+                "x": 28,
+                "y": 7
+            },
+            "trimmed": true
+        },
+        "xiezaba_a0016.png": {
+            "frame": {
+                "h": 285,
+                "idx": 0,
+                "w": 178,
+                "x": 858,
+                "y": 0
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 302,
+                "w": 235
+            },
+            "spriteSourceSize": {
+                "h": 285,
+                "w": 178,
+                "x": 28,
+                "y": 8
+            },
+            "trimmed": true
+        },
+        "xiezaba_a0017.png": {
+            "frame": {
+                "h": 281,
+                "idx": 0,
+                "w": 176,
+                "x": 681,
+                "y": 0
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 302,
+                "w": 235
+            },
+            "spriteSourceSize": {
+                "h": 281,
+                "w": 176,
+                "x": 29,
+                "y": 10
+            },
+            "trimmed": true
+        },
+        "xiezaba_a0018.png": {
+            "frame": {
+                "h": 278,
+                "idx": 0,
+                "w": 181,
+                "x": 499,
+                "y": 0
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 302,
+                "w": 235
+            },
+            "spriteSourceSize": {
+                "h": 278,
+                "w": 181,
+                "x": 27,
+                "y": 12
+            },
+            "trimmed": true
+        },
+        "xiezaba_a0019.png": {
+            "frame": {
+                "h": 276,
+                "idx": 0,
+                "w": 183,
+                "x": 315,
+                "y": 0
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 302,
+                "w": 235
+            },
+            "spriteSourceSize": {
+                "h": 276,
+                "w": 183,
+                "x": 26,
+                "y": 13
+            },
+            "trimmed": true
+        },
+        "xiezaba_a0020.png": {
+            "frame": {
+                "h": 274,
+                "idx": 0,
+                "w": 184,
+                "x": 130,
+                "y": 0
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 302,
+                "w": 235
+            },
+            "spriteSourceSize": {
+                "h": 274,
+                "w": 184,
+                "x": 25,
+                "y": 14
+            },
+            "trimmed": true
+        }
+    },
+    "meta": {
+        "image": "14.png",
+        "prefix": "14/"
+    }
+}

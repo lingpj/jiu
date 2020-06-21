@@ -1,0 +1,415 @@
+  /* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+   重置浏览器样式开始 lpj */
+ 
+ *{
+    box-sizing: border-box;
+    margin: 0;
+	padding: 0;
+	border: 0;
+}  
+body {
+    line-height: 1;
+    padding-top: 60px;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    font-family: Microsoft YaHei, STHeitiSC-Light;
+}
+ol, ul {
+	list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: #333333;
+}   
+ 
+    /* 重置浏览器样式结束 lpj
+
+    正文css开始 */
+ 
+
+.nav{
+    height: 60px;
+    padding: 0 20px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 999;
+    background-color: #fff;
+    width: 100%;
+    border-bottom: 1px solid #eee;
+}
+.nav>div{
+    width: 1200px;
+    margin: 0 auto;
+}
+.logo{
+    width: 46px;
+    height: 46px;
+    float: left;
+}
+.nav .logoBox{
+    height: 100%;
+    align-items: center;
+    width: 500px;
+    float: left;
+    padding-top: 7px;
+}
+.nav .logoBox p{
+    height: 100%;
+    padding-left: 60px;
+     padding-top: 12px; 
+    font-size: 20px;
+}  
+  .nav .logoBox p span{
+    display: block;
+    font-size: 14px;
+    margin-top: 5px;
+    color: gray;
+}
+.nav .anchorBox{
+    float: left;
+    height: 100%;
+    width: 650px; 
+}
+.nav .anchorBox>ul{
+    height: 100%;
+}
+.nav .anchorBox>ul li{
+    float: left;
+    height: 100%;
+    line-height: 60px;
+    width: 130px;
+    text-align: right;
+}  
+.bannerBox{
+    height: 350px;
+    width: 100%;
+}
+.bannerBox a{
+    display: inline-block;
+    background-image: url('/static/img/official/banner.png');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+}
+  .erWeiMaTip{
+    text-align: right;
+    padding-bottom: 50px;
+    padding-right: 80px;
+}
+.icon{
+    display: block;
+    margin: 0 auto 40px auto;
+}
+ h2{
+    text-align: center;
+    font-size: 28px;
+    color: #333333;
+}  
+.bgColor{
+     background-color: #f9fdff; 
+}  
+  #proAdvantage{
+    padding-top: 70px;
+    overflow: hidden;
+}
+.proAdvantage{
+    margin-top: 20px;
+    width: 960px;
+    margin: 0 auto;
+}
+.phone{
+    width: 236px;
+    height: 484px;
+    float: right;
+}
+.proAdvantage .contentBox{
+    width: 600px;
+    margin-top: 60px;
+    font-size: 18px;
+    line-height: 36px;
+    float: left;
+}  
+  .pad-70{
+    padding: 70px 70px 0 70px;
+}
+.hotExample{
+    padding-top: 100px;
+    padding-bottom: 150px;
+    text-align:center;
+    font-size: 18px;
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+}
+#productionIntro .box{
+    width: 960px;
+    margin: 0 auto;
+}
+.hotExampleBox{
+    margin: 0 auto;
+    width: 960px;
+    overflow: hidden;
+}
+.hotExampleBox>div{
+    float: left;
+     display: block;
+     text-align: center;
+     width: 33.3333333%;
+}
+ #productionIntro{
+    padding-top: 70px;
+    margin-bottom: 50px;
+}
+.productionIntroIcon{
+    display: block;
+     margin: 0px auto; 
+     margin-bottom: 40px;
+}
+#aboutUs{
+    padding-top: 70px;
+}
+.productionIntroTitle{
+    text-align: center;
+    font-size:28px;
+    font-weight: 700;
+    margin-bottom: 70px;
+}
+.introDetail{
+    float: left;
+    width: 500px;
+    font-size: 18px;
+    line-height: 36px;
+}
+.clear{
+    clear: both;
+}
+.erWeiMaBox{
+    float: left;
+    position: relative;
+    top: -12px;
+    margin-left: 70px;
+    width: 250px;
+}
+.erWeiMaBox img{
+    width: 100%;
+}
+.erWeiMaBox p{
+    text-align: center;
+    font-size: 18px;
+}
+.hotExample img{
+    width: 260px;
+    height: 260px;
+    margin-bottom: 40px; 
+}
+.contactService{
+    position: relative;
+    overflow: hidden;
+    height: 700px;
+    width: 100%;
+}  
+  .contactService .bg{
+    position: absolute;
+    z-index: 0;
+    background-image: url('/static/img/official/图层.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 100%;
+    height: 100%;
+}
+.contactService .icon{
+    margin-top: 70px;
+    z-index: 1;
+    position: relative;
+}  
+  .contactService h2{
+    text-align: center;
+    font-size: 28px;
+    color: #fff;
+    z-index: 1;
+    position: relative;
+}
+.contactService .mask{
+    height: 100%;
+    width: 100%;
+    background:rgba(0,0,0,0.6);
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index:1;
+}  
+  .contentDetail {
+    margin-left: auto;
+    margin-right: auto;
+    width: 700px;
+    margin-top: 170px;
+    z-index: 1;
+    position: relative;
+    overflow: hidden;
+}
+.contentDetail img{
+    height: 160px;
+    width: 160px;
+    float: left;
+}
+.contentDetail p{
+    color: #fff;
+    margin-left: 43px;
+    width: 450px;
+    font-size: 18px;
+    padding-top: 40px;
+    line-height: 36px;
+    float: left;
+}
+.aboutUs .aboutDetail{
+    width: 500px;
+    margin: 70px auto 0 auto;;
+    font-size: 18px;
+    line-height: 36px;
+    padding-bottom: 70px;
+}    
+
+/* 2017-08-19官网下的页面样式  */
+@media screen and (min-width:1025px){
+    .case-page{
+        width: 670px;
+        margin: 0 auto;
+    }
+}
+
+.case-page{
+    padding: 20px 15px;
+    /* font-family: '宋体'; */
+    letter-spacing: 2px;
+    color: #000;
+}
+.case-title h1{
+    font-weight: 500;
+    font-size: 48px;
+    /* font-family: '雅黑'; */
+    line-height: 1.5em;
+}
+.case-page h2{
+    text-align: left;
+    color: #000;
+    line-height: 2em;
+}
+.case-title .title-notice{
+    color: #999;
+    font-size: 18px;
+    margin: 1em auto;
+}
+.case-title .title-notice a,
+.case-page a{
+    color: #607fa6;
+    text-decoration: none;
+}
+.case-page .hr{
+    width: 100%;
+    padding: 0 20px;
+    margin: 120px 0 0;
+}
+.case-page .hr img{
+    width: 100%;
+    margin: 0;
+}
+.case-page .block p{
+    font-size: 18px;
+    line-height: 1.5em;
+}
+.case-page2 .block p{
+    text-indent: 2em;
+}
+.case-page .julogo{
+    text-align: center;
+    margin: 50px auto;
+}
+.case-page .julogo img{
+    width: 45%;
+}
+.case-page img{
+    width: 100%;
+    margin-bottom: 20px;
+}
+.case-page .block{
+    margin-top: 60px;
+}
+.case-page .success-methods{
+    margin-bottom: 1.5em;
+}
+.case-page .block h3{
+    line-height: 1.8em;
+}
+.case-page .red {
+    color: red;
+}
+.page3{
+    margin-top: 30px;
+}
+.page3 .page-block p{
+    font-size: 16px;
+    line-height: 1.8em;
+}
+.page3 .page-block h3{
+    font-weight: normal;
+    margin-top: 1.5em;
+    border-top: 1px solid #999;
+    box-sizing: border-box;
+    height: auto;
+}
+.page3 .page-block h3 p{
+    padding: .5em .2em;
+    border-top: 3px solid rgb(128, 177, 53);
+    width: 5em;
+    text-align: center;
+    margin-top: -1px;
+    font-size: 22px;
+}
+.page3 .page-block img {
+    margin-bottom: 20px;
+}
+@media screen and (max-width:1025px){
+    .case-page .block p{
+        line-height: 2.5em;
+        font-size: 32px;
+    }
+    .case-page .block h3{
+        font-size: 36px;
+        line-height: 2.5em;
+    }
+    .case-page2 .block p{
+        text-indent: 2.5em;
+    }
+    .to-film{
+        font-size: 32px;
+        line-height: 3em;
+    }
+    .page3 .page-block h3 p{
+        font-size: 50px;
+        line-height: 1.5em;
+    }
+    .page3 .page-block h3{
+        line-height: 4em;
+    }
+    .page3 .page-block p{
+        font-size: 32px;
+        line-height: 2.5em;
+    }
+    .page3 .page-block h2{
+        font-size: 50px;
+        line-height: 4em;
+    }
+    .case-title .title-notice{
+        font-size: 30px;
+        margin: 1em auto;
+    }
+}

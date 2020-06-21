@@ -1,0 +1,428 @@
+{
+    "frames": {
+        "ren_a0001.png": {
+            "frame": {
+                "h": 108,
+                "idx": 0,
+                "w": 72,
+                "x": 282,
+                "y": 116
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 128,
+                "w": 111
+            },
+            "spriteSourceSize": {
+                "h": 108,
+                "w": 72,
+                "x": 19,
+                "y": 10
+            },
+            "trimmed": true
+        },
+        "ren_a0002.png": {
+            "frame": {
+                "h": 108,
+                "idx": 0,
+                "w": 72,
+                "x": 428,
+                "y": 228
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 128,
+                "w": 111
+            },
+            "spriteSourceSize": {
+                "h": 108,
+                "w": 72,
+                "x": 19,
+                "y": 10
+            },
+            "trimmed": true
+        },
+        "ren_a0003.png": {
+            "frame": {
+                "h": 112,
+                "idx": 0,
+                "w": 71,
+                "x": 438,
+                "y": 0
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 128,
+                "w": 111
+            },
+            "spriteSourceSize": {
+                "h": 112,
+                "w": 71,
+                "x": 20,
+                "y": 8
+            },
+            "trimmed": true
+        },
+        "ren_a0004.png": {
+            "frame": {
+                "h": 112,
+                "idx": 0,
+                "w": 72,
+                "x": 415,
+                "y": 115
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 128,
+                "w": 111
+            },
+            "spriteSourceSize": {
+                "h": 112,
+                "w": 72,
+                "x": 19,
+                "y": 8
+            },
+            "trimmed": true
+        },
+        "ren_a0005.png": {
+            "frame": {
+                "h": 114,
+                "idx": 0,
+                "w": 75,
+                "x": 362,
+                "y": 0
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 128,
+                "w": 111
+            },
+            "spriteSourceSize": {
+                "h": 114,
+                "w": 75,
+                "x": 18,
+                "y": 7
+            },
+            "trimmed": true
+        },
+        "ren_a0006.png": {
+            "frame": {
+                "h": 116,
+                "idx": 0,
+                "w": 76,
+                "x": 351,
+                "y": 233
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 128,
+                "w": 111
+            },
+            "spriteSourceSize": {
+                "h": 116,
+                "w": 76,
+                "x": 17,
+                "y": 6
+            },
+            "trimmed": true
+        },
+        "ren_a0007.png": {
+            "frame": {
+                "h": 117,
+                "idx": 0,
+                "w": 73,
+                "x": 194,
+                "y": 231
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 128,
+                "w": 111
+            },
+            "spriteSourceSize": {
+                "h": 117,
+                "w": 73,
+                "x": 19,
+                "y": 5
+            },
+            "trimmed": true
+        },
+        "ren_a0008.png": {
+            "frame": {
+                "h": 117,
+                "idx": 0,
+                "w": 68,
+                "x": 282,
+                "y": 225
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 128,
+                "w": 111
+            },
+            "spriteSourceSize": {
+                "h": 117,
+                "w": 68,
+                "x": 21,
+                "y": 5
+            },
+            "trimmed": true
+        },
+        "ren_a0009.png": {
+            "frame": {
+                "h": 116,
+                "idx": 0,
+                "w": 59,
+                "x": 355,
+                "y": 116
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 128,
+                "w": 111
+            },
+            "spriteSourceSize": {
+                "h": 116,
+                "w": 59,
+                "x": 26,
+                "y": 6
+            },
+            "trimmed": true
+        },
+        "ren_a0010.png": {
+            "frame": {
+                "h": 113,
+                "idx": 0,
+                "w": 51,
+                "x": 142,
+                "y": 229
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 128,
+                "w": 111
+            },
+            "spriteSourceSize": {
+                "h": 113,
+                "w": 51,
+                "x": 30,
+                "y": 7
+            },
+            "trimmed": true
+        },
+        "ren_a0011.png": {
+            "frame": {
+                "h": 116,
+                "idx": 0,
+                "w": 57,
+                "x": 0,
+                "y": 0
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 128,
+                "w": 111
+            },
+            "spriteSourceSize": {
+                "h": 116,
+                "w": 57,
+                "x": 27,
+                "y": 6
+            },
+            "trimmed": true
+        },
+        "ren_a0012.png": {
+            "frame": {
+                "h": 117,
+                "idx": 0,
+                "w": 66,
+                "x": 75,
+                "y": 229
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 128,
+                "w": 111
+            },
+            "spriteSourceSize": {
+                "h": 117,
+                "w": 66,
+                "x": 22,
+                "y": 5
+            },
+            "trimmed": true
+        },
+        "ren_a0013.png": {
+            "frame": {
+                "h": 116,
+                "idx": 0,
+                "w": 72,
+                "x": 209,
+                "y": 114
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 128,
+                "w": 111
+            },
+            "spriteSourceSize": {
+                "h": 116,
+                "w": 72,
+                "x": 19,
+                "y": 6
+            },
+            "trimmed": true
+        },
+        "ren_a0014.png": {
+            "frame": {
+                "h": 116,
+                "idx": 0,
+                "w": 74,
+                "x": 0,
+                "y": 227
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 128,
+                "w": 111
+            },
+            "spriteSourceSize": {
+                "h": 116,
+                "w": 74,
+                "x": 18,
+                "y": 6
+            },
+            "trimmed": true
+        },
+        "ren_a0015.png": {
+            "frame": {
+                "h": 114,
+                "idx": 0,
+                "w": 75,
+                "x": 133,
+                "y": 114
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 128,
+                "w": 111
+            },
+            "spriteSourceSize": {
+                "h": 114,
+                "w": 75,
+                "x": 18,
+                "y": 7
+            },
+            "trimmed": true
+        },
+        "ren_a0016.png": {
+            "frame": {
+                "h": 112,
+                "idx": 0,
+                "w": 74,
+                "x": 58,
+                "y": 114
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 128,
+                "w": 111
+            },
+            "spriteSourceSize": {
+                "h": 112,
+                "w": 74,
+                "x": 18,
+                "y": 8
+            },
+            "trimmed": true
+        },
+        "ren_a0017.png": {
+            "frame": {
+                "h": 115,
+                "idx": 0,
+                "w": 75,
+                "x": 286,
+                "y": 0
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 128,
+                "w": 111
+            },
+            "spriteSourceSize": {
+                "h": 115,
+                "w": 75,
+                "x": 18,
+                "y": 6
+            },
+            "trimmed": true
+        },
+        "ren_a0018.png": {
+            "frame": {
+                "h": 113,
+                "idx": 0,
+                "w": 75,
+                "x": 210,
+                "y": 0
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 128,
+                "w": 111
+            },
+            "spriteSourceSize": {
+                "h": 113,
+                "w": 75,
+                "x": 18,
+                "y": 7
+            },
+            "trimmed": true
+        },
+        "ren_a0019.png": {
+            "frame": {
+                "h": 113,
+                "idx": 0,
+                "w": 75,
+                "x": 134,
+                "y": 0
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 128,
+                "w": 111
+            },
+            "spriteSourceSize": {
+                "h": 113,
+                "w": 75,
+                "x": 18,
+                "y": 7
+            },
+            "trimmed": true
+        },
+        "ren_a0020.png": {
+            "frame": {
+                "h": 113,
+                "idx": 0,
+                "w": 75,
+                "x": 58,
+                "y": 0
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 128,
+                "w": 111
+            },
+            "spriteSourceSize": {
+                "h": 113,
+                "w": 75,
+                "x": 18,
+                "y": 7
+            },
+            "trimmed": true
+        }
+    },
+    "meta": {
+        "image": "3.png",
+        "prefix": "3/"
+    }
+}

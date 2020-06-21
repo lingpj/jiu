@@ -1,0 +1,41 @@
+{extend name="public:base"} {block name="content"}
+<style>
+    #a{
+        margin-top: 10px;
+        border:1px solid #D2D2D2;
+        padding:5px;
+    }
+</style>
+<div class="dashboard-page" id="dashboard-page">
+    <form method="post">
+    <input type="hidden" name="id" value="{$id|default=0}"/>
+    <div class="layui-form-item">
+        <label class="layui-form-label">标题</label>
+        <div class="layui-input-block">
+            <input type="text" name="title" value="{$title|default=''}" placeholder="最多15个字" required lay-verify="required" v-model="name" autocomplete="off"
+                class="layui-input">
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label">内容</label>
+        <div class="layui-input-block">
+            <input type="text" name="content" value="{$content|default=''}" placeholder="最多80个字" v-model="note" autocomplete="off" class="layui-input">
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label">类型</label>
+        <div class="layui-input-block">
+            <select name="type" id="a">
+                <option value="1">滚动公告</option>
+                <option value="3">公开公告</option>
+            </select>
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <div class="layui-input-block">
+            <button class="layui-btn" @click="submitForm" lay-submit lay-filter="formDemo">确定</button>
+        </div>
+    </div>
+    </form>
+</div>
+{/block}

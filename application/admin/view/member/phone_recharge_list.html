@@ -1,0 +1,46 @@
+{extend name="public:base"}
+{block name="content"}
+<div>
+    <table class="layui-table">
+        <thead>
+        <th>用户编号</th>
+        <th>昵称</th>
+        <th>充值手机号</th>
+        <th>充值前积分</th>
+        <th>充值后积分</th>
+        <th>改变积分</th>
+        <th>充值话费</th>
+        <th>状态</th>
+        <th>充值时间</th>
+        <th>创建日期</th>
+        </thead>
+        <tbody>
+        {foreach $list as $v}
+        <tr>
+            <td>{$v.user_id}</td>
+            <td>{$v.nickname}</td>
+            <td><a class="layui-bg-gray">{$v.telephone}</a></td>
+            <td>{$v.start_score}</td>
+            <td>{$v.end_score}</td>
+            <td>{$v.change_score}</td>
+            <td>{$v.hundred_count * 100}元</td>
+            <td>
+                {if $v.status}
+                已审核
+                {else/}
+                <a class="layui-btn" href="{:url('admin/member/phoneRechargeStatus')}?id={$v.id}">审核</a>
+                {/if}
+            </td>
+            <td>{$v.charge_time}</td>
+            <td>
+                {$v.create_time}
+            </td>
+        </tr>
+        {/foreach}
+        </tbody>
+    </table>
+    <div>
+        {$pagination}
+    </div>
+</div>
+{/block}

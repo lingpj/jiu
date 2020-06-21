@@ -1,0 +1,66 @@
+{extend name="public:base"}
+{block name="content"}
+<style>
+    .wrap{
+        word-break: break-all;
+    }
+</style>
+<div>
+    <form method="get">
+        <input placeholder="玩家id" value="{$player_id|default=''}" name="player_id"/>
+        <button>确定</button>
+        <button type="button" onclick="$(this).parent().find('input').val('');$(this).parent().submit();">清空</button>
+    </form>
+    <table class="layui-table">
+        <thead>
+        <th>ID</th>
+        <th>类型</th>
+        <th>结果</th>
+        <th>押注</th>
+        <th>玩家列表</th>
+        <!--<th>牌</th>-->
+        <th width="100">牌型</th>
+        <th>庄家</th>
+        <!--<th>输赢</th>-->
+        <th width="100">时间</th>
+        </thead>
+        <tbody>
+        {foreach $list as $v}
+        <tr>
+            <td>{$v.id}</td>
+            <td>{$v.round_type}</td>
+            <td class="wrap" width="300">{$v.result_map}</td>
+            <td width="300" class="wrap">{$v.chip_map}</td>
+            <td>{$v.players}</td>
+            <!--<td>-->
+                <!--{$v.cards}-->
+            <!--</td>-->
+            <td width="200">{$v.form}</td>
+            <td>
+                {$v.master_id}
+            </td>
+            <!--<td>-->
+                <!--{$v.point_map}-->
+            <!--</td>-->
+            <td>
+                {$v.created_time}
+            </td>
+        </tr>
+        {/foreach}
+        </tbody>
+    </table>
+    <div>
+        {$pagination}
+    </div>
+    <script>
+        function watch(othis){
+            othis = $(othis);
+            var html = othis.next().html();
+            layer.open({
+                title:'',
+                content:html
+            });
+        }
+    </script>
+</div>
+{/block}

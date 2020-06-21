@@ -1,0 +1,262 @@
+{extend name="public:base"} {block name="content"}
+<script>
+    var pageVar = JSON.parse('{$list}');
+    console.log(pageVar);
+
+</script>
+<div class="dashboard-page">
+    <div id="edit">
+        <div class="role-name fix">
+            <label for="userName" class="form-title">用户名：</label>
+            <div class="form-selector">
+                <input type="text" id="userName" class="layui-input" maxlength="20" v-model="userName">
+            </div>
+        </div>
+        <div class="fix authority-list">
+            <div class="form-title">权限列表：</div>
+            <div class="form-selector">
+                <div class="role-edit" v-for="(auth,index) in authList">
+                    <div class="auth-title-list">
+                        <span @click="titleselected(index)">
+                        <input type="checkbox" v-model="auth.checked" :name="auth.auth">
+                        <label for="">{{auth.name}}</label>
+                    </span>
+                    </div>
+                    <div class="auth-inner-list">
+                        <div class="children-auth" v-for="children in auth.list">
+                            <span @click="childrenSelect(index)">
+                            <input type="checkbox" :name="children.auth" v-model="children.checked">
+                            <label for="">{{children.name}}</label>
+                        </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="sub-btn" @click="submit">确定</button>
+    </div>
+</div>
+<script>
+    var vm = new Vue({
+        el: '#edit',
+        data: {
+            authList: [],
+            authority_list: {},
+            userName: pageVar.role_name,
+            isError: true,
+            id: ''
+        },
+        methods: {
+            // 初始化数据，
+            initList: function () {
+                var list = [];
+                pageVar.list.map(function (item) {
+                    var obj = {};
+                    if (item.active == 1) {
+                        obj.checked = true;
+                    } else {
+                        obj.checked = false;
+                    }
+                    obj.name = item.name;
+                    item.list.map(function (info) {
+                        if (info.active == 1) {
+                            info.checked = true;
+                        } else {
+                            info.checked = false;
+                        }
+                    })
+                    obj.auth = item.auth;
+                    obj.list = item.list
+                    list.push(obj);
+                });
+                this.authList = list;
+            },
+            // 主选项
+            titleselected: function (num) {
+                var value = event.target.checked;
+                this.authList[num].list.map(function (item) {
+                    item.checked = value;
+                });
+            },
+            // 副选项
+            childrenSelect: function (i) {
+                var status = this.authList[i].list.filter(function (item) {
+                    return item.checked == true;
+                });
+                if (status.length > 0) {
+                    this.authList[i].checked = true;
+                } else {
+                    this.authList[i].checked = false;
+                }
+            },
+            // 获取被选 中的参数
+            initInfo: function () {
+                var param = {};
+                this.authList.map(function (o) {
+                    if (o.checked) {
+                        var arr = [];
+                        o.list.map(function (item) {
+                            if (item.checked) {
+                                arr.push(item.auth)
+                            }
+                        })
+                        param[o.auth] = arr;
+                    }
+                })
+                this.authority_list = param;
+            },
+            // 验证
+            valueChecked: function () {
+                if (this.userName.trim() == '') {
+                    layer.msg('请输入用户名')
+                    this.isError = true;
+                    return;
+                };
+                if (this.authority_list.length == 0) {
+                    layer.msg('请至少选取一种权限')
+                    this.isError = true;
+                    return;
+                }
+                this.isError = false;
+            },
+            // 提交
+            submit: function () {
+                this.initInfo();
+                this.valueChecked();
+                if (!this.isError) {
+                    var params = {};
+                    params.name = this.userName;
+                    params.authority_list = this.authority_list;
+                    if (this.id != '') {
+                        params.id = this.id;
+                    }
+                    $.post('{:url("admin/role/edit")}', params, function (res) {
+                        if(res.code == 1){
+                            layer.msg('创建成功');
+                            window.location.href = "{:url('admin/role/index')}";
+                        }else{
+                            layer.msg(res.msg);
+                        }
+                    })
+                }
+            },
+            getID: function () {
+                var str = window.location.search;
+                var _this = this;
+                if (str != '') {
+                    var arr = str.split('=');
+                    _this.id = arr[1];
+                }
+            }
+        },
+        computed: {
+
+        },
+        mounted: function () {
+            this.initList();
+            this.getID()
+        }
+    })
+
+</script>
+<style>
+    .auth-inner-list {
+        padding: 0 20px;
+    }
+
+    .fix::after {
+        display: block;
+        content: '';
+        clear: both;
+        visibility: hidden;
+    }
+
+    #edit {
+        width: 400px;
+        /* position: relative;  */
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .alert-model {
+        position: absolute;
+        top: 50px;
+        width: 100%;
+        height: 100%;
+    }
+
+    .role-name {
+        border-bottom: 1px solid #333;
+        padding: 1em 0;
+    }
+
+    .authority-list {
+        padding: 1em 0;
+    }
+
+    .alert-content {
+        padding: 1em 0;
+        width: 200px;
+        background-color: #666;
+        text-align: center;
+        color: #fff;
+        margin: 0 auto;
+        border-radius: 5px;
+    }
+
+    .form-title {
+        width: 20%;
+        text-align: right;
+        display: inline-block;
+        float: left;
+    }
+
+    .form-selector {
+        width: 70%;
+        text-align: left;
+        display: inline-block;
+        float: right;
+    }
+
+    label {
+        font-size: 15px;
+        line-height: 2em;
+    }
+
+    input[type=checkbox] {
+        border-color: #fff;
+        width: 15px;
+        height: 15px;
+    }
+
+    input[type=checkbox]:after {
+        content: "";
+        display: block;
+        width: 15px;
+        height: 15px;
+        text-align: center;
+        line-height: 14px;
+        font-size: 16px;
+        color: #fff;
+        border: 2px solid #aaa;
+        background-color: #fff;
+        box-sizing: border-box;
+    }
+
+    input[type=checkbox]:checked:after {
+        border: 2px solid #aaa;
+        background-color: #37AF6E;
+    }
+
+    .sub-btn {
+        background-color: #3879D9;
+        color: #fff;
+        padding: .5em 1em;
+        border: none;
+        border-radius: 5px;
+        margin-top: 25px;
+    }
+
+
+</style>
+{/block}

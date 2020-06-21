@@ -1,0 +1,38 @@
+{extend name="public:base"}
+{block name="content"}
+<div>
+    <table class="layui-table">
+        <thead>
+        <th>编号</th>
+        <th>姓名</th>
+        <th>电话</th>
+        <th>过期时间</th>
+        <th>充值者</th>
+        <th>充值金额</th>
+        <th>充值月数</th>
+        <th>赠送月数</th>
+        <th>充值时间</th>
+        </thead>
+        <tbody>
+        {foreach $list as $v}
+        <tr>
+            <td>{$v.id}</td>
+            <td>{$v.name}</td>
+            <td>{$v.phone}</td>
+            <td>{$v.expire_time}</td>
+            <td>{$v.role_name}</td>
+            <td>{$v.money}</td>
+            <td>{$v.month}</td>
+            <td>{$v.give_month}</td>
+            <td>
+                {$v.created_time}
+            </td>
+        </tr>
+        {/foreach}
+        </tbody>
+    </table>
+    <div>
+        {$pagination}
+    </div>
+</div>
+{/block}

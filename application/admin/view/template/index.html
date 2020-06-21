@@ -1,0 +1,59 @@
+{extend name="public:base"}
+{block name="content"}
+<a class="layui-btn" href="{:url('admin/template/add')}">添加</a>
+<a class="layui-btn" href="{:url('admin/template/clear')}">清理redis缓存<a>
+<table class="layui-table">
+    <thead>
+        <th>标题</th>
+        <th>排序</th>
+        <th>new</th>
+        <th>皮肤</th>
+        <th>简介</th>
+        <th>标题图片</th>
+        <th>标签</th>
+        <th>主题（theme）</th>
+        <th>主图</th>
+        <th>产品介绍图</th>
+        <th>音乐</th>
+        <th>banner图（内容页）</th>
+        <th>默认标题（内容页）</th>
+        <th>默认简介（内容页）</th>
+        <th>默认规则（内容页）</th>
+        <th>默认组织机构介绍（内容页）</th>
+        <th width="100">状态</th>
+        <th>创建时间</th>
+        <th>操作</th>
+    </thead>
+    <tbody>
+        {foreach name="list" key="k" item="v"}
+        <tr>
+            <td>{$v.title}</td>
+            <td>{$v.sort}</td>
+            <td>{$v.is_new ? '是':'否'}</td>
+            <td>{$v.skin}</td>
+            <td>{$v.intro}</td>
+            <td>{$v.image_id}</td>
+            <td>{$v.tag}</td>
+            <td>{$v.theme}</td>
+            <td style="width:100px;word-break:break-all;">{my:image id="v.main_image_id"}</td>
+            <td style="width:100px;word-break:break-all;">{$v.intro_image_ids}</td>
+            <td>{$v.music_id}</td>
+            <td style="width:100px;word-break:break-all;">{$v.banner_image}</td>
+            <td style="width:100px;word-break:break-all;">{$v.default_title}</td>
+            <td style="width:100px;word-break:break-all;">{$v.default_intro}</td>
+            <td style="width:100px;word-break:break-all;">{$v.default_rule}</td>
+            <td style="width:100px;word-break:break-all;">{$v.org_intro}</td>
+            <td>
+                {$v.status_text}
+                <a href="{:url('admin/template/updateStatus')}?id={$v.id}" class="blue">切换状态</a>
+            </td>
+            <td>{$v.created_time}</td>
+            <td>
+                <a class="blue" href="{:url('admin/template/edit')}?id={$v.id}">修改</a>
+            </td>
+        </tr>
+        {/foreach}
+    </tbody>
+</table>
+{my:image id="359"}
+{/block}

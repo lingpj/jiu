@@ -1,0 +1,218 @@
+{extend name="public:base"} {block name="content"}
+<div class="dashboard-page" id="level_two_beg_add">
+    <form action="">
+        <h1>添加二级代理</h1>
+        <div class="layui-form-item">
+            <!-- 二级代理商的id -->
+            <input type="text" v-model="id" name="id" class="layui-hide">
+            <!-- 地域 -->
+            <!-- <div class="layui-form-item">
+                <label for="" class="layui-form-label">地域：</label>
+                <div class="layui-input-block">
+                    <select name="" id="" class="layui-input" v-model="area_id">
+                        <option :value="city.cityid" v-for="city in citylist">{{city.city}}</option>
+                    </select>
+                </div>
+            </div> -->
+            <!-- 邀请码 -->
+            <div class="layui-form-item">
+                    <label class="layui-form-label">邀请码</label>
+                    <div class="layui-input-block">
+                            <input type="number" name="invite_code" required lay-verify="required"  oninput="if(value.length > 10)value=value.slice(0,10)" v-model="invite_code" placeholder="请输入邀请码" autocomplete="off"
+                            class="layui-input">
+                    </div>
+                </div>
+            <!-- 一级代理商 -->
+            <div class="layui-form-item">
+                <label class="layui-form-label">一级代理商</label>
+                <div class="layui-input-block">
+                    <select class="layui-input" name="agent_one_id" v-model="agent_one_id">
+                        <option :value="item.id" v-for="item in agent_one_list">{{item.name}}</option>
+                    </select>
+                </div>
+            </div>
+            <!-- 角色列表 -->
+            <div class="layui-form-item">
+                <label class="layui-form-label">角色</label>
+                <div class="layui-input-block">
+                    <select class="layui-input" name="role_id" v-model="role_id">
+                        <option :value="item.id" v-for="item in role_list">{{item.role_name}}</option>
+                    </select>
+                </div>
+            </div>
+            <label class="layui-form-label">用户名</label>
+            <div class="layui-input-block">
+                <input type="text" name="name" required lay-verify="required" v-model="name" placeholder="请输入用户名，1-10位" autocomplete="off"
+                    class="layui-input">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">密码</label>
+            <div class="layui-input-block">
+                <input type="password" name="password" required lay-verify="required" v-model="password" placeholder="请输入密码，6-20位" autocomplete="off"
+                    class="layui-input">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">电话</label>
+            <div class="layui-input-block">
+                <input type="number" name="phone" required lay-verify="required" v-model="phone" oninput="if(value.length>11)value = value.slice(0,11)"
+                    placeholder="请输入电话" autocomplete="off" class="layui-input">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">备注</label>
+            <div class="layui-input-block">
+                <input type="text" name="note" placeholder="请输入备注" required lay-verify="required" autocomplete="off" class="layui-input"
+                    v-model="note">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <div class="layui-input-block">
+                <!-- <button type="submit" class="layui-btn" lay-submit lay-filter="formDemo">确定</button> -->
+                <a href="javascript:void(0)" class="layui-btn" @click="submit">确定</a>
+                <button type="reset" class="layui-btn layui-btn-primary">重置</button>
+            </div>
+        </div>
+    </form>
+</div>
+<style scoped>
+    h1 {
+        font-size: 36px;
+        padding-left: 50px;
+        padding-bottom: 50px;
+    }
+</style>
+<script>
+    var pageVar = JSON.parse('{$page_var}');
+    console.log(pageVar);
+    var vm = new Vue({
+        el: '#level_two_beg_add',
+        data: {
+            name: pageVar.list.name,
+            phone: pageVar.list.phone,
+            password: pageVar.list.password,
+            note: pageVar.list.note,
+            role_id: pageVar.list.role_id | 1,
+            role_list: pageVar.role_list,
+            agent_one_list: pageVar.agent_one_list,
+            agent_one_id: pageVar.list.agent_one_id ,
+            id: pageVar.list.id,
+            value_status: true,
+            citylist:[],
+            invite_code:pageVar.list.invite_code,
+            // area_id:0
+        },
+        methods: {
+            isValid: function () {
+                var fish = new Fish();
+                if(!this.invite_code||this.invite_code == ''){
+                    layer.msg('请输入邀请码');
+                    this.value_status = false;
+                    return;
+                }else if(this.invite_code.length > 10){
+                    layer.msg('邀请码不能超过10个数字');
+                    this.value_status = false;
+                    return;
+                }
+                if (!this.name || this.name.trim() == '') {
+                    layer.msg('请输入代理商的姓名，1~10个字符');
+                    this.value_status = false;
+                    return;
+                } else if (this.name.length > 10) {
+                    layer.msg('代理商姓名不能超过10个字符');
+                    this.value_status = false;
+                    return;
+                }
+                if (!this.password || this.password == '') {
+                    layer.msg('请输入密码');
+                    this.value_status = false;
+                    return;
+                } else if (this.password.length < 6 || this.password.length > 20) {
+                    layer.msg('密码长度应在6~20个字符之间');
+                    this.value_status = false;
+                    return;
+                }
+                if (!this.phone || this.phone == '') {
+                    layer.msg('请输入代理商的联系电话');
+                    this.value_status = false;
+                    return;
+                } else if (!fish.isPhone(this.phone)) {
+                    layer.msg('请输入正确的联系电话');
+                    this.value_status = false;
+                    return;
+                }
+                if (this.note) {
+                    console.log(this.note.length)
+                    if(this.note.length > 20){
+                        layer.msg('备注信息字数不得多于20字');
+                        this.value_status = false;
+                        return;
+                    }
+                }
+                this.value_status = true;
+            },
+            initparams: function () {
+                var params = {}
+                params.name = this.name;
+                params.phone = this.phone;
+                params.password = this.password;
+                
+                params.note = !this.note?'':this.note;
+                params.role_id = this.role_id;
+                params.agent_one_id = this.agent_one_id;
+                params.id = this.id;
+                // params.area_id = this.area_id;
+                params.invite_code = this.invite_code;
+                return params;
+            },
+            submit: function () {
+                var param = this.initparams();
+                this.isValid();
+                var that = this;
+                console.log(param)
+                if (this.value_status) {
+                    var loading = layer.load(1);
+                    $.post('{:url("admin/agent/leveltwoedit")}', param, function (r) {
+                        layer.close(loading);
+                        if (r.code == 1) {
+                            if(!that.id){
+                                layer.msg('添加成功');
+                            }else{
+                                layer.msg('修改成功')
+                            }
+                            
+                            setTimeout(function () {
+                                location.href = '{:url("admin/agent/leveltwoindex")}';
+                            }, 3000);
+                        } else {
+                            layer.msg(r.msg);
+                        }
+                    })
+                }
+            },
+            // initArea:function(){
+            //     var areas = JSON.parse(bao_provinces);
+            //     var that = this
+            //     var provinceid;
+            //     var prov = this.agent_one_list.find(function(item){
+            //         return that.agent_one_id = item.id
+            //     })
+            //     var provinceid = prov.province_id;
+            //     console.log(provinceid)
+            //     this.citylist = areas[provinceid].children,
+            //     this.area_id = areas[provinceid].children[0].cityid
+            // },
+            // valueChange:function(){
+            //     var agent_one_id = this.agent_one_id;
+            //     console.log(agent_one_id)
+            // }
+        },
+        // mounted:function(){
+        //     this.initArea();
+        // },
+        
+    });
+
+</script>
+{/block}

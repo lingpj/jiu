@@ -1,0 +1,63 @@
+{extend name="public:base"}
+{block name="content"}
+<div>
+    <form method="get">
+    </form>
+    注册会员数：{$total}
+    <table class="layui-table">
+        <thead>
+        <th>ID</th>
+        <th>手机号</th>
+        <th>昵称</th>
+        <th>金币</th>
+        <th>银行金币</th>
+        <th>券</th>
+        <th>注册时间</th>
+        <th>操作</th>
+        <th>修改密码</th>
+        </thead>
+        <tbody>
+        {foreach $list as $v}
+        <tr>
+            <td>{$v.id}</td>
+            <td>{$v.phone}</td>
+            <td>{$v.nickname}</td>
+            <td>{:short_count($v.coin)}</td>
+            <td>
+                {:short_count($v.bank_coin)}
+            </td>
+            <td>
+                {$v.voucher}
+            </td>
+            <td>
+                {$v.created_time}
+            </td>
+            <td>
+                {if $v.is_vip}
+                <a class="layui-btn layui-btn-normal" href="{:url('admin/member/setVip')}?id={$v.id}&set=0">取消VIP</a>
+                {else/}
+                <a class="layui-btn" href="{:url('admin/member/setVip')}?id={$v.id}&set=1">设为VIP</a>
+                {/if}
+            </td>
+            <td>
+                <a href="{:url('admin/member/modifyPassword')}?user_id={$v.id}">修改密码</a>
+            </td>
+        </tr>
+        {/foreach}
+        </tbody>
+    </table>
+    <div>
+        {$pagination}
+    </div>
+    <script>
+        function watch(othis){
+            othis = $(othis);
+            var html = othis.next().html();
+            layer.open({
+                title:'',
+                content:html
+            });
+        }
+    </script>
+</div>
+{/block}

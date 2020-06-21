@@ -1,0 +1,428 @@
+{
+    "frames": {
+        "bandeng_a0001.png": {
+            "frame": {
+                "h": 110,
+                "idx": 0,
+                "w": 73,
+                "x": 152,
+                "y": 236
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 128,
+                "w": 111
+            },
+            "spriteSourceSize": {
+                "h": 110,
+                "w": 73,
+                "x": 19,
+                "y": 9
+            },
+            "trimmed": true
+        },
+        "bandeng_a0002.png": {
+            "frame": {
+                "h": 110,
+                "idx": 0,
+                "w": 72,
+                "x": 298,
+                "y": 239
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 128,
+                "w": 111
+            },
+            "spriteSourceSize": {
+                "h": 110,
+                "w": 72,
+                "x": 19,
+                "y": 9
+            },
+            "trimmed": true
+        },
+        "bandeng_a0003.png": {
+            "frame": {
+                "h": 112,
+                "idx": 0,
+                "w": 71,
+                "x": 226,
+                "y": 239
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 128,
+                "w": 111
+            },
+            "spriteSourceSize": {
+                "h": 112,
+                "w": 71,
+                "x": 20,
+                "y": 8
+            },
+            "trimmed": true
+        },
+        "bandeng_a0004.png": {
+            "frame": {
+                "h": 114,
+                "idx": 0,
+                "w": 72,
+                "x": 424,
+                "y": 237
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 128,
+                "w": 111
+            },
+            "spriteSourceSize": {
+                "h": 114,
+                "w": 72,
+                "x": 19,
+                "y": 7
+            },
+            "trimmed": true
+        },
+        "bandeng_a0005.png": {
+            "frame": {
+                "h": 116,
+                "idx": 0,
+                "w": 75,
+                "x": 424,
+                "y": 120
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 128,
+                "w": 111
+            },
+            "spriteSourceSize": {
+                "h": 116,
+                "w": 75,
+                "x": 18,
+                "y": 6
+            },
+            "trimmed": true
+        },
+        "bandeng_a0006.png": {
+            "frame": {
+                "h": 118,
+                "idx": 0,
+                "w": 75,
+                "x": 348,
+                "y": 120
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 128,
+                "w": 111
+            },
+            "spriteSourceSize": {
+                "h": 118,
+                "w": 75,
+                "x": 18,
+                "y": 5
+            },
+            "trimmed": true
+        },
+        "bandeng_a0007.png": {
+            "frame": {
+                "h": 119,
+                "idx": 0,
+                "w": 73,
+                "x": 430,
+                "y": 0
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 128,
+                "w": 111
+            },
+            "spriteSourceSize": {
+                "h": 119,
+                "w": 73,
+                "x": 19,
+                "y": 4
+            },
+            "trimmed": true
+        },
+        "bandeng_a0008.png": {
+            "frame": {
+                "h": 119,
+                "idx": 0,
+                "w": 68,
+                "x": 361,
+                "y": 0
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 128,
+                "w": 111
+            },
+            "spriteSourceSize": {
+                "h": 119,
+                "w": 68,
+                "x": 21,
+                "y": 4
+            },
+            "trimmed": true
+        },
+        "bandeng_a0009.png": {
+            "frame": {
+                "h": 118,
+                "idx": 0,
+                "w": 59,
+                "x": 301,
+                "y": 0
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 128,
+                "w": 111
+            },
+            "spriteSourceSize": {
+                "h": 118,
+                "w": 59,
+                "x": 26,
+                "y": 5
+            },
+            "trimmed": true
+        },
+        "bandeng_a0010.png": {
+            "frame": {
+                "h": 116,
+                "idx": 0,
+                "w": 51,
+                "x": 296,
+                "y": 119
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 128,
+                "w": 111
+            },
+            "spriteSourceSize": {
+                "h": 116,
+                "w": 51,
+                "x": 30,
+                "y": 6
+            },
+            "trimmed": true
+        },
+        "bandeng_a0011.png": {
+            "frame": {
+                "h": 118,
+                "idx": 0,
+                "w": 57,
+                "x": 0,
+                "y": 0
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 128,
+                "w": 111
+            },
+            "spriteSourceSize": {
+                "h": 118,
+                "w": 57,
+                "x": 27,
+                "y": 5
+            },
+            "trimmed": true
+        },
+        "bandeng_a0012.png": {
+            "frame": {
+                "h": 119,
+                "idx": 0,
+                "w": 67,
+                "x": 228,
+                "y": 119
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 128,
+                "w": 111
+            },
+            "spriteSourceSize": {
+                "h": 119,
+                "w": 67,
+                "x": 22,
+                "y": 4
+            },
+            "trimmed": true
+        },
+        "bandeng_a0013.png": {
+            "frame": {
+                "h": 118,
+                "idx": 0,
+                "w": 72,
+                "x": 228,
+                "y": 0
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 128,
+                "w": 111
+            },
+            "spriteSourceSize": {
+                "h": 118,
+                "w": 72,
+                "x": 19,
+                "y": 5
+            },
+            "trimmed": true
+        },
+        "bandeng_a0014.png": {
+            "frame": {
+                "h": 118,
+                "idx": 0,
+                "w": 75,
+                "x": 152,
+                "y": 117
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 128,
+                "w": 111
+            },
+            "spriteSourceSize": {
+                "h": 118,
+                "w": 75,
+                "x": 18,
+                "y": 5
+            },
+            "trimmed": true
+        },
+        "bandeng_a0015.png": {
+            "frame": {
+                "h": 116,
+                "idx": 0,
+                "w": 75,
+                "x": 151,
+                "y": 0
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 128,
+                "w": 111
+            },
+            "spriteSourceSize": {
+                "h": 116,
+                "w": 75,
+                "x": 18,
+                "y": 6
+            },
+            "trimmed": true
+        },
+        "bandeng_a0016.png": {
+            "frame": {
+                "h": 114,
+                "idx": 0,
+                "w": 73,
+                "x": 77,
+                "y": 115
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 128,
+                "w": 111
+            },
+            "spriteSourceSize": {
+                "h": 114,
+                "w": 73,
+                "x": 19,
+                "y": 7
+            },
+            "trimmed": true
+        },
+        "bandeng_a0017.png": {
+            "frame": {
+                "h": 116,
+                "idx": 0,
+                "w": 75,
+                "x": 76,
+                "y": 233
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 128,
+                "w": 111
+            },
+            "spriteSourceSize": {
+                "h": 116,
+                "w": 75,
+                "x": 18,
+                "y": 6
+            },
+            "trimmed": true
+        },
+        "bandeng_a0018.png": {
+            "frame": {
+                "h": 114,
+                "idx": 0,
+                "w": 75,
+                "x": 0,
+                "y": 233
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 128,
+                "w": 111
+            },
+            "spriteSourceSize": {
+                "h": 114,
+                "w": 75,
+                "x": 18,
+                "y": 7
+            },
+            "trimmed": true
+        },
+        "bandeng_a0019.png": {
+            "frame": {
+                "h": 114,
+                "idx": 0,
+                "w": 75,
+                "x": 58,
+                "y": 0
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 128,
+                "w": 111
+            },
+            "spriteSourceSize": {
+                "h": 114,
+                "w": 75,
+                "x": 18,
+                "y": 7
+            },
+            "trimmed": true
+        },
+        "bandeng_a0020.png": {
+            "frame": {
+                "h": 113,
+                "idx": 0,
+                "w": 76,
+                "x": 0,
+                "y": 119
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 128,
+                "w": 111
+            },
+            "spriteSourceSize": {
+                "h": 113,
+                "w": 76,
+                "x": 17,
+                "y": 7
+            },
+            "trimmed": true
+        }
+    },
+    "meta": {
+        "image": "7.png",
+        "prefix": "7/"
+    }
+}

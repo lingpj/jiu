@@ -1,0 +1,134 @@
+{
+    "frames": {
+        "avatar.png": {
+            "frame": {
+                "h": 120,
+                "idx": 0,
+                "w": 120,
+                "x": 0,
+                "y": 88
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 120,
+                "w": 120
+            },
+            "spriteSourceSize": {
+                "h": 120,
+                "w": 120,
+                "x": 0,
+                "y": 0
+            },
+            "trimmed": false
+        },
+        "coupons.png": {
+            "frame": {
+                "h": 52,
+                "idx": 0,
+                "w": 56,
+                "x": 121,
+                "y": 88
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 52,
+                "w": 56
+            },
+            "spriteSourceSize": {
+                "h": 52,
+                "w": 56,
+                "x": 0,
+                "y": 0
+            },
+            "trimmed": false
+        },
+        "gold.png": {
+            "frame": {
+                "h": 57,
+                "idx": 0,
+                "w": 55,
+                "x": 202,
+                "y": 0
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 57,
+                "w": 55
+            },
+            "spriteSourceSize": {
+                "h": 57,
+                "w": 55,
+                "x": 0,
+                "y": 0
+            },
+            "trimmed": false
+        },
+        "goldbg.png": {
+            "frame": {
+                "h": 87,
+                "idx": 0,
+                "w": 201,
+                "x": 0,
+                "y": 0
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 87,
+                "w": 201
+            },
+            "spriteSourceSize": {
+                "h": 87,
+                "w": 201,
+                "x": 0,
+                "y": 0
+            },
+            "trimmed": false
+        },
+        "personaltext.png": {
+            "frame": {
+                "h": 58,
+                "idx": 0,
+                "w": 187,
+                "x": 0,
+                "y": 209
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 58,
+                "w": 187
+            },
+            "spriteSourceSize": {
+                "h": 58,
+                "w": 187,
+                "x": 0,
+                "y": 0
+            },
+            "trimmed": false
+        },
+        "shut.png": {
+            "frame": {
+                "h": 80,
+                "idx": 0,
+                "w": 79,
+                "x": 188,
+                "y": 88
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 80,
+                "w": 79
+            },
+            "spriteSourceSize": {
+                "h": 80,
+                "w": 79,
+                "x": 0,
+                "y": 0
+            },
+            "trimmed": false
+        }
+    },
+    "meta": {
+        "image": "userinfo.png",
+        "prefix": "comp/loaded/userinfo/"
+    }
+}

@@ -1,0 +1,206 @@
+{extend name="public:base"} {block name="content"}
+<script src="/static/js/qrcode.min.js"></script>
+<div>
+    <form method="get" class="layui-form">
+        <div class="layui-form-item2">
+            <label>按手机号搜索</label>
+            <input type="text" name="phone" class="layui-input-block" value="{$phone}" />
+            <button type="button" class="layui-btn layui-btn-primary" onclick="$(this).prev().val('').parent().parent().submit();">清除</button>
+            <label>按参与人数排序</label>
+            <input type="checkbox" name="sort_joiner" value="1" {if $sort_joiner}checked{/if}/>
+            <button class="layui-btn">确定</button>
+        </div>
+    </form>
+    <table class="layui-table">
+        <thead>
+            <th>编号</th>
+            <th width="200">标题</th>
+            <th>二维码(点击放大)</th>
+            <th width="200">商家手机</th>
+            <th>访问量</th>
+            <th>分享</th>
+            <th>参与者</th>
+            <th>创建时间</th>
+            <th>开始时间</th>
+            <th>结束时间</th>
+            <th>操作</th>
+        </thead>
+        <tbody>
+            {foreach $list as $v}
+            <tr>
+                <td>{$v.id}</td>
+                <td>{$v.title}</td>
+                <td onclick="enlarge(this)">
+                    <img data-src="<?php $uri = whole_url_raw('index/activity/index').'?tag='.$v['tag'].'&id='.$v['id'];echo $uri; ?>" />
+                </td>
+                <td>{$v.phone}</td>
+                <td>{$v.page_view}</td>
+                <td>{$v.share}</td>
+                <td>{$v.joiner}</td>
+                <td>{$v.created_time}</td>
+                <td>
+                    {$v.start_time}
+                </td>
+                <td>
+                    {$v.end_time}
+                </td>
+                <td>
+                    <button class="layui-btn" onclick="changedata('{$v.id}','{$v.page_view}','{$v.share}')" type="button">修改统计</button>
+                </td>
+            </tr>
+            {/foreach}
+        </tbody>
+    </table>
+    <div>
+        {$pagination}
+    </div>
+</div>
+<style>
+    td img{
+        width: 20px;
+    }
+</style>
+<script>
+
+    $(document).ready(function(){
+        //init form
+        layui.form().render();
+        //init qr code
+        $('img').each(function(index,ele){
+            if($(ele).attr('data-src')){
+                new QRCode($(ele).parent().get(0), $(ele).attr('data-src'));
+            }
+        });
+    });
+
+    function enlarge(othis){
+        othis = $(othis);
+        var img = othis.find('img').eq(1);
+        if(img.width() < 200){
+           img.width(200);
+        }else{
+            img.width(20);
+        }
+    }
+
+    function temp(viewnum, sharenum) {
+        var tpl = `<form class="">
+                <div class = "layui-form-input">
+                    <label class="layui-form-label">活动浏览量</label>
+                    <input class = "layui-input"  name="page_view" type = "number" onkeyup="if(value.length > 6)value=value.slice(0,6)" value ="${viewnum}">
+                </div>
+                <div class = "layui-form-input">
+                    <label class="layui-form-label">活动分享量</label>
+                    <input class = "layui-input" name="share" type = "number" onkeyup="if(value.length > 6)value=value.slice(0,6)" value ="${sharenum}">
+                </div>
+                </form>`;
+        return tpl
+    }
+
+    // var valueStatus = true;
+    // function checkValue(str, msg) {
+    //     console.log('test' + msg)
+    //     if (str == '') {
+    //         layer.msg(msg + '不能为空');
+    //         valueStatus = false;
+    //         return;
+    //     } else if (str * 1 < 0) {
+    //         layer.msg(msg + '不能为负');
+    //         valueStatus = false;
+    //         return;
+    //     } else if (str * 1 != 0) {
+    //         if (str.slice(0, 1) == '0') {
+    //             layer.msg(msg + '不能以0开头');
+    //             valueStatus = false;
+    //             return;
+    //         }
+    //     } else if (Math.floor(str * 1) != str * 1) {
+    //         console.log('0000');
+    //         layer.msg(msg + '不能为小数');
+    //         valueStatus = false;
+    //         return;
+    //     } else {
+    //         valueStatus = true;
+    //     }
+    // }
+    function changedata(id, viewnum, sharenum) {
+        layer.open({
+            title: '修改统计',
+            content: temp(viewnum, sharenum),
+            btn: ['取消', '确定'],
+            closeBtn: 0,
+            btn1: function (index) {
+                layer.close(index);
+            },
+            btn2: function (index) {
+                var valueStatus = true;
+                var fish = new Fish;
+                var pageView = $('input[name = "page_view"]').val();
+                var shareNum = $('input[name = share]').val();
+                if (pageView == '') {
+                    layer.msg('访问量不能为空');
+                    valueStatus = false;
+                    return;
+                } else if (pageView * 1 < 0) {
+                    layer.msg('访问量不能为负');
+                    valueStatus = false;
+                    return;
+                } else if (!fish.isInteger(pageView)) {
+                    layer.msg('访问量不能为小数');
+                    valueStatus = false;
+                    return;
+                } else if (pageView * 1 != 0) {
+                    if (pageView.slice(0, 1) == '0') {
+                        layer.msg('访问量不能以0开头');
+                        valueStatus = false;
+                        return;
+                    }
+                } else {
+                    valueStatus = true;
+                }
+                if (shareNum == '') {
+                    layer.msg('分享量不能为空');
+                    valueStatus = false;
+                    return;
+                } else if (shareNum * 1 < 0) {
+                    layer.msg('分享量不能为负');
+                    valueStatus = false;
+                    return;
+                } else if (!fish.isInteger(shareNum)) {
+                    layer.msg('分享量不能为小数');
+                    valueStatus = false;
+                    return;
+                } else if (shareNum * 1 != 0) {
+                    if (shareNum.slice(0, 1) == '0') {
+                        layer.msg('分享量不能以0开头');
+                        valueStatus = false;
+                        return;
+                    }
+                } else {
+                    valueStatus = true;
+                }
+                if (valueStatus == true) {
+                    console.log('1111')
+                    var params = {};
+                    params.activity_id = id * 1;
+                    params.page_view = pageView * 1;
+                    params.share = shareNum * 1;
+                    $.post('{:url("admin/activity/editcount")}', params, function (res) {
+                        if (res.code == 1) {
+                            layer.msg('修改成功');
+                            setTimeout(function () {
+                                window.location.href = '{:url("admin/activity/index")}'
+                            }, 1000);
+
+                        } else {
+                            layer.msg(res.msg);
+                        }
+                    })
+                }
+
+            }
+        })
+    }
+
+</script>
+{/block}

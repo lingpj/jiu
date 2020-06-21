@@ -1,0 +1,197 @@
+{
+    "frames": {
+        "dao.png": {
+            "frame": {
+                "h": 41,
+                "idx": 0,
+                "w": 86,
+                "x": 185,
+                "y": 388
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 41,
+                "w": 86
+            },
+            "spriteSourceSize": {
+                "h": 41,
+                "w": 86,
+                "x": 0,
+                "y": 0
+            },
+            "trimmed": false
+        },
+        "shun.png": {
+            "frame": {
+                "h": 41,
+                "idx": 0,
+                "w": 82,
+                "x": 272,
+                "y": 388
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 41,
+                "w": 82
+            },
+            "spriteSourceSize": {
+                "h": 41,
+                "w": 82,
+                "x": 0,
+                "y": 0
+            },
+            "trimmed": false
+        },
+        "tian.png": {
+            "frame": {
+                "h": 41,
+                "idx": 0,
+                "w": 79,
+                "x": 355,
+                "y": 388
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 41,
+                "w": 79
+            },
+            "spriteSourceSize": {
+                "h": 41,
+                "w": 79,
+                "x": 0,
+                "y": 0
+            },
+            "trimmed": false
+        },
+        "tishibg.png": {
+            "frame": {
+                "h": 69,
+                "idx": 0,
+                "w": 295,
+                "x": 185,
+                "y": 286
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 69,
+                "w": 295
+            },
+            "spriteSourceSize": {
+                "h": 69,
+                "w": 295,
+                "x": 0,
+                "y": 0
+            },
+            "trimmed": false
+        },
+        "you.png": {
+            "frame": {
+                "h": 285,
+                "idx": 0,
+                "w": 188,
+                "x": 0,
+                "y": 0
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 285,
+                "w": 188
+            },
+            "spriteSourceSize": {
+                "h": 285,
+                "w": 188,
+                "x": 0,
+                "y": 0
+            },
+            "trimmed": false
+        },
+        "youshang.png": {
+            "frame": {
+                "h": 31,
+                "idx": 0,
+                "w": 145,
+                "x": 332,
+                "y": 356
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 31,
+                "w": 145
+            },
+            "spriteSourceSize": {
+                "h": 31,
+                "w": 145,
+                "x": 0,
+                "y": 0
+            },
+            "trimmed": false
+        },
+        "zhong.png": {
+            "frame": {
+                "h": 149,
+                "idx": 0,
+                "w": 184,
+                "x": 0,
+                "y": 286
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 149,
+                "w": 184
+            },
+            "spriteSourceSize": {
+                "h": 149,
+                "w": 184,
+                "x": 0,
+                "y": 0
+            },
+            "trimmed": false
+        },
+        "zuo.png": {
+            "frame": {
+                "h": 285,
+                "idx": 0,
+                "w": 188,
+                "x": 189,
+                "y": 0
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 285,
+                "w": 188
+            },
+            "spriteSourceSize": {
+                "h": 285,
+                "w": 188,
+                "x": 0,
+                "y": 0
+            },
+            "trimmed": false
+        },
+        "zuoshang.png": {
+            "frame": {
+                "h": 31,
+                "idx": 0,
+                "w": 146,
+                "x": 185,
+                "y": 356
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 31,
+                "w": 146
+            },
+            "spriteSourceSize": {
+                "h": 31,
+                "w": 146,
+                "x": 0,
+                "y": 0
+            },
+            "trimmed": false
+        }
+    },
+    "meta": {
+        "image": "datianjiu2.png",
+        "prefix": "comp/datianjiu2/"
+    }
+}

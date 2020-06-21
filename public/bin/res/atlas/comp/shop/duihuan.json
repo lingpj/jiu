@@ -1,0 +1,71 @@
+{
+    "frames": {
+        "box1.png": {
+            "frame": {
+                "h": 75,
+                "idx": 0,
+                "w": 370,
+                "x": 0,
+                "y": 0
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 75,
+                "w": 370
+            },
+            "spriteSourceSize": {
+                "h": 75,
+                "w": 370,
+                "x": 0,
+                "y": 0
+            },
+            "trimmed": false
+        },
+        "fanhui.png": {
+            "frame": {
+                "h": 61,
+                "idx": 0,
+                "w": 57,
+                "x": 247,
+                "y": 76
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 61,
+                "w": 57
+            },
+            "spriteSourceSize": {
+                "h": 61,
+                "w": 57,
+                "x": 0,
+                "y": 0
+            },
+            "trimmed": false
+        },
+        "queren.png": {
+            "frame": {
+                "h": 98,
+                "idx": 0,
+                "w": 246,
+                "x": 0,
+                "y": 76
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 98,
+                "w": 246
+            },
+            "spriteSourceSize": {
+                "h": 98,
+                "w": 246,
+                "x": 0,
+                "y": 0
+            },
+            "trimmed": false
+        }
+    },
+    "meta": {
+        "image": "duihuan.png",
+        "prefix": "comp/shop/duihuan/"
+    }
+}

@@ -1,0 +1,51 @@
+{extend name="public:base"}
+{block name="content"}
+<div class="dashboard-page">
+    <a class="layui-btn" href="{:url('admin/agent/levelOneEdit')}">添加</a>
+    <table class="layui-table">
+        <thead>
+            <th>姓名</th>
+            <th>邀请码</th>
+            <th>角色</th>
+            <th>手机</th>
+            <th>备注</th>
+            <th>创建时间</th>
+            <th>二级代理商</th>
+            <th>修改</th>
+        </thead>
+        <tbody>
+            {foreach $list as $v}
+            <tr>
+                <td>{$v.name}</td>
+                <td>{$v.invite_code}</td>
+                <td>{$v.role_name}</td>
+                <td>{$v.phone}</td>
+                <td>{$v.note}</td>
+                <td>{$v.created_time}</td>
+                <td>
+                    {if $v.level_two_list}
+                        <button onclick="watch(this)" type="button" class="layui-btn">查看</button>
+                        {foreach name="v.level_two_list" key="k" item="i"}
+                        <div class="level-two layui-hide">
+                            <p>{$k + 1}) 姓名：{$i.name} 电话：{$i.phone} 备注：{$i.note} <span class="gray">{$i.created_time}</span></p>
+                        </div>
+                        {/foreach}
+                    {/if}
+                </td>
+                <td><a href="{:url('admin/agent/levelOneEdit')}?id={$v.id}">编辑</a></td>
+            </tr>
+            {/foreach}
+        </tbody>
+    </table>
+</div>
+<script>
+    function watch(othis){
+        othis = $(othis);
+        var html = othis.next().html();
+        layer.open({
+            title:'二级代理',
+            content:html
+        });
+    }
+</script>
+{/block}

@@ -1,0 +1,659 @@
+{
+    "frames": {
+        "jiazai_00000.png": {
+            "frame": {
+                "h": 173,
+                "idx": 0,
+                "w": 168,
+                "x": 676,
+                "y": 174
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 303,
+                "w": 303
+            },
+            "spriteSourceSize": {
+                "h": 173,
+                "w": 168,
+                "x": 65,
+                "y": 68
+            },
+            "trimmed": true
+        },
+        "jiazai_00001.png": {
+            "frame": {
+                "h": 173,
+                "idx": 0,
+                "w": 168,
+                "x": 845,
+                "y": 691
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 303,
+                "w": 303
+            },
+            "spriteSourceSize": {
+                "h": 173,
+                "w": 168,
+                "x": 65,
+                "y": 68
+            },
+            "trimmed": true
+        },
+        "jiazai_00002.png": {
+            "frame": {
+                "h": 172,
+                "idx": 0,
+                "w": 168,
+                "x": 169,
+                "y": 863
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 303,
+                "w": 303
+            },
+            "spriteSourceSize": {
+                "h": 172,
+                "w": 168,
+                "x": 65,
+                "y": 68
+            },
+            "trimmed": true
+        },
+        "jiazai_00003.png": {
+            "frame": {
+                "h": 173,
+                "idx": 0,
+                "w": 168,
+                "x": 338,
+                "y": 695
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 303,
+                "w": 303
+            },
+            "spriteSourceSize": {
+                "h": 173,
+                "w": 168,
+                "x": 65,
+                "y": 68
+            },
+            "trimmed": true
+        },
+        "jiazai_00004.png": {
+            "frame": {
+                "h": 173,
+                "idx": 0,
+                "w": 168,
+                "x": 507,
+                "y": 691
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 303,
+                "w": 303
+            },
+            "spriteSourceSize": {
+                "h": 173,
+                "w": 168,
+                "x": 65,
+                "y": 68
+            },
+            "trimmed": true
+        },
+        "jiazai_00005.png": {
+            "frame": {
+                "h": 171,
+                "idx": 0,
+                "w": 168,
+                "x": 676,
+                "y": 520
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 303,
+                "w": 303
+            },
+            "spriteSourceSize": {
+                "h": 171,
+                "w": 168,
+                "x": 65,
+                "y": 68
+            },
+            "trimmed": true
+        },
+        "jiazai_00006.png": {
+            "frame": {
+                "h": 172,
+                "idx": 0,
+                "w": 168,
+                "x": 845,
+                "y": 518
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 303,
+                "w": 303
+            },
+            "spriteSourceSize": {
+                "h": 172,
+                "w": 168,
+                "x": 65,
+                "y": 68
+            },
+            "trimmed": true
+        },
+        "jiazai_00007.png": {
+            "frame": {
+                "h": 172,
+                "idx": 0,
+                "w": 168,
+                "x": 169,
+                "y": 690
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 303,
+                "w": 303
+            },
+            "spriteSourceSize": {
+                "h": 172,
+                "w": 168,
+                "x": 65,
+                "y": 68
+            },
+            "trimmed": true
+        },
+        "jiazai_00008.png": {
+            "frame": {
+                "h": 173,
+                "idx": 0,
+                "w": 168,
+                "x": 338,
+                "y": 521
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 303,
+                "w": 303
+            },
+            "spriteSourceSize": {
+                "h": 173,
+                "w": 168,
+                "x": 65,
+                "y": 68
+            },
+            "trimmed": true
+        },
+        "jiazai_00009.png": {
+            "frame": {
+                "h": 172,
+                "idx": 0,
+                "w": 168,
+                "x": 507,
+                "y": 518
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 303,
+                "w": 303
+            },
+            "spriteSourceSize": {
+                "h": 172,
+                "w": 168,
+                "x": 65,
+                "y": 68
+            },
+            "trimmed": true
+        },
+        "jiazai_00010.png": {
+            "frame": {
+                "h": 171,
+                "idx": 0,
+                "w": 168,
+                "x": 676,
+                "y": 348
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 303,
+                "w": 303
+            },
+            "spriteSourceSize": {
+                "h": 171,
+                "w": 168,
+                "x": 65,
+                "y": 68
+            },
+            "trimmed": true
+        },
+        "jiazai_00011.png": {
+            "frame": {
+                "h": 171,
+                "idx": 0,
+                "w": 168,
+                "x": 845,
+                "y": 346
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 303,
+                "w": 303
+            },
+            "spriteSourceSize": {
+                "h": 171,
+                "w": 168,
+                "x": 65,
+                "y": 68
+            },
+            "trimmed": true
+        },
+        "jiazai_00012.png": {
+            "frame": {
+                "h": 171,
+                "idx": 0,
+                "w": 168,
+                "x": 169,
+                "y": 518
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 303,
+                "w": 303
+            },
+            "spriteSourceSize": {
+                "h": 171,
+                "w": 168,
+                "x": 65,
+                "y": 68
+            },
+            "trimmed": true
+        },
+        "jiazai_00013.png": {
+            "frame": {
+                "h": 173,
+                "idx": 0,
+                "w": 168,
+                "x": 338,
+                "y": 347
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 303,
+                "w": 303
+            },
+            "spriteSourceSize": {
+                "h": 173,
+                "w": 168,
+                "x": 65,
+                "y": 68
+            },
+            "trimmed": true
+        },
+        "jiazai_00014.png": {
+            "frame": {
+                "h": 172,
+                "idx": 0,
+                "w": 168,
+                "x": 507,
+                "y": 345
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 303,
+                "w": 303
+            },
+            "spriteSourceSize": {
+                "h": 172,
+                "w": 168,
+                "x": 65,
+                "y": 68
+            },
+            "trimmed": true
+        },
+        "jiazai_00015.png": {
+            "frame": {
+                "h": 172,
+                "idx": 0,
+                "w": 168,
+                "x": 0,
+                "y": 0
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 303,
+                "w": 303
+            },
+            "spriteSourceSize": {
+                "h": 172,
+                "w": 168,
+                "x": 65,
+                "y": 68
+            },
+            "trimmed": true
+        },
+        "jiazai_00016.png": {
+            "frame": {
+                "h": 172,
+                "idx": 0,
+                "w": 168,
+                "x": 845,
+                "y": 173
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 303,
+                "w": 303
+            },
+            "spriteSourceSize": {
+                "h": 172,
+                "w": 168,
+                "x": 65,
+                "y": 68
+            },
+            "trimmed": true
+        },
+        "jiazai_00017.png": {
+            "frame": {
+                "h": 172,
+                "idx": 0,
+                "w": 168,
+                "x": 845,
+                "y": 0
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 303,
+                "w": 303
+            },
+            "spriteSourceSize": {
+                "h": 172,
+                "w": 168,
+                "x": 65,
+                "y": 68
+            },
+            "trimmed": true
+        },
+        "jiazai_00018.png": {
+            "frame": {
+                "h": 171,
+                "idx": 0,
+                "w": 168,
+                "x": 169,
+                "y": 346
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 303,
+                "w": 303
+            },
+            "spriteSourceSize": {
+                "h": 171,
+                "w": 168,
+                "x": 65,
+                "y": 68
+            },
+            "trimmed": true
+        },
+        "jiazai_00019.png": {
+            "frame": {
+                "h": 173,
+                "idx": 0,
+                "w": 168,
+                "x": 338,
+                "y": 173
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 303,
+                "w": 303
+            },
+            "spriteSourceSize": {
+                "h": 173,
+                "w": 168,
+                "x": 65,
+                "y": 68
+            },
+            "trimmed": true
+        },
+        "jiazai_00020.png": {
+            "frame": {
+                "h": 172,
+                "idx": 0,
+                "w": 168,
+                "x": 507,
+                "y": 172
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 303,
+                "w": 303
+            },
+            "spriteSourceSize": {
+                "h": 172,
+                "w": 168,
+                "x": 65,
+                "y": 68
+            },
+            "trimmed": true
+        },
+        "jiazai_00021.png": {
+            "frame": {
+                "h": 173,
+                "idx": 0,
+                "w": 168,
+                "x": 676,
+                "y": 0
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 303,
+                "w": 303
+            },
+            "spriteSourceSize": {
+                "h": 173,
+                "w": 168,
+                "x": 65,
+                "y": 68
+            },
+            "trimmed": true
+        },
+        "jiazai_00022.png": {
+            "frame": {
+                "h": 171,
+                "idx": 0,
+                "w": 168,
+                "x": 507,
+                "y": 0
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 303,
+                "w": 303
+            },
+            "spriteSourceSize": {
+                "h": 171,
+                "w": 168,
+                "x": 65,
+                "y": 68
+            },
+            "trimmed": true
+        },
+        "jiazai_00023.png": {
+            "frame": {
+                "h": 173,
+                "idx": 0,
+                "w": 168,
+                "x": 169,
+                "y": 172
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 303,
+                "w": 303
+            },
+            "spriteSourceSize": {
+                "h": 173,
+                "w": 168,
+                "x": 65,
+                "y": 68
+            },
+            "trimmed": true
+        },
+        "jiazai_00024.png": {
+            "frame": {
+                "h": 172,
+                "idx": 0,
+                "w": 168,
+                "x": 338,
+                "y": 0
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 303,
+                "w": 303
+            },
+            "spriteSourceSize": {
+                "h": 172,
+                "w": 168,
+                "x": 65,
+                "y": 68
+            },
+            "trimmed": true
+        },
+        "jiazai_00025.png": {
+            "frame": {
+                "h": 171,
+                "idx": 0,
+                "w": 168,
+                "x": 169,
+                "y": 0
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 303,
+                "w": 303
+            },
+            "spriteSourceSize": {
+                "h": 171,
+                "w": 168,
+                "x": 65,
+                "y": 68
+            },
+            "trimmed": true
+        },
+        "jiazai_00026.png": {
+            "frame": {
+                "h": 172,
+                "idx": 0,
+                "w": 168,
+                "x": 0,
+                "y": 865
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 303,
+                "w": 303
+            },
+            "spriteSourceSize": {
+                "h": 172,
+                "w": 168,
+                "x": 65,
+                "y": 68
+            },
+            "trimmed": true
+        },
+        "jiazai_00027.png": {
+            "frame": {
+                "h": 171,
+                "idx": 0,
+                "w": 168,
+                "x": 0,
+                "y": 693
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 303,
+                "w": 303
+            },
+            "spriteSourceSize": {
+                "h": 171,
+                "w": 168,
+                "x": 65,
+                "y": 68
+            },
+            "trimmed": true
+        },
+        "jiazai_00028.png": {
+            "frame": {
+                "h": 172,
+                "idx": 0,
+                "w": 168,
+                "x": 0,
+                "y": 520
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 303,
+                "w": 303
+            },
+            "spriteSourceSize": {
+                "h": 172,
+                "w": 168,
+                "x": 65,
+                "y": 68
+            },
+            "trimmed": true
+        },
+        "jiazai_00029.png": {
+            "frame": {
+                "h": 173,
+                "idx": 0,
+                "w": 168,
+                "x": 0,
+                "y": 346
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 303,
+                "w": 303
+            },
+            "spriteSourceSize": {
+                "h": 173,
+                "w": 168,
+                "x": 65,
+                "y": 68
+            },
+            "trimmed": true
+        },
+        "jiazai_00030.png": {
+            "frame": {
+                "h": 172,
+                "idx": 0,
+                "w": 168,
+                "x": 0,
+                "y": 173
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 303,
+                "w": 303
+            },
+            "spriteSourceSize": {
+                "h": 172,
+                "w": 168,
+                "x": 65,
+                "y": 68
+            },
+            "trimmed": true
+        }
+    },
+    "meta": {
+        "image": "1.png",
+        "prefix": "1/"
+    }
+}

@@ -1,0 +1,196 @@
+{extend name="public:base"} {block name="content"}
+<script>
+    var pageVar = JSON.parse('{$page_var}');
+    console.log(pageVar);
+
+</script>
+<div class="dashboard-page">
+    <div id="levelOne">
+        <!-- <div class="layui-form-item">
+            <label for="" class="layui-form-label">地域：</label>
+            <div class="layui-form-block input-content">
+                <select class="layui-input" v-model="areaid">
+                    <option v-for="areas in initAreas" :value="areas.provinceid">{{areas.province}}</option>
+                </select>
+            </div>
+        </div> -->
+        <div class="layui-form-item">
+                <label class="layui-form-label" for="">邀请码：</label>
+                <div class="layui-form-block input-content">
+                    <input class="layui-input" type="number" v-model="invite_code" placeholder="请输入邀请码，不多于10位数" oninput="if(value.length > 10)value=value.slice(0,10)">
+                </div>
+            </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label" for="">姓名：</label>
+            <div class="layui-form-block input-content">
+                <input class="layui-input" type="text" v-model="name">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label" for="">密码：</label>
+            <div class="layui-form-block input-content">
+                <input class="layui-input" type="password" v-model="password">
+            </div>
+        </div>
+        <div class="content fix">
+            <label class="layui-form-label" for="">电话：</label>
+            <div class="layui-form-block input-content">
+                <input class="layui-input" type="number" oninput="if(value.length>11)value=value.slice(0,11)" v-model="phone">
+            </div>
+        </div>
+        <div class="content fix">
+            <label class="layui-form-label" for="">备注：</label>
+            <div class="layui-form-block input-content">
+                <input class="layui-input" type="text" v-model="note">
+            </div>
+        </div>
+        <div class="content fix">
+            <label class="layui-form-label" for="">角色：</label>
+            <div class="layui-form-block input-content">
+                <select name="" id="" class="layui-input" v-model="role_id">
+                    <option :value="item.id" v-for="item in role_list">{{item.role_name}}</option>
+                </select>
+            </div>
+        </div>
+        <div class="btn-container">
+            <button class="layui-btn layui-btn-norma" @click="submit">提交</button>
+        </div>
+    </div>
+</div>
+<script>
+    var vm = new Vue({
+        el: '#levelOne',
+        data: {
+            name: pageVar.name,
+            password: pageVar.password,
+            phone: pageVar.phone,
+            note: pageVar.note,
+            role_list: pageVar.role_list,
+            role_id: pageVar.role_id | 1,
+            isError: false,
+            id: pageVar.id,
+            invite_code:pageVar.invite_code,
+            // areaid:pageVar.area_id ,
+        },
+        methods: {
+            checkParams: function () {
+                var fish = new Fish();
+                if(!this.invite_code||this.invite_code == ''){
+                    layer.msg('请输入邀请码');
+                    this.isError = true;
+                    return;
+                }
+                if (!this.name || this.name.trim() == '') {
+                    layer.msg('请输入姓名');
+                    this.isError = true;
+                    return;
+                }
+                if (!this.password || this.password == '') {
+                    layer.msg('请输入密码');
+                    this.isError = true;
+                    return;
+                } else if (!fish.lengthBetween(this.password, 6, 20)) {
+                    layer.msg('密码长度在6~20个字符');
+                    this.isError = true;
+                    return;
+                }
+                if (!this.phone || this.phone.trim() == '') {
+                    layer.msg('请输入电话号码');
+                    this.isError = true;
+                    return;
+                } else if (!fish.isPhone(this.phone)) {
+                    layer.msg('请输入正确的电话号码');
+                    this.isError = true;
+                    return;
+                }
+                // if (!this.note||this.note.trim() == '') {
+                //     layer.msg('请输入说明');
+                //     this.isError = true;
+                //     return;
+                // }
+
+                this.isError = false;
+            },
+            getParams: function () {
+                var params = {};
+                params.name = this.name;
+                params.password = this.password;
+                params.phone = this.phone;
+                params.note = this.note;
+                params.role_id = this.role_id;
+                params.invite_code = this.invite_code;
+                // params.area_id = this.areaid
+                if (this.id != '') {
+                    params.id = this.id
+                }
+                return params
+            },
+            submit: function () {
+                this.checkParams();
+                if (!this.isError) {
+                    var param = this.getParams();
+                    var _this = this;
+                    console.log(param)
+                    $.post("{:url('admin/agent/leveloneedit')}", param, function (res) {
+                        if (res.code == 1) {
+                            if (!_this.id) {
+                                layer.msg('添加成功');
+                            } else {
+                                layer.msg('修改成功');
+                            }
+                            setTimeout(function () {
+                                window.location.href = "{:url('admin/agent/levelOneIndex')}";
+                            }, 1000)
+                        } else {
+                            layer.msg(res.msg)
+                        }
+                    })
+                }
+
+            },
+        },
+        // computed:{
+        //     initAreas:function(){
+        //         var areas = JSON.parse(bao_provinces);
+        //         var areaList = []
+        //         for(key in areas){
+        //             areaList.push(areas[key])
+        //         }
+        //         return areaList;
+        //     }
+        // },
+        // mounted:function(){
+        //     if(!pageVar.area_id){
+        //         this.areaid = 110000
+        //     }
+        // }
+    })
+
+</script>
+<style>
+    .content {
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    .btn-container {
+        width: 100%;
+        text-align: center;
+        padding-top: 25px;
+    }
+
+    label {
+        width: 15%;
+        text-align: right;
+        display: inline-block;
+        float: left;
+        height: 100%;
+    }
+
+    .input-content {
+        width: 85%;
+        display: inline-block;
+        float: right;
+    }
+</style>
+{/block}

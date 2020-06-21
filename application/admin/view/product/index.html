@@ -1,0 +1,29 @@
+{extend name="public:base"}
+{block name="content"}
+<div class="dashboard-page">
+    <a class="layui-btn" href="{:url('admin/product/edit')}">添加</a>
+    <table class="layui-table">
+        <thead>
+            <th>名称</th>
+            <th>单价（券）</th>
+            <th>图片</th>
+            <th>创建时间</th>
+            <th>操作</th>
+            <th>操作</th>
+        </thead>
+        {foreach $list as $v}
+        <tr>
+            <td>{$v.name}</td>
+            <td>{$v.price}</td>
+            <td>{$v.img} <img src="/upload/{$v.img}" height="50"/> </td>
+            <td>{$v.created_time}</td>
+            <td><a href="{:url('admin/product/edit')}?id={$v.id}">编辑</a></td>
+            <td><a href="{:url('admin/product/del')}?id={$v.id}">删除</a></td>
+        </tr>
+        {/foreach}
+    </table>
+    <div>
+        {$pagination}
+    </div>
+</div>
+{/block}

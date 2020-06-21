@@ -1,0 +1,161 @@
+{extend name="public:base"} {block name="content"}
+<style>
+    .fee-form{
+        border:1px solid #efefef;
+        width: 400px;
+        padding:20px;
+    }
+    select{
+        border:1px solid #D2D2D2;
+        padding:8px;
+    }
+    .after{
+        padding:10px;
+    }
+</style>
+<div>
+    <div class="fee-form">
+        <form method="post" >
+            <div class="layui-form-item">
+                <label class="layui-form-label">类型：</label>
+                <div class="layui-input-block">
+                    <select name="type" onchange="change(this)">
+                        <option value="1">充值</option>
+                        <option value="2">扣除金额</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="layui-form-item" id="money">
+                <label class="layui-form-label">金额：</label>
+                <div class="layui-input-block">
+                    <input type="number" name="fee" required lay-verify="required" class="layui-input" onkeyup="convertCoin(this)">
+                </div>
+                <label class="layui-form-label">金币：</label>
+                <div class="layui-input-block">
+                    <p class="after" id="label-coin">0</p>
+                </div>
+            </div>
+
+            <div class="layui-form-item" id="coin">
+                <label class="layui-form-label">金币：</label>
+                <div class="layui-input-block">
+                    <input type="number" name="coin" required lay-verify="required" class="layui-input" onkeyup="convertMoney(this)">
+                </div>
+                <label class="layui-form-label">金额：</label>
+                <div class="layui-input-block">
+                    <p class="after" id="label-money">0</p>
+                </div>
+            </div>
+
+            <div class="layui-form-item">
+                <label class="layui-form-label">充值用户ID：</label>
+                <div class="layui-input-block">
+                    <input type="number" name="player_id" required lay-verify="required" class="layui-input">
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <!--<label class="layui-form-label">充值用户ID</label>-->
+                <div class="layui-input-block">
+                    <button class="layui-btn" type="button" onclick="submit2()">确定</button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <table class="layui-table">
+        <thead>
+            <th>编号</th>
+            <th>金额</th>
+            <th>金币</th>
+            <th>手续费</th>
+            <th>充值用户</th>
+            <th>充值用户ID</th>
+            <th>充值者</th>
+            <th>时间</th>
+        </thead>
+        <tbody>
+            {foreach $list as $v}
+            <tr>
+                <td>{$v.id}</td>
+                <td>{if $v.fee < 0}{$v.coin * 0.98}{else/}{$v.coin}{/if}</td>
+                <td>{:short_count($v.coin)}</td>
+                <td>{if $v.fee > 0}无{else/}{:short_count(-$v.coin * 0.02)}{/if}</td>
+                <td>{$v.nickname}</td>
+                <td>{$v.player_id}</td>
+                <td>{$v.recharger}</td>
+                <td>
+                    {$v.created_time}
+                </td>
+            </tr>
+            {/foreach}
+        </tbody>
+    </table>
+    <div>
+        {$pagination}
+    </div>
+</div>
+<script>
+    function change(othis){
+        var val = $(othis).val();
+        if (val == 1){
+            $("#money").show();
+            $("#coin").hide();
+        }else{
+            $("#coin").show();
+            $("#money").hide();
+        }
+    }
+
+    function convertCoin(othis){
+        var val = $(othis).val();
+        val = val;
+        $("#label-coin").html(val+"个");
+    }
+
+    function convertMoney(othis){
+        var val = $(othis).val();
+//        val = val / 1.02;//不加手续费的金币
+//        val = parseInt((val / 10E4) * 100) / 100;
+        val = parseInt(val * 0.98 * 100) / 100;
+        $("#label-money").html(val+"元");
+    }
+
+    $("#money").show();
+    $("#coin").hide();
+
+    function post(){
+        layer.load(1);
+        var type = $('select[name=type]').val();
+        if(type == 1){
+            var fee = $('input[name=fee]').val();
+        }else{
+            var fee = $('input[name=coin]').val();
+        }
+
+        $.post("{:url('admin/member/handrecharge')}",{
+            type:type,
+            fee:fee,
+            player_id:$("input[name=player_id]").val(),
+        },function(r){
+            layer.closeAll();
+            layer.msg(r.msg);
+            if(r.code == 1){
+                setTimeout(function(){
+                    window.location.reload();
+                },1000);
+            }
+        });
+    }
+
+    function submit2(){
+        var type = $("select[name=type]").val();
+        if(type == 2){
+            if(confirm("你在进行扣减金币操作，继续?")){
+                post();
+            }
+        }else{
+            post();
+        }
+    }
+</script>
+{/block}

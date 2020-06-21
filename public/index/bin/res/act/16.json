@@ -1,0 +1,428 @@
+{
+    "frames": {
+        "zaqi_a0001.png": {
+            "frame": {
+                "h": 112,
+                "idx": 0,
+                "w": 75,
+                "x": 222,
+                "y": 117
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 128,
+                "w": 111
+            },
+            "spriteSourceSize": {
+                "h": 112,
+                "w": 75,
+                "x": 18,
+                "y": 8
+            },
+            "trimmed": true
+        },
+        "zaqi_a0002.png": {
+            "frame": {
+                "h": 114,
+                "idx": 0,
+                "w": 74,
+                "x": 413,
+                "y": 234
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 128,
+                "w": 111
+            },
+            "spriteSourceSize": {
+                "h": 114,
+                "w": 74,
+                "x": 18,
+                "y": 7
+            },
+            "trimmed": true
+        },
+        "zaqi_a0003.png": {
+            "frame": {
+                "h": 115,
+                "idx": 0,
+                "w": 72,
+                "x": 413,
+                "y": 118
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 128,
+                "w": 111
+            },
+            "spriteSourceSize": {
+                "h": 115,
+                "w": 72,
+                "x": 19,
+                "y": 6
+            },
+            "trimmed": true
+        },
+        "zaqi_a0004.png": {
+            "frame": {
+                "h": 116,
+                "idx": 0,
+                "w": 72,
+                "x": 340,
+                "y": 236
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 128,
+                "w": 111
+            },
+            "spriteSourceSize": {
+                "h": 116,
+                "w": 72,
+                "x": 19,
+                "y": 6
+            },
+            "trimmed": true
+        },
+        "zaqi_a0005.png": {
+            "frame": {
+                "h": 117,
+                "idx": 0,
+                "w": 73,
+                "x": 394,
+                "y": 0
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 128,
+                "w": 111
+            },
+            "spriteSourceSize": {
+                "h": 117,
+                "w": 73,
+                "x": 19,
+                "y": 5
+            },
+            "trimmed": true
+        },
+        "zaqi_a0006.png": {
+            "frame": {
+                "h": 117,
+                "idx": 0,
+                "w": 72,
+                "x": 340,
+                "y": 118
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 128,
+                "w": 111
+            },
+            "spriteSourceSize": {
+                "h": 117,
+                "w": 72,
+                "x": 19,
+                "y": 5
+            },
+            "trimmed": true
+        },
+        "zaqi_a0007.png": {
+            "frame": {
+                "h": 117,
+                "idx": 0,
+                "w": 68,
+                "x": 325,
+                "y": 0
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 128,
+                "w": 111
+            },
+            "spriteSourceSize": {
+                "h": 117,
+                "w": 68,
+                "x": 21,
+                "y": 5
+            },
+            "trimmed": true
+        },
+        "zaqi_a0008.png": {
+            "frame": {
+                "h": 116,
+                "idx": 0,
+                "w": 62,
+                "x": 262,
+                "y": 0
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 128,
+                "w": 111
+            },
+            "spriteSourceSize": {
+                "h": 116,
+                "w": 62,
+                "x": 24,
+                "y": 6
+            },
+            "trimmed": true
+        },
+        "zaqi_a0009.png": {
+            "frame": {
+                "h": 112,
+                "idx": 0,
+                "w": 53,
+                "x": 286,
+                "y": 230
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 128,
+                "w": 111
+            },
+            "spriteSourceSize": {
+                "h": 112,
+                "w": 53,
+                "x": 29,
+                "y": 8
+            },
+            "trimmed": true
+        },
+        "zaqi_a0010.png": {
+            "frame": {
+                "h": 110,
+                "idx": 0,
+                "w": 49,
+                "x": 75,
+                "y": 113
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 128,
+                "w": 111
+            },
+            "spriteSourceSize": {
+                "h": 110,
+                "w": 49,
+                "x": 31,
+                "y": 9
+            },
+            "trimmed": true
+        },
+        "zaqi_a0011.png": {
+            "frame": {
+                "h": 112,
+                "idx": 0,
+                "w": 51,
+                "x": 0,
+                "y": 0
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 128,
+                "w": 111
+            },
+            "spriteSourceSize": {
+                "h": 112,
+                "w": 51,
+                "x": 30,
+                "y": 8
+            },
+            "trimmed": true
+        },
+        "zaqi_a0012.png": {
+            "frame": {
+                "h": 116,
+                "idx": 0,
+                "w": 59,
+                "x": 202,
+                "y": 0
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 128,
+                "w": 111
+            },
+            "spriteSourceSize": {
+                "h": 116,
+                "w": 59,
+                "x": 26,
+                "y": 6
+            },
+            "trimmed": true
+        },
+        "zaqi_a0013.png": {
+            "frame": {
+                "h": 117,
+                "idx": 0,
+                "w": 66,
+                "x": 219,
+                "y": 235
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 128,
+                "w": 111
+            },
+            "spriteSourceSize": {
+                "h": 117,
+                "w": 66,
+                "x": 22,
+                "y": 5
+            },
+            "trimmed": true
+        },
+        "zaqi_a0014.png": {
+            "frame": {
+                "h": 117,
+                "idx": 0,
+                "w": 71,
+                "x": 147,
+                "y": 235
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 128,
+                "w": 111
+            },
+            "spriteSourceSize": {
+                "h": 117,
+                "w": 71,
+                "x": 20,
+                "y": 5
+            },
+            "trimmed": true
+        },
+        "zaqi_a0015.png": {
+            "frame": {
+                "h": 117,
+                "idx": 0,
+                "w": 74,
+                "x": 147,
+                "y": 117
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 128,
+                "w": 111
+            },
+            "spriteSourceSize": {
+                "h": 117,
+                "w": 74,
+                "x": 18,
+                "y": 5
+            },
+            "trimmed": true
+        },
+        "zaqi_a0016.png": {
+            "frame": {
+                "h": 116,
+                "idx": 0,
+                "w": 74,
+                "x": 127,
+                "y": 0
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 128,
+                "w": 111
+            },
+            "spriteSourceSize": {
+                "h": 116,
+                "w": 74,
+                "x": 18,
+                "y": 6
+            },
+            "trimmed": true
+        },
+        "zaqi_a0017.png": {
+            "frame": {
+                "h": 115,
+                "idx": 0,
+                "w": 72,
+                "x": 74,
+                "y": 226
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 128,
+                "w": 111
+            },
+            "spriteSourceSize": {
+                "h": 115,
+                "w": 72,
+                "x": 19,
+                "y": 6
+            },
+            "trimmed": true
+        },
+        "zaqi_a0018.png": {
+            "frame": {
+                "h": 114,
+                "idx": 0,
+                "w": 73,
+                "x": 0,
+                "y": 226
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 128,
+                "w": 111
+            },
+            "spriteSourceSize": {
+                "h": 114,
+                "w": 73,
+                "x": 19,
+                "y": 7
+            },
+            "trimmed": true
+        },
+        "zaqi_a0019.png": {
+            "frame": {
+                "h": 112,
+                "idx": 0,
+                "w": 74,
+                "x": 52,
+                "y": 0
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 128,
+                "w": 111
+            },
+            "spriteSourceSize": {
+                "h": 112,
+                "w": 74,
+                "x": 18,
+                "y": 8
+            },
+            "trimmed": true
+        },
+        "zaqi_a0020.png": {
+            "frame": {
+                "h": 112,
+                "idx": 0,
+                "w": 74,
+                "x": 0,
+                "y": 113
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 128,
+                "w": 111
+            },
+            "spriteSourceSize": {
+                "h": 112,
+                "w": 74,
+                "x": 18,
+                "y": 8
+            },
+            "trimmed": true
+        }
+    },
+    "meta": {
+        "image": "16.png",
+        "prefix": "16/"
+    }
+}

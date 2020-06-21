@@ -1,0 +1,428 @@
+{
+    "frames": {
+        "changsan_a0001.png": {
+            "frame": {
+                "h": 281,
+                "idx": 0,
+                "w": 186,
+                "x": 504,
+                "y": 284
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 302,
+                "w": 235
+            },
+            "spriteSourceSize": {
+                "h": 281,
+                "w": 186,
+                "x": 24,
+                "y": 10
+            },
+            "trimmed": true
+        },
+        "changsan_a0002.png": {
+            "frame": {
+                "h": 283,
+                "idx": 0,
+                "w": 184,
+                "x": 903,
+                "y": 583
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 302,
+                "w": 235
+            },
+            "spriteSourceSize": {
+                "h": 283,
+                "w": 184,
+                "x": 25,
+                "y": 9
+            },
+            "trimmed": true
+        },
+        "changsan_a0003.png": {
+            "frame": {
+                "h": 286,
+                "idx": 0,
+                "w": 178,
+                "x": 724,
+                "y": 580
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 302,
+                "w": 235
+            },
+            "spriteSourceSize": {
+                "h": 286,
+                "w": 178,
+                "x": 28,
+                "y": 8
+            },
+            "trimmed": true
+        },
+        "changsan_a0004.png": {
+            "frame": {
+                "h": 290,
+                "idx": 0,
+                "w": 183,
+                "x": 540,
+                "y": 569
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 302,
+                "w": 235
+            },
+            "spriteSourceSize": {
+                "h": 290,
+                "w": 183,
+                "x": 26,
+                "y": 6
+            },
+            "trimmed": true
+        },
+        "changsan_a0005.png": {
+            "frame": {
+                "h": 292,
+                "idx": 0,
+                "w": 182,
+                "x": 357,
+                "y": 571
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 302,
+                "w": 235
+            },
+            "spriteSourceSize": {
+                "h": 292,
+                "w": 182,
+                "x": 26,
+                "y": 5
+            },
+            "trimmed": true
+        },
+        "changsan_a0006.png": {
+            "frame": {
+                "h": 293,
+                "idx": 0,
+                "w": 177,
+                "x": 179,
+                "y": 575
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 302,
+                "w": 235
+            },
+            "spriteSourceSize": {
+                "h": 293,
+                "w": 177,
+                "x": 29,
+                "y": 4
+            },
+            "trimmed": true
+        },
+        "changsan_a0007.png": {
+            "frame": {
+                "h": 291,
+                "idx": 0,
+                "w": 166,
+                "x": 969,
+                "y": 291
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 302,
+                "w": 235
+            },
+            "spriteSourceSize": {
+                "h": 291,
+                "w": 166,
+                "x": 34,
+                "y": 5
+            },
+            "trimmed": true
+        },
+        "changsan_a0008.png": {
+            "frame": {
+                "h": 288,
+                "idx": 0,
+                "w": 149,
+                "x": 819,
+                "y": 291
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 302,
+                "w": 235
+            },
+            "spriteSourceSize": {
+                "h": 288,
+                "w": 149,
+                "x": 43,
+                "y": 7
+            },
+            "trimmed": true
+        },
+        "changsan_a0009.png": {
+            "frame": {
+                "h": 281,
+                "idx": 0,
+                "w": 127,
+                "x": 691,
+                "y": 287
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 302,
+                "w": 235
+            },
+            "spriteSourceSize": {
+                "h": 281,
+                "w": 127,
+                "x": 54,
+                "y": 10
+            },
+            "trimmed": true
+        },
+        "changsan_a0010.png": {
+            "frame": {
+                "h": 272,
+                "idx": 0,
+                "w": 122,
+                "x": 1055,
+                "y": 0
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 302,
+                "w": 235
+            },
+            "spriteSourceSize": {
+                "h": 272,
+                "w": 122,
+                "x": 56,
+                "y": 15
+            },
+            "trimmed": true
+        },
+        "changsan_a0011.png": {
+            "frame": {
+                "h": 281,
+                "idx": 0,
+                "w": 131,
+                "x": 0,
+                "y": 0
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 302,
+                "w": 235
+            },
+            "spriteSourceSize": {
+                "h": 281,
+                "w": 131,
+                "x": 52,
+                "y": 10
+            },
+            "trimmed": true
+        },
+        "changsan_a0012.png": {
+            "frame": {
+                "h": 288,
+                "idx": 0,
+                "w": 152,
+                "x": 351,
+                "y": 282
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 302,
+                "w": 235
+            },
+            "spriteSourceSize": {
+                "h": 288,
+                "w": 152,
+                "x": 41,
+                "y": 7
+            },
+            "trimmed": true
+        },
+        "changsan_a0013.png": {
+            "frame": {
+                "h": 291,
+                "idx": 0,
+                "w": 167,
+                "x": 183,
+                "y": 282
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 302,
+                "w": 235
+            },
+            "spriteSourceSize": {
+                "h": 291,
+                "w": 167,
+                "x": 34,
+                "y": 5
+            },
+            "trimmed": true
+        },
+        "changsan_a0014.png": {
+            "frame": {
+                "h": 293,
+                "idx": 0,
+                "w": 178,
+                "x": 0,
+                "y": 575
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 302,
+                "w": 235
+            },
+            "spriteSourceSize": {
+                "h": 293,
+                "w": 178,
+                "x": 28,
+                "y": 4
+            },
+            "trimmed": true
+        },
+        "changsan_a0015.png": {
+            "frame": {
+                "h": 292,
+                "idx": 0,
+                "w": 182,
+                "x": 0,
+                "y": 282
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 302,
+                "w": 235
+            },
+            "spriteSourceSize": {
+                "h": 292,
+                "w": 182,
+                "x": 26,
+                "y": 5
+            },
+            "trimmed": true
+        },
+        "changsan_a0016.png": {
+            "frame": {
+                "h": 290,
+                "idx": 0,
+                "w": 181,
+                "x": 873,
+                "y": 0
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 302,
+                "w": 235
+            },
+            "spriteSourceSize": {
+                "h": 290,
+                "w": 181,
+                "x": 27,
+                "y": 6
+            },
+            "trimmed": true
+        },
+        "changsan_a0017.png": {
+            "frame": {
+                "h": 286,
+                "idx": 0,
+                "w": 179,
+                "x": 693,
+                "y": 0
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 302,
+                "w": 235
+            },
+            "spriteSourceSize": {
+                "h": 286,
+                "w": 179,
+                "x": 28,
+                "y": 8
+            },
+            "trimmed": true
+        },
+        "changsan_a0018.png": {
+            "frame": {
+                "h": 283,
+                "idx": 0,
+                "w": 185,
+                "x": 507,
+                "y": 0
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 302,
+                "w": 235
+            },
+            "spriteSourceSize": {
+                "h": 283,
+                "w": 185,
+                "x": 25,
+                "y": 9
+            },
+            "trimmed": true
+        },
+        "changsan_a0019.png": {
+            "frame": {
+                "h": 281,
+                "idx": 0,
+                "w": 186,
+                "x": 320,
+                "y": 0
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 302,
+                "w": 235
+            },
+            "spriteSourceSize": {
+                "h": 281,
+                "w": 186,
+                "x": 24,
+                "y": 10
+            },
+            "trimmed": true
+        },
+        "changsan_a0020.png": {
+            "frame": {
+                "h": 279,
+                "idx": 0,
+                "w": 187,
+                "x": 132,
+                "y": 0
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 302,
+                "w": 235
+            },
+            "spriteSourceSize": {
+                "h": 279,
+                "w": 187,
+                "x": 24,
+                "y": 11
+            },
+            "trimmed": true
+        }
+    },
+    "meta": {
+        "image": "6.png",
+        "prefix": "6/"
+    }
+}

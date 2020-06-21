@@ -1,0 +1,95 @@
+{extend name="public:base"} {block name="content"}
+<div class="dashboard-page">
+    <table class="layui-table">
+        <thead>
+            <th>姓名</th>
+            <th>上级</th>
+            <th>手机</th>
+            <th>备注</th>
+            <th>创建时间</th>
+            <th>状态</th>
+            <th>操作</th>
+        </thead>
+        <tbody>
+            {foreach $list as $v}
+            <tr>
+                <td>{$v.name}</td>
+                <td>{$v.parent}</td>
+                <td>{$v.phone}</td>
+                <td>{$v.note}</td>
+                <td>{$v.created_time}</td>
+                <td>{$v.status_text}</td>
+                <td>
+                    {if $v.status == 0}
+                    <button type="button" data-method="offset" data-type="auto"  id="{$v.id}" class="layui-btn">审核</button> {/if}
+                </td>
+            </tr>
+            {/foreach}
+        </tbody>
+    </table>
+    <div>
+        {$pagination}
+    </div>
+    
+</div>
+<style>
+    #role_select{
+        border: 1px solid #eee;
+        display: block;
+        margin: 20px auto;
+        text-align: center;
+    }
+</style>
+<script>
+    $(document).ready(function () {
+        var role_list = JSON.parse('{$role_list}');
+        var url = '{url("admin/agent/levelTwoAgreeAdd")}';
+        var htmlStr = '<select id="role_select">'
+        for(var i=0;i<role_list.length;i++){
+            var role = role_list[i]
+            htmlStr += '<option value="'+role.id+'">'+role.role_name+'</option>'
+        }
+        htmlStr+='</select>'
+        var active = {
+            offset: function (othis) {
+                var type = othis.data('type')
+                var id = $(othis).attr('id')
+                layer.open({
+                    type: 1
+                    , offset: type
+                    , id: 'LAY_demo' + type //防止重复弹出
+                    , content: htmlStr
+                    , btn: '确定'
+                    , btnAlign: 'c' //按钮居中
+                    , shade: 0 //不显示遮罩
+                    , yes: function () {
+                        var param = {
+                            'id':id,
+                            'role_id':$('#role_select option:selected') .val()
+                        }
+                        var loading = layer.load(1);
+                        $.post('{:url("admin/agent/levelTwoAgreeAdd")}', param
+                            , function (r) {
+                                layer.close(loading);
+                                if (r.code == 1) {
+                                    layer.msg('添加成功');
+                                    location.reload()
+                                } else {
+                                    layer.msg(r.msg);
+                                }
+                            })
+                        layer.closeAll();
+                    }
+                });
+            }
+        };
+
+        $('.layui-btn').on('click', function () {
+     
+            var othis = $(this), method = othis.data('method');
+            active[method] ? active[method].call(this, othis) : '';
+        });
+    })
+
+</script>
+{/block}

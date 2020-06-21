@@ -1,0 +1,155 @@
+{
+    "frames": {
+        "airtext.png": {
+            "frame": {
+                "h": 51,
+                "idx": 0,
+                "w": 357,
+                "x": 0,
+                "y": 63
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 51,
+                "w": 357
+            },
+            "spriteSourceSize": {
+                "h": 51,
+                "w": 357,
+                "x": 0,
+                "y": 0
+            },
+            "trimmed": false
+        },
+        "anntext.png": {
+            "frame": {
+                "h": 52,
+                "idx": 0,
+                "w": 91,
+                "x": 74,
+                "y": 115
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 52,
+                "w": 91
+            },
+            "spriteSourceSize": {
+                "h": 52,
+                "w": 91,
+                "x": 0,
+                "y": 0
+            },
+            "trimmed": false
+        },
+        "bg.png": {
+            "frame": {
+                "h": 62,
+                "idx": 0,
+                "w": 427,
+                "x": 0,
+                "y": 0
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 62,
+                "w": 427
+            },
+            "spriteSourceSize": {
+                "h": 62,
+                "w": 427,
+                "x": 0,
+                "y": 0
+            },
+            "trimmed": false
+        },
+        "biao.png": {
+            "frame": {
+                "h": 19,
+                "idx": 0,
+                "w": 19,
+                "x": 428,
+                "y": 0
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 19,
+                "w": 19
+            },
+            "spriteSourceSize": {
+                "h": 19,
+                "w": 19,
+                "x": 0,
+                "y": 0
+            },
+            "trimmed": false
+        },
+        "mail.png": {
+            "frame": {
+                "h": 71,
+                "idx": 0,
+                "w": 73,
+                "x": 0,
+                "y": 144
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 71,
+                "w": 73
+            },
+            "spriteSourceSize": {
+                "h": 71,
+                "w": 73,
+                "x": 0,
+                "y": 0
+            },
+            "trimmed": false
+        },
+        "return.png": {
+            "frame": {
+                "h": 61,
+                "idx": 0,
+                "w": 57,
+                "x": 166,
+                "y": 115
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 61,
+                "w": 57
+            },
+            "spriteSourceSize": {
+                "h": 61,
+                "w": 57,
+                "x": 0,
+                "y": 0
+            },
+            "trimmed": false
+        },
+        "shut.png": {
+            "frame": {
+                "h": 80,
+                "idx": 0,
+                "w": 79,
+                "x": 358,
+                "y": 63
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 80,
+                "w": 79
+            },
+            "spriteSourceSize": {
+                "h": 80,
+                "w": 79,
+                "x": 0,
+                "y": 0
+            },
+            "trimmed": false
+        }
+    },
+    "meta": {
+        "image": "message.png",
+        "prefix": "comp/loaded/message/"
+    }
+}

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8' />
+    <title>九九游戏</title>
+    <meta name='viewport' content='width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no'
+    />
+    <meta name="renderer" content="webkit">
+    <meta name='apple-mobile-web-app-capable' content='yes' />
+    <meta name='full-screen' content='true' />
+    <meta name='x5-fullscreen' content='true' />
+    <meta name='360-fullscreen' content='true' />
+    <meta name="laya" screenorientation="landscape" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta http-equiv='expires' content='0' />
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            width: 100%;
+            height: 100%;
+        }
+
+        body {
+            overflow: hidden;
+            width: 100%;
+            height: 100%;
+            background: url('comp/img/start/bg.png') no-repeat;
+            background-size: 100% 100%;
+        }
+
+        .logo {
+            width: 300px;
+            margin: 50px auto;
+            display: block;
+        }
+
+        .way {
+            width: 150px;
+            margin: 100px auto;
+            display: block;
+        }
+
+        .mask {
+            position: absolute;
+            left: 0;
+            top: 0;
+            z-index: 3;
+            display: none;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <img src="comp/img/start/word.png" alt="" class="logo">
+    <img src="comp/img/start/shouji--icon.png" alt="" class="way" id="weixin">
+    <img src="comp/img/start/weixin--icon.png" alt="" class="way" id="phone">
+    <!-- <img src="comp/login/indexMask.png" alt="" class="mask" id="mask"> -->
+</body>
+<script src="http://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous"></script>
+<script>
+    function getQueryString(name) {
+        var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i");
+        var r = window.location.search.substr(1).match(reg);
+        if (r != null) return unescape(r[2]); return null;
+    }
+
+    $(document).ready(function () {
+        var url = location.href
+        var index = url.indexOf('number')
+        var str = ''
+        var number = ''
+        if (index > 0) {
+            str = url.slice(index + 6)
+            if (str && str != '') {
+                number = '&number' + str
+            }
+        }
+        $('#weixin').click(function () {
+            location.href = '/index/index/index2?way=phone' + number
+        })
+
+        $('#phone').click(function () {
+            location.href = '/index/index/index2?way=weixin' + number
+        })
+
+        var str = location.href
+        var s = str.indexOf('parent_id')
+        var parent_id = getQueryString('parent_id')
+        if (str.indexOf('parent') > 0) {
+            console.log(parent_id)
+            $.post('/index/index/saveParentId', { parent_id: parent_id })
+        }
+    })
+
+</script>
+
+</html>

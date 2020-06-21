@@ -1,0 +1,428 @@
+{
+    "frames": {
+        "zaba2_0001.png": {
+            "frame": {
+                "h": 97,
+                "idx": 0,
+                "w": 68,
+                "x": 0,
+                "y": 219
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 128,
+                "w": 111
+            },
+            "spriteSourceSize": {
+                "h": 97,
+                "w": 68,
+                "x": 21,
+                "y": 15
+            },
+            "trimmed": true
+        },
+        "zaba2_0002.png": {
+            "frame": {
+                "h": 98,
+                "idx": 0,
+                "w": 69,
+                "x": 439,
+                "y": 106
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 128,
+                "w": 111
+            },
+            "spriteSourceSize": {
+                "h": 98,
+                "w": 69,
+                "x": 21,
+                "y": 15
+            },
+            "trimmed": true
+        },
+        "zaba2_0003.png": {
+            "frame": {
+                "h": 100,
+                "idx": 0,
+                "w": 71,
+                "x": 373,
+                "y": 209
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 128,
+                "w": 111
+            },
+            "spriteSourceSize": {
+                "h": 100,
+                "w": 71,
+                "x": 20,
+                "y": 14
+            },
+            "trimmed": true
+        },
+        "zaba2_0004.png": {
+            "frame": {
+                "h": 102,
+                "idx": 0,
+                "w": 75,
+                "x": 363,
+                "y": 106
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 128,
+                "w": 111
+            },
+            "spriteSourceSize": {
+                "h": 102,
+                "w": 75,
+                "x": 18,
+                "y": 13
+            },
+            "trimmed": true
+        },
+        "zaba2_0005.png": {
+            "frame": {
+                "h": 105,
+                "idx": 0,
+                "w": 78,
+                "x": 294,
+                "y": 213
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 128,
+                "w": 111
+            },
+            "spriteSourceSize": {
+                "h": 105,
+                "w": 78,
+                "x": 16,
+                "y": 11
+            },
+            "trimmed": true
+        },
+        "zaba2_0006.png": {
+            "frame": {
+                "h": 107,
+                "idx": 0,
+                "w": 79,
+                "x": 214,
+                "y": 213
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 128,
+                "w": 111
+            },
+            "spriteSourceSize": {
+                "h": 107,
+                "w": 79,
+                "x": 16,
+                "y": 10
+            },
+            "trimmed": true
+        },
+        "zaba2_0007.png": {
+            "frame": {
+                "h": 109,
+                "idx": 0,
+                "w": 77,
+                "x": 285,
+                "y": 103
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 128,
+                "w": 111
+            },
+            "spriteSourceSize": {
+                "h": 109,
+                "w": 77,
+                "x": 17,
+                "y": 9
+            },
+            "trimmed": true
+        },
+        "zaba2_0008.png": {
+            "frame": {
+                "h": 110,
+                "idx": 0,
+                "w": 71,
+                "x": 142,
+                "y": 210
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 128,
+                "w": 111
+            },
+            "spriteSourceSize": {
+                "h": 110,
+                "w": 71,
+                "x": 20,
+                "y": 9
+            },
+            "trimmed": true
+        },
+        "zaba2_0009.png": {
+            "frame": {
+                "h": 111,
+                "idx": 0,
+                "w": 61,
+                "x": 80,
+                "y": 209
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 128,
+                "w": 111
+            },
+            "spriteSourceSize": {
+                "h": 111,
+                "w": 61,
+                "x": 25,
+                "y": 8
+            },
+            "trimmed": true
+        },
+        "zaba2_0010.png": {
+            "frame": {
+                "h": 110,
+                "idx": 0,
+                "w": 52,
+                "x": 232,
+                "y": 101
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 128,
+                "w": 111
+            },
+            "spriteSourceSize": {
+                "h": 110,
+                "w": 52,
+                "x": 29,
+                "y": 9
+            },
+            "trimmed": true
+        },
+        "zaba2_0011.png": {
+            "frame": {
+                "h": 110,
+                "idx": 0,
+                "w": 62,
+                "x": 0,
+                "y": 0
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 128,
+                "w": 111
+            },
+            "spriteSourceSize": {
+                "h": 110,
+                "w": 62,
+                "x": 24,
+                "y": 9
+            },
+            "trimmed": true
+        },
+        "zaba2_0012.png": {
+            "frame": {
+                "h": 110,
+                "idx": 0,
+                "w": 72,
+                "x": 159,
+                "y": 99
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 128,
+                "w": 111
+            },
+            "spriteSourceSize": {
+                "h": 110,
+                "w": 72,
+                "x": 19,
+                "y": 9
+            },
+            "trimmed": true
+        },
+        "zaba2_0013.png": {
+            "frame": {
+                "h": 110,
+                "idx": 0,
+                "w": 78,
+                "x": 80,
+                "y": 98
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 128,
+                "w": 111
+            },
+            "spriteSourceSize": {
+                "h": 110,
+                "w": 78,
+                "x": 16,
+                "y": 9
+            },
+            "trimmed": true
+        },
+        "zaba2_0014.png": {
+            "frame": {
+                "h": 107,
+                "idx": 0,
+                "w": 79,
+                "x": 0,
+                "y": 111
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 128,
+                "w": 111
+            },
+            "spriteSourceSize": {
+                "h": 107,
+                "w": 79,
+                "x": 16,
+                "y": 10
+            },
+            "trimmed": true
+        },
+        "zaba2_0015.png": {
+            "frame": {
+                "h": 105,
+                "idx": 0,
+                "w": 78,
+                "x": 417,
+                "y": 0
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 128,
+                "w": 111
+            },
+            "spriteSourceSize": {
+                "h": 105,
+                "w": 78,
+                "x": 16,
+                "y": 11
+            },
+            "trimmed": true
+        },
+        "zaba2_0016.png": {
+            "frame": {
+                "h": 102,
+                "idx": 0,
+                "w": 74,
+                "x": 342,
+                "y": 0
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 128,
+                "w": 111
+            },
+            "spriteSourceSize": {
+                "h": 102,
+                "w": 74,
+                "x": 18,
+                "y": 13
+            },
+            "trimmed": true
+        },
+        "zaba2_0017.png": {
+            "frame": {
+                "h": 100,
+                "idx": 0,
+                "w": 71,
+                "x": 270,
+                "y": 0
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 128,
+                "w": 111
+            },
+            "spriteSourceSize": {
+                "h": 100,
+                "w": 71,
+                "x": 20,
+                "y": 14
+            },
+            "trimmed": true
+        },
+        "zaba2_0018.png": {
+            "frame": {
+                "h": 98,
+                "idx": 0,
+                "w": 68,
+                "x": 201,
+                "y": 0
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 128,
+                "w": 111
+            },
+            "spriteSourceSize": {
+                "h": 98,
+                "w": 68,
+                "x": 21,
+                "y": 15
+            },
+            "trimmed": true
+        },
+        "zaba2_0019.png": {
+            "frame": {
+                "h": 97,
+                "idx": 0,
+                "w": 68,
+                "x": 132,
+                "y": 0
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 128,
+                "w": 111
+            },
+            "spriteSourceSize": {
+                "h": 97,
+                "w": 68,
+                "x": 21,
+                "y": 15
+            },
+            "trimmed": true
+        },
+        "zaba2_0020.png": {
+            "frame": {
+                "h": 96,
+                "idx": 0,
+                "w": 68,
+                "x": 63,
+                "y": 0
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 128,
+                "w": 111
+            },
+            "spriteSourceSize": {
+                "h": 96,
+                "w": 68,
+                "x": 21,
+                "y": 16
+            },
+            "trimmed": true
+        }
+    },
+    "meta": {
+        "image": "14.png",
+        "prefix": "14/"
+    }
+}
